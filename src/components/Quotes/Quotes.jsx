@@ -4,4 +4,4 @@ const Quotes = () => {
     return <div></div>
 };
 
-export default Quotes
+export default Quotes;

@@ -4,4 +4,4 @@ const ExploreBlogs = () => {
     return <div></div>
 };
 
-export default ExploreBlogs
+export default ExploreBlogs;

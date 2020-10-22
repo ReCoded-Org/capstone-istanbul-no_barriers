@@ -4,4 +4,4 @@ const CategoriesBrowes = () => {
  return <div></div>
 };
 
-export default CategoriesBrowes
+export default CategoriesBrowes;

@@ -4,4 +4,4 @@ const HowDoesItWork = () => {
     return <div></div>
 };
 
-export default HowDoesItWork
+export default HowDoesItWork;
