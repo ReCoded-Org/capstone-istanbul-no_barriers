@@ -24,4 +24,4 @@ const HomePage = () => {
         <Footer />
         </div>
     )
-}
+};
