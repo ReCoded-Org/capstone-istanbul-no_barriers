@@ -1,7 +1,7 @@
 import React from "react";
 
-const BrowseCategory = ()=>{
-    return <div></div>
-}
+const BrowseCategory = () => {
+  return <div></div>;
+};
 
-export default BrowseCategory
+export default BrowseCategory;

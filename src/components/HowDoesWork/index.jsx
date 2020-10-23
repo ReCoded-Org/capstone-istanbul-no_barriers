@@ -1,7 +1,7 @@
 import React from "react";
 
-const HowDoesWork = ()=>{
-    return <div></div>
-}
+const HowDoesWork = () => {
+  return <div></div>;
+};
 
-export default HowDoesWork
+export default HowDoesWork;
