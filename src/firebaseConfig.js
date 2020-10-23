@@ -1,6 +1,6 @@
-import * as firebase from "firebase";
+import * as firebaseConfig from "firebase";
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyA_W5FFmcpoLooDBWggCdOaWdD20aacVXk",
   authDomain: "no-barriers.firebaseapp.com",
   databaseURL: "https://no-barriers.firebaseio.com",
