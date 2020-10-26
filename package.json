@@ -9,9 +9,13 @@
         "bootstrap": "^4.5.3",
         "firebase": "^7.24.0",
         "i18n": "^0.13.2",
+        "i18n-react": "^0.7.0",
+        "i18next": "^19.8.2",
+        "i18next-browser-languagedetector": "^6.0.1",
         "react": "^16.14.0",
         "react-bootstrap": "^1.4.0",
         "react-dom": "^16.14.0",
+        "react-i18next": "^11.7.3",
         "react-scripts": "3.4.3",
         "react-slickgrid": "^0.0.1"
     },
@@ -46,7 +50,7 @@
         "eslint-plugin-jsx-a11y": "^6.3.1",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.1.2",
-        "jest": "^24.9.0",
+        "jest": "^26.6.1",
         "prettier": "^2.0.5",
         "pretty-quick": "^2.0.1"
     }
