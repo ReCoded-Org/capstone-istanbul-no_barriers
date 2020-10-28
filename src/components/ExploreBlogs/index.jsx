@@ -14,58 +14,58 @@ const ExploreBlogs = () => {
   return (
     <div className="exploreBlogs">
       <Row className="justify-content-center">
-        <Container className="exploreBlogs-heading">
-          <h3 className="exploreBlogs-heading-title_main">
+        <Container className="exploreBlogsHeading">
+          <h3 className="exploreBlogsHeadingTitleMain">
             {t("homePage.exploreBlogs.exploreBlogs")}
           </h3>
-          <p className="exploreBlogs-heading-paragraph">
+          <p className="exploreBlogsHeadingParagraph">
             {t("homePage.exploreBlogs.paragraph")}
           </p>
         </Container>
       </Row>
-      <Container className="exploreBlogs-blog-list">
+      <Container className="exploreBlogsBlogList">
         <Row className="d-flex">
           <Col xs={12} md={6} lg={4}>
-            <div className="exploreBlogs-blog">
+            <div className="exploreBlogsBlog">
               <img
                 src={image}
                 alt="placeholder"
-                className="exploreBlogs-blog-img"
+                className="exploreBlogsBlogImg"
               />
-              <h5 className="exploreBlogs-blog-heading">
+              <h5 className="exploreBlogsBlogHeading">
                 {t("homePage.exploreBlogs.blogTitle")}
               </h5>
-              <a href="#singleBlog" className="exploreBlogs-blog-link">
+              <a href="#singleBlog" className="exploreBlogsBlogLink">
                 {t("homePage.exploreBlogs.blogLink")}
               </a>
             </div>
           </Col>
           <Col xs={12} md={6} lg={4}>
-            <div className="exploreBlogs-blog">
+            <div className="exploreBlogsBlog">
               <img
                 src={image}
                 alt="placeholder"
-                className="exploreBlogs-blog-img"
+                className="exploreBlogsBlogImg"
               />
-              <h5 className="exploreBlogs-blog-heading">
+              <h5 className="exploreBlogsBlogHeading">
                 {t("homePage.exploreBlogs.blogTitle")}
               </h5>
-              <a href="#singleBlog" className="exploreBlogs-blog-link">
+              <a href="#singleBlog" className="exploreBlogsBlogLink">
                 {t("homePage.exploreBlogs.blogLink")}
               </a>
             </div>
           </Col>
           <Col xs={12} md={6} lg={4}>
-            <div className="exploreBlogs-blog">
+            <div className="exploreBlogsBlog">
               <img
                 src={image}
                 alt="placeholder"
-                className="exploreBlogs-blog-img"
+                className="exploreBlogsBlogImg"
               />
-              <h5 className="exploreBlogs-blog-heading">
+              <h5 className="exploreBlogsBlogHeading">
                 {t("homePage.exploreBlogs.blogTitle")}
               </h5>
-              <a href="#singleBlog" className="exploreBlogs-blog-link">
+              <a href="#singleBlog" className="exploreBlogsBlogLink">
                 {t("homePage.exploreBlogs.blogLink")}
               </a>
             </div>
