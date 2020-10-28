@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="exploreBlogs"
+>
+  <div
+    className="justify-content-center row"
+  >
+    <div
+      className="exploreBlogs-heading container"
+    >
+      <h3
+        className="exploreBlogs-heading-title_main"
+      >
+        homePage.exploreBlogs.exploreBlogs
+      </h3>
+      <p
+        className="exploreBlogs-heading-paragraph"
+      >
+        homePage.exploreBlogs.paragraph
+      </p>
+    </div>
+  </div>
+  <div
+    className="exploreBlogs-blog-list container"
+  >
+    <div
+      className="d-flex row"
+    >
+      <div
+        className="col-lg-4 col-md-6 col-12"
+      >
+        <div
+          className="exploreBlogs-blog"
+        >
+          <img
+            alt="placeholder"
+            className="exploreBlogs-blog-img"
+            src="placeHolderImage.jpg"
+          />
+          <h5
+            className="exploreBlogs-blog-heading"
+          >
+            homePage.exploreBlogs.blogTitle
+          </h5>
+          <a
+            className="exploreBlogs-blog-link"
+            href="#singleBlog"
+          >
+            homePage.exploreBlogs.blogLink
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-lg-4 col-md-6 col-12"
+      >
+        <div
+          className="exploreBlogs-blog"
+        >
+          <img
+            alt="placeholder"
+            className="exploreBlogs-blog-img"
+            src="placeHolderImage.jpg"
+          />
+          <h5
+            className="exploreBlogs-blog-heading"
+          >
+            homePage.exploreBlogs.blogTitle
+          </h5>
+          <a
+            className="exploreBlogs-blog-link"
+            href="#singleBlog"
+          >
+            homePage.exploreBlogs.blogLink
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-lg-4 col-md-6 col-12"
+      >
+        <div
+          className="exploreBlogs-blog"
+        >
+          <img
+            alt="placeholder"
+            className="exploreBlogs-blog-img"
+            src="placeHolderImage.jpg"
+          />
+          <h5
+            className="exploreBlogs-blog-heading"
+          >
+            homePage.exploreBlogs.blogTitle
+          </h5>
+          <a
+            className="exploreBlogs-blog-link"
+            href="#singleBlog"
+          >
+            homePage.exploreBlogs.blogLink
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="justify-content-center row"
+  >
+    <button
+      className="btn btn-outline-warning shadow-none"
+      disabled={false}
+      type="button"
+    >
+      homePage.exploreBlogs.buttonSeeMore
+    </button>
+  </div>
+</div>
+`;
