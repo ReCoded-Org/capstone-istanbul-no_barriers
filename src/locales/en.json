@@ -1,3 +1,11 @@
 {
-  "homePage": {}
+  "homePage": {
+    "exploreBlogs": {
+      "exploreBlogs": "EXPLORE OUR BLOGS",
+      "paragraph": "Think about the word destroy. Do you know what it is? De-story. Destroy. Destory. You see. And restore. That&apos;s re-story. Do you know that only two things have been proven to help survivors of the Holocaust? Massage is one. Telling their story is another. Being touched and touching. Telling your story is touching. It sets you free.",
+      "blogTitle": "This is the title of my blog",
+      "blogLink": "Go to blog post",
+      "buttonSeeMore": "See more blogs"
+    }
+  }
 }
