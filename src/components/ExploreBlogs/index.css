@@ -15,12 +15,12 @@
 }
 
 /* container blog list style */
-.exploreBlogs-blog-list {
+.exploreBlogsBlogList {
   padding: 0 5rem 1.5rem 5rem;
 }
 
 /* image style */
-.exploreBlogs-blog-img {
+.exploreBlogsBlogImg {
   height: 17rem;
   width: auto;
   border-radius: 1rem;
@@ -28,12 +28,12 @@
 }
 
 /* link style */
-.exploreBlogs-blog-link {
+.exploreBlogsBlogLink {
   text-decoration: none;
   color: var(--main-color);
 }
 
-.exploreBlogs-blog-link:hover {
+.exploreBlogsBlogLink:hover {
   text-decoration: none;
   color: var(--orange-link);
 }
