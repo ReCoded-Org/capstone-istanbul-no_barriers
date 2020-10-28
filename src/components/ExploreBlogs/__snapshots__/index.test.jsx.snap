@@ -8,22 +8,22 @@ exports[`renders correctly 1`] = `
     className="justify-content-center row"
   >
     <div
-      className="exploreBlogs-heading container"
+      className="exploreBlogsHeading container"
     >
       <h3
-        className="exploreBlogs-heading-title_main"
+        className="exploreBlogsHeadingTitleMain"
       >
         homePage.exploreBlogs.exploreBlogs
       </h3>
       <p
-        className="exploreBlogs-heading-paragraph"
+        className="exploreBlogsHeadingParagraph"
       >
         homePage.exploreBlogs.paragraph
       </p>
     </div>
   </div>
   <div
-    className="exploreBlogs-blog-list container"
+    className="exploreBlogsBlogList container"
   >
     <div
       className="d-flex row"
@@ -32,20 +32,20 @@ exports[`renders correctly 1`] = `
         className="col-lg-4 col-md-6 col-12"
       >
         <div
-          className="exploreBlogs-blog"
+          className="exploreBlogsBlog"
         >
           <img
             alt="placeholder"
-            className="exploreBlogs-blog-img"
+            className="exploreBlogsBlogImg"
             src="placeHolderImage.jpg"
           />
           <h5
-            className="exploreBlogs-blog-heading"
+            className="exploreBlogsBlogHeading"
           >
             homePage.exploreBlogs.blogTitle
           </h5>
           <a
-            className="exploreBlogs-blog-link"
+            className="exploreBlogsBlogLink"
             href="#singleBlog"
           >
             homePage.exploreBlogs.blogLink
@@ -56,20 +56,20 @@ exports[`renders correctly 1`] = `
         className="col-lg-4 col-md-6 col-12"
       >
         <div
-          className="exploreBlogs-blog"
+          className="exploreBlogsBlog"
         >
           <img
             alt="placeholder"
-            className="exploreBlogs-blog-img"
+            className="exploreBlogsBlogImg"
             src="placeHolderImage.jpg"
           />
           <h5
-            className="exploreBlogs-blog-heading"
+            className="exploreBlogsBlogHeading"
           >
             homePage.exploreBlogs.blogTitle
           </h5>
           <a
-            className="exploreBlogs-blog-link"
+            className="exploreBlogsBlogLink"
             href="#singleBlog"
           >
             homePage.exploreBlogs.blogLink
@@ -80,20 +80,20 @@ exports[`renders correctly 1`] = `
         className="col-lg-4 col-md-6 col-12"
       >
         <div
-          className="exploreBlogs-blog"
+          className="exploreBlogsBlog"
         >
           <img
             alt="placeholder"
-            className="exploreBlogs-blog-img"
+            className="exploreBlogsBlogImg"
             src="placeHolderImage.jpg"
           />
           <h5
-            className="exploreBlogs-blog-heading"
+            className="exploreBlogsBlogHeading"
           >
             homePage.exploreBlogs.blogTitle
           </h5>
           <a
-            className="exploreBlogs-blog-link"
+            className="exploreBlogsBlogLink"
             href="#singleBlog"
           >
             homePage.exploreBlogs.blogLink
