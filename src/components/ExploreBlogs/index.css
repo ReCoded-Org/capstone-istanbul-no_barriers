@@ -1,0 +1,51 @@
+/* Color Variables */
+:root {
+  --main-bg-color: #d7f7fa;
+  --main-color: #00374d;
+  --white-link: #eff4f6;
+  --orange-link: #f2c94c;
+  --dark-orange: #d88315;
+}
+
+/*General section style*/
+.exploreBlogs {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  padding: 4rem 4rem;
+}
+
+/* container blog list style */
+.exploreBlogs-blog-list {
+  padding: 0 5rem 1.5rem 5rem;
+}
+
+/* image style */
+.exploreBlogs-blog-img {
+  height: 17rem;
+  width: auto;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+/* link style */
+.exploreBlogs-blog-link {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.exploreBlogs-blog-link:hover {
+  text-decoration: none;
+  color: var(--orange-link);
+}
+
+/* button color on hover */
+button.btn.btn-outline-warning:hover {
+  color: var(--white-link);
+}
+
+/* button on click */
+.btn-outline-warning:not(:disabled):not(.disabled):active {
+  color: var(--white-link);
+  background-color: var(--dark-orange);
+  border: none;
+}
