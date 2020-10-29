@@ -7,19 +7,16 @@
   --dark-orange: #d88315;
 }
 
-/*General section style*/
 .exploreBlogs {
   background-color: var(--main-bg-color);
   color: var(--main-color);
   padding: 4rem 4rem;
 }
 
-/* container blog list style */
 .exploreBlogsBlogList {
   padding: 0 5rem 1.5rem 5rem;
 }
 
-/* image style */
 .exploreBlogsBlogImg {
   height: 17rem;
   width: auto;
@@ -27,7 +24,6 @@
   margin: 1rem 0;
 }
 
-/* link style */
 .exploreBlogsBlogLink {
   text-decoration: none;
   color: var(--main-color);
