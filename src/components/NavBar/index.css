@@ -1,0 +1,72 @@
+/* Color variables */
+:root {
+  --medium-blue: #01506e;
+  --white: #eff4f6;
+  --light-orange: #f2c94c;
+  --dark-orange: #d88315;
+}
+
+.navbar {
+  background-color: var(--medium-blue);
+  color: var(--white);
+}
+
+/* All links default color active and visited */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand:visited,
+.navbar-light .navbar-nav .nav-link:visited,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .show > .nav-link:visited,
+a#basic-nav-dropdown.dropdown-toggle.nav-link {
+  color: var(--white);
+}
+
+/* No barriers and nav links hover style */
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:hover,
+a#basic-nav-dropdown.dropdown-toggle.nav-link:hover,
+a#basic-nav-dropdown.dropdown-toggle.nav-link:active {
+  color: var(--light-orange);
+}
+
+/* Nav links */
+.navbar-expand .navbar-nav .nav-link:last-of-type {
+  padding-right: 1.5rem;
+}
+
+/* buttons styles */
+.shadow-none.btn.btn-outline-info {
+  color: var(--white);
+  border-color: var(--white);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* buttons and dropdown style on hover */
+.shadow-none.btn.btn-outline-info:hover,
+a.dropdown-item:hover,
+.dropdown-item.active {
+  color: var(--white);
+  background-color: var(--light-orange);
+  border-color: var(--light-orange);
+}
+
+/*btn on click*/
+.shadow-none.btn.btn-outline-info:active {
+  color: var(--white);
+  background-color: var(--dark-orange);
+  border-color: var(--dark-orange);
+}
+
+/*Dropdown languages style */
+a.dropdown-item,
+.navbar-expand .navbar-nav .dropdown-menu {
+  background-color: var(--medium-blue);
+  color: var(--white);
+  border-color: var(--medium-blue);
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+  padding-bottom: 0;
+}

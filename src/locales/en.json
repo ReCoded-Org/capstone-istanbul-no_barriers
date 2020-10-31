@@ -1,5 +1,19 @@
 {
   "homePage": {
+    "navbar": {
+      "home": "NO BARRIERS",
+      "ngo": "Find NGO",
+      "stories": "Stories",
+      "aboutUs": "About Us",
+      "profile": "Profile",
+      "dropdownTitle": "lang",
+      "dropdownEnglish": "En",
+      "dropdownArabic": "Ar",
+      "dropdownTurkish": "Tr",
+      "signOut": "Sign Out",
+      "signIn": "Sign In",
+      "signUp": "Sign Up"
+    },
     "exploreBlogs": {
       "exploreBlogs": "EXPLORE OUR BLOGS",
       "paragraph": "Do you know that only two things have been proven to help survivors of the Holocaust? Massage is one. Telling their story is another. Being touched and touching. Telling your story is touching. It sets you free.",
