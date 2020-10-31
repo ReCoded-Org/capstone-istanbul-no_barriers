@@ -3,10 +3,10 @@ import "./index.css";
 import { Row, Container, Col, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import image from "./images/placeHolderImage.jpg";
+
 // Explore-Blogs section shows the last 3 blog posts in the database.
 // If you click on a single blog post, you go to that blog's page
 // If you click on show more button, you go to blogs list page
-
 const ExploreBlogs = () => {
   const { t } = useTranslation();
 
