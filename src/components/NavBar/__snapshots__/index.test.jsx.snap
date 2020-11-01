@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navbar renders correctly 1`] = `
+<nav
+  className="navbar navbar-expand navbar-light"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="navbar-brand"
+      href="#home"
+    >
+      homePage.navbar.home
+    </a>
+    <div
+      className="ml-auto navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key="#findNgo"
+        href="#findNgo"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        homePage.navbar.ngo
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="#stories"
+        href="#stories"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        homePage.navbar.stories
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="#aboutUs"
+        href="#aboutUs"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        homePage.navbar.aboutUs
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="#profile"
+        href="#profile"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        homePage.navbar.profile
+      </a>
+      <button
+        className="shadow-none btn btn-outline-info"
+        disabled={false}
+        type="button"
+      >
+        homePage.navbar.signIn
+      </button>
+      <button
+        className="shadow-none mr-1 btn btn-outline-info"
+        disabled={false}
+        type="button"
+      >
+        homePage.navbar.signUp
+      </button>
+      <div
+        className="dropdown nav-item"
+        onKeyDown={[Function]}
+      >
+        <a
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle nav-link"
+          data-rb-event-key={null}
+          href="#"
+          id="basic-nav-dropdown"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          homePage.navbar.dropdownTitle
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

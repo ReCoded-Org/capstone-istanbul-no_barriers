@@ -2,8 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "./App.css";
 import HomePage from "./containers/HomePage";
-import i18n from "./i18n";
 import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n";
 
 function App() {
   return (
