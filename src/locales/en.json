@@ -1,5 +1,13 @@
 {
   "homePage": {
+    "header": {
+      "title": "NO BARRIERS",
+      "subtitle": "CONNECT WITH NGOs - SHARE YOUR STORY",
+      "inputLocation": "Location",
+      "inputService": "Service",
+      "inputRating": "Rating",
+      "button": "Find it NOW"
+    },
     "quotes": {
       "quoteAisha": "We perceive and are affected by changes too subtle to be described.",
       "personAisha": "Aisha Khaled, manager at Teng",
