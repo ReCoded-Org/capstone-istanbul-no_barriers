@@ -1,5 +1,12 @@
 {
   "homePage": {
+    "footer": {
+      "brand": "NO BARRIERS",
+      "find": "Find Now",
+      "stories": "Stories",
+      "about": "About Us",
+      "term": "Privacy - Terms"
+    },
     "navbar": {
       "home": "NO BARRIERS",
       "ngo": "Find NGO",

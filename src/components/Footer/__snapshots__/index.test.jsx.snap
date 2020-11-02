@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div
+  className="footer"
+>
+  <div
+    className="container"
+  >
+    <nav
+      className="footerNavbar navbar navbar-expand navbar-dark"
+    >
+      <a
+        className="d-flex navbar-brand"
+        href="#home"
+      >
+        <h4
+          className="footerHeading"
+        >
+          homePage.footer.brand
+        </h4>
+        <p
+          className="copyright"
+        >
+          <span>
+            ©
+          </span>
+          2020
+        </p>
+      </a>
+      <div
+        className="ml-auto navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          className="nav-link"
+          data-rb-event-key="#find"
+          href="#find"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          homePage.footer.find
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="#stories"
+          href="#stories"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          homePage.footer.stories
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="#aboutUs"
+          href="#aboutUs"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          homePage.footer.about
+        </a>
+      </div>
+    </nav>
+    <div
+      className="justify-content-md-left col-md-2"
+    >
+      <a
+        className="privacyTerms"
+        href="#term"
+        target="blank"
+      >
+        homePage.footer.term
+      </a>
+    </div>
+  </div>
+</div>
+`;
