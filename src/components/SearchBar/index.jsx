@@ -10,7 +10,7 @@ const SearchBar = () => {
           <input
             className="searchBarInput"
             type="text"
-            placeholder="Search for a service..."
+            placeholder="Please, enter a search term..."
             maxLength="15"
           />
           <Button className="searchBarButton">Search</Button>
