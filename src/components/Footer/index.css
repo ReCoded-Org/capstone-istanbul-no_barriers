@@ -1,0 +1,61 @@
+/* color variables */
+:root {
+  --main-footer-background-colour: #002736;
+  --text: #eff4f6;
+  --hover-text: #f2c94c;
+}
+
+.footer {
+  background-color: var(--main-footer-background-colour);
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.footerNavbar {
+  background-color: var(--main-footer-background-colour);
+}
+
+/* links to pages */
+.navbar-expand .navbar-nav .nav-link {
+  padding-left: 2.5rem;
+}
+
+/* No barriers main link */
+.navbar-dark .navbar-brand {
+  padding-top: 1.1rem;
+}
+
+.footerHeading {
+  padding-right: 0.5rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  padding-top: 0.35rem;
+}
+
+/* all links style */
+.navbar-dark .navbar-brand,
+.privacyTerms,
+.navbar-expand .navbar-nav .nav-link {
+  color: var(--text);
+}
+
+/* all links on hover */
+.navbar-dark .navbar-brand:hover,
+.privacyTerms:hover,
+.navbar-expand .navbar-nav .nav-link:hover {
+  color: var(--hover-text);
+}
+
+.privacyTerms {
+  position: absolute;
+  width: 10rem;
+  top: -2rem;
+  left: -1rem;
+  font-size: smaller;
+}
+
+.privacyTerms:hover {
+  text-decoration: none;
+}
