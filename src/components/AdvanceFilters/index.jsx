@@ -1,26 +1,29 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import filters from "./filters";
+import "./index.css";
 
 const AdvanceFilters = () => {
   return (
     <div className="advanceFilters">
       <Container>
-        <div className="title">
+        <div className="advanceFiltersTitle d-flex justify-content-between">
           <h5>Refine the list with filters</h5>
-          <span>?</span>
+          <span className="moreInfoFilters">?</span>
         </div>
         {filters.map((filter) => {
           return (
-            <p>
-              <span>+</span>
-              {filter.filterName}
-            </p>
+            <div className="filter d-flex">
+              <div className="circle">
+                <span className="filterPlusSign">+</span>
+              </div>
+              <p className="filterTitle">{filter.filterName}</p>
+            </div>
           );
         })}
-        <div className="d-flex justify-content-center">
+        <div className="filterButtons d-flex justify-content-center align-items-baseline">
           <p className="clearAll">Clear All</p>
-          <Button className="applyFilters">Apply Filters</Button>
+          <Button className="applyFilters shadow-none">Apply Filters</Button>
         </div>
       </Container>
     </div>
