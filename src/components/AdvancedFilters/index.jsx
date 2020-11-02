@@ -3,7 +3,7 @@ import { Container, Button } from "react-bootstrap";
 import filters from "./filters";
 import "./index.css";
 
-const AdvanceFilters = () => {
+const AdvancedFilters = () => {
   return (
     <div className="advanceFilters">
       <Container>
@@ -30,4 +30,4 @@ const AdvanceFilters = () => {
   );
 };
 
-export default AdvanceFilters;
+export default AdvancedFilters;
