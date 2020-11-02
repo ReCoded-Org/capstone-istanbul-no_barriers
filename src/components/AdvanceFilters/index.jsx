@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import filters from "./filters";
 
 const AdvanceFilters = () => {
@@ -18,6 +18,10 @@ const AdvanceFilters = () => {
             </p>
           );
         })}
+        <div className="d-flex justify-content-center">
+          <p className="clearAll">Clear All</p>
+          <Button className="applyFilters">Apply Filters</Button>
+        </div>
       </Container>
     </div>
   );
