@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Single quote renders correctly 1`] = `
+Array [
+  <div
+    className="quotesQuoteBox"
+  >
+    <q
+      className="quote"
+    >
+      homePage.quotes.quoteAisha
+    </q>
+    <img
+      alt="person"
+      className="quotesImg"
+      src="Photo-by-Andrea-Piacquadio-from-Pexels.jpg"
+    />
+    <p>
+      homePage.quotes.personAisha
+    </p>
+  </div>,
+  <div
+    className="quotesQuoteBox"
+  >
+    <q
+      className="quote"
+    >
+      homePage.quotes.quoteLatif
+    </q>
+    <img
+      alt="person"
+      className="quotesImg"
+      src="pexels-justin-shaifer-1222271.jpg"
+    />
+    <p>
+      homePage.quotes.personLatif
+    </p>
+  </div>,
+  <div
+    className="quotesQuoteBox"
+  >
+    <q
+      className="quote"
+    >
+      homePage.quotes.quoteŞen
+    </q>
+    <img
+      alt="person"
+      className="quotesImg"
+      src="pexels-christina-morillo-1181686.jpg"
+    />
+    <p>
+      homePage.quotes.personŞen
+    </p>
+  </div>,
+]
+`;

@@ -1,5 +1,16 @@
 {
   "homePage": {
+    "quotes": {
+      "quoteAisha": "We perceive and are affected by changes too subtle to be described.",
+      "personAisha": "Aisha Khaled, manager at Teng",
+      "idAisha": "0",
+      "quoteLatif": "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+      "personLatif": "Abdul Latif, refugee",
+      "idLatif": "1",
+      "quoteŞen": "People who are crazy enough to think they can change the world, are the ones who do.",
+      "personŞen": "Aişe Şen, VP at A. S.",
+      "idŞen": "2"
+    },
     "footer": {
       "brand": "NO BARRIERS",
       "find": "Find Now",
