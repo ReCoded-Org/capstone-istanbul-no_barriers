@@ -1,19 +1,20 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
+import "./index.css";
 
 const SearchBar = () => {
   return (
     <div className="globalSearch">
       <Container>
         <h1>Find the Service you Need</h1>
-        <div className="searchBar">
+        <div className="searchBar d-flex">
           <input
-            className="searchBarInput"
+            className="searchBarInput flex-grow-1"
             type="text"
             placeholder="Please, enter a search term..."
             maxLength="15"
           />
-          <Button className="searchBarButton">Search</Button>
+          <Button className="searchBarButton shadow-none">Search</Button>
         </div>
       </Container>
     </div>
