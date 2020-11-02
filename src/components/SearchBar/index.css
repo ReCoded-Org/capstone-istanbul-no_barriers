@@ -1,52 +1,53 @@
 :root {
-    --main-searchBar-bg-color: #EFF4F6;
-    --searchBar-text-color: #002736;
-    --orange-link: #f2c94c;
-    --dark-orange: #d88315;
-    --orange: #FC9E01;
-    --inputBar-background: #f4fcff;
-  }
+  --main-searchBar-bg-color: #eff4f6;
+  --searchBar-text-color: #002736;
+  --orange-link: #f2c94c;
+  --dark-orange: #d88315;
+  --orange: #fc9e01;
+  --inputBar-background: #f4fcff;
+}
 
-  .globalSearch {
-    background-color: var(--main-searchBar-bg-color);
-    color: var(--searchBar-text-color);
-    padding: 5rem 0 4rem 0;
-  }
+.globalSearch {
+  background-color: var(--main-searchBar-bg-color);
+  color: var(--searchBar-text-color);
+  padding: 5rem 0 4rem 0;
+}
 
-  .searchBar {
-    padding-top: 2rem;
-  }
+.searchBar {
+  padding-top: 2rem;
+}
 
 .searchBarInput {
-    color: var(--dark-orange);
-   margin-right: 1rem;
-   border-color: var(--orange);
-   border-radius: .3rem;
-   background: var(--inputBar-background);
+  padding: 0 1rem;
+  color: var(--dark-orange);
+  margin-right: 1rem;
+  border-color: var(--orange);
+  border-radius: 0.3rem;
+  background: var(--inputBar-background);
 }
 
 .searchBarInput:focus {
-    border-style: inset;
-   outline-color: var(--orange);
+  border-style: inset;
+  outline-color: var(--orange);
 }
 
 .searchBarInput::placeholder {
-    color: var(--orange-link);
+  color: var(--orange-link);
 }
 
 .searchBarButton {
-    padding: .5rem 3rem;
-    border-radius: 5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 5rem;
 }
 
 .searchBarButton,
 .searchBarButton:hover,
 .searchBarButton:focus {
-    background-color: var(--orange);
-    border: none;
+  background-color: var(--orange);
+  border: none;
 }
 
 /* search button active state style */
 .btn-primary:not(:disabled):not(.disabled):active {
-    background-color: var(--dark-orange);
+  background-color: var(--dark-orange);
 }
