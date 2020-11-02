@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "../../components/SearchBar";
 import NgoList from "../../components/NgoList";
-import AdvancedFilters from "../../components/AdvancedFilters";
+import AdvanceFilters from "../../components/AdvanceFilters";
 import PagesList from "../../components/PagesList";
 
 const Resources = () => {
@@ -9,7 +9,7 @@ const Resources = () => {
     <div>
       <SearchBar />
       <div className="coreFunctionalities">
-        <AdvancedFilters />
+        <AdvanceFilters />
         <NgoList />
       </div>
       <PagesList />
