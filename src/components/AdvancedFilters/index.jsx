@@ -14,7 +14,7 @@ const AdvancedFilters = () => {
         </div>
         {filters.map((filter) => {
           return (
-            <Accordion defaultActiveKey="0">
+            <Accordion>
               <Accordion.Toggle as={Card.Header} eventKey="0">
                 <div className="filter d-flex">
                   <div className="circle">
