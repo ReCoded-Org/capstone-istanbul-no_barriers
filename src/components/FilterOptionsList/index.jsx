@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 // This renders the filter options of a given filter as parameter.
 // It is called in AdvancedFilters component

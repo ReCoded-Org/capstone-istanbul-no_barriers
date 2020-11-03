@@ -1,0 +1,18 @@
+:root {
+    --main-filter-option-bg-color: #E7E7E7;
+    --main-filter-option-text-color: #00374d;
+    --orange-link: #f2c94c;
+  }
+
+  .filterOptionsList {
+      background-color: var(--main-filter-option-bg-color);
+      color: var(--main-filter-option-text-color);
+  }
+
+  .filterOption:not(:last-of-type) {
+      border-bottom: 1px solid var(--main-filter-option-text-color);
+  }
+
+  .filterOptionPlusSign {
+      margin-left: 1rem;
+  }
