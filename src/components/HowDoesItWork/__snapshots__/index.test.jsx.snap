@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders HowDoesItWork correctly 1`] = `
+<div
+  className="howDoesItWork container-fluid"
+>
+  <h4>
+    How Does It Work?
+  </h4>
+  <br />
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <header>
+        1
+      </header>
+      <br />
+      <img
+        alt="preference"
+        src="preference.png"
+        title="preference"
+      />
+      <div>
+        Select Your Preference
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <header>
+        2
+      </header>
+      <br />
+      <img
+        alt="service"
+        src="service.png"
+        title="service"
+      />
+      <div>
+        Choose a Service
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <header>
+        3
+      </header>
+      <br />
+      <img
+        alt="NGO"
+        src="NGO.png"
+        title="NGO"
+      />
+      <div>
+        Connect with NGO
+      </div>
+    </div>
+  </div>
+</div>
+`;
