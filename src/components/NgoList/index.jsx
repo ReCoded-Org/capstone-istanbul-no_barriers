@@ -4,14 +4,27 @@ import allNgos from "./allNgos";
 
 // This renders the NGOs which are filtered or searched
 // It renders all NGOs by defalt if a parameter is not given
-const NgoList = ({ ngos = allNgos } ) => {
+const NgoList = ({ ngos = allNgos }) => {
   return (
     <div>
       <Table className="table-borderless">
         <tbody>
-          {ngos.map((ngo) => {
+          {ngos.map((ngo, index) => {
+            if (index % 2 === 0) {
+              return (
+                <tr className="table-light">
+                  <th scope="row">{ngo.name}</th>
+                  <td>{ngo.service}</td>
+                  <td>{ngo.city}</td>
+                  <td>{ngo.rating}</td>
+                  <td>
+                    <Button>Details</Button>
+                  </td>
+                </tr>
+              );
+            }
             return (
-              <tr>
+              <tr className="table-info">
                 <th scope="row">{ngo.name}</th>
                 <td>{ngo.service}</td>
                 <td>{ngo.city}</td>
