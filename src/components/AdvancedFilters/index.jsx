@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Button } from "react-bootstrap";
 import filters from "./filters";
 import "./index.css";
@@ -13,11 +13,13 @@ const AdvancedFilters = () => {
         </div>
         {filters.map((filter) => {
           return (
-            <div className="filter d-flex">
-              <div className="circle">
-                <span className="filterPlusSign">+</span>
+            <div>
+              <div className="filter d-flex">
+                <div className="circle">
+                  <span className="filterPlusSign">+</span>
+                </div>
+                <p className="filterTitle">{filter.filterName}</p>
               </div>
-              <p className="filterTitle">{filter.filterName}</p>
             </div>
           );
         })}
