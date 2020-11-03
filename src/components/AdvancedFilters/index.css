@@ -7,13 +7,13 @@
   --orange: #fc9e01;
 }
 
-.advanceFilters {
+.advancedFilters {
   background-color: var(--main-filter-bg-color);
   color: var(--main-filter-text-color);
   padding: 2rem;
 }
 
-.advanceFiltersTitle {
+.advancedFiltersTitle {
   border-bottom: 1px solid var(--main-filter-text-color);
   padding-left: 1rem;
   margin-bottom: 1rem;
@@ -30,15 +30,20 @@
   background-color: var(--orange-link);
 }
 
+/* Div with + filter option */
+div.advancedFilters .card-header {
+  padding: 0;
+}
+
+div.advancedFilters .card-header:hover {
+  background-color: var(--orange-link);
+  color: var(--main-filter-bg-color);
+}
+
 .filter {
   margin: none;
   font-weight: bold;
   padding: 0.5rem 0 0;
-}
-
-.filter:hover {
-  background-color: var(--orange-link);
-  color: var(--main-filter-bg-color);
 }
 
 .circle {

@@ -8,9 +8,12 @@ const FilterOptionsList = ({ filter }) => {
     <div className="filterOptionsList">
       {filter.filterParameters.map((option) => {
         return (
-          <div className="filterOption d-flex">
+          <div
+            className="filterOption d-flex align-items-center p-1"
+            key={option}
+          >
             <span className="filterOptionPlusSign">+</span>
-            <p className="filterOptionTitle">{option}</p>
+            <p className="filterOptionTitle ">{option}</p>
           </div>
         );
       })}

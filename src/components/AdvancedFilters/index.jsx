@@ -1,26 +1,32 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Accordion, Card } from "react-bootstrap";
 import filters from "./filters";
 import "./index.css";
+import FilterOptionsList from "../FilterOptionsList";
 
 const AdvancedFilters = () => {
   return (
-    <div className="advanceFilters">
+    <div className="advancedFilters">
       <Container>
-        <div className="advanceFiltersTitle d-flex justify-content-between">
+        <div className="advancedFiltersTitle d-flex justify-content-between">
           <h5>Refine the list with filters</h5>
           <span className="moreInfoFilters">?</span>
         </div>
         {filters.map((filter) => {
           return (
-            <div>
-              <div className="filter d-flex">
-                <div className="circle">
-                  <span className="filterPlusSign">+</span>
+            <Accordion defaultActiveKey="0">
+              <Accordion.Toggle as={Card.Header} eventKey="0">
+                <div className="filter d-flex">
+                  <div className="circle">
+                    <span className="filterPlusSign">+</span>
+                  </div>
+                  <p className="filterTitle">{filter.filterName}</p>
                 </div>
-                <p className="filterTitle">{filter.filterName}</p>
-              </div>
-            </div>
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="0">
+                <FilterOptionsList filter={filter} />
+              </Accordion.Collapse>
+            </Accordion>
           );
         })}
         <div className="filterButtons d-flex justify-content-center align-items-baseline">

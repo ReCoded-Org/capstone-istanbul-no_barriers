@@ -14,5 +14,14 @@
 }
 
 .filterOptionPlusSign {
-  margin-left: 1rem;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.filterOptionTitle {
+  margin: 0;
+}
+
+.filterOption:hover {
+  background-color: var(--orange-link);
 }
