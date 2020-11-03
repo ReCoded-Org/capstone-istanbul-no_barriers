@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Button, Accordion, Card } from "react-bootstrap";
+import {
+  Container,
+  Button,
+  Accordion,
+  Card,
+  Tooltip,
+  OverlayTrigger,
+} from "react-bootstrap";
 import filters from "./filters";
 import "./index.css";
 import FilterOptionsList from "../FilterOptionsList";
@@ -10,11 +17,20 @@ const AdvancedFilters = () => {
       <Container>
         <div className="advancedFiltersTitle d-flex justify-content-between">
           <h5>Refine the list with filters</h5>
-          <span className="moreInfoFilters">?</span>
+          <OverlayTrigger
+            overlay={
+              <Tooltip className="tooltipInfo">
+                You can select different filter options by clicking on a filter
+                name.
+              </Tooltip>
+            }
+          >
+            <span className="moreInfoFilters">?</span>
+          </OverlayTrigger>
         </div>
         {filters.map((filter) => {
           return (
-            <Accordion>
+            <Accordion key={filter.filterName}>
               <Accordion.Toggle as={Card.Header} eventKey="0">
                 <div className="filter d-flex">
                   <div className="circle">

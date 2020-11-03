@@ -12,8 +12,11 @@ const NgoList = ({ ngos = allNgos }) => {
           {ngos.map((ngo, index) => {
             if (index % 2 === 0) {
               return (
-                <tr className="table-light">
-                  <th scope="row">{ngo.name}</th>
+                <tr className="table-light" key={ngo.name}>
+                  <td>
+                    <img src={ngo.image} alt="NGO Logo" />
+                  </td>
+                  <td>{ngo.name}</td>
                   <td>{ngo.service}</td>
                   <td>{ngo.city}</td>
                   <td>{ngo.rating}</td>
