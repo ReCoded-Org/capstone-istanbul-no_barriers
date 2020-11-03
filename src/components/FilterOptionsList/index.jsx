@@ -9,7 +9,6 @@ const FilterOptionsList = ({ filter }) => {
         return (
           <div className="filterOption d-flex">
             <span className="filterOptionPlusSign">+</span>
-
             <p className="filterOptionTitle">{option}</p>
           </div>
         );
