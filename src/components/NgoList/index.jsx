@@ -27,8 +27,11 @@ const NgoList = ({ ngos = allNgos }) => {
               );
             }
             return (
-              <tr className="table-info">
-                <th scope="row">{ngo.name}</th>
+              <tr className="table-info" key={ngo.name}>
+                <td>
+                  <img src={ngo.image} alt="NGO Logo" />
+                </td>
+                <td>{ngo.name}</td>
                 <td>{ngo.service}</td>
                 <td>{ngo.city}</td>
                 <td>{ngo.rating}</td>
