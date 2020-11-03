@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-// This renders the selected filter options of a given state which tracks the selected filter options.
+// It renders the selected filter options of a given state which tracks the selected filter options.
 // It is called in AdvancedFilters component
 const FilterOptionsList = ({ selectedOptions }) => {
   return (
