@@ -1,7 +1,8 @@
 import React from "react";
+import "./index.css";
 
 const NgoDetails = ({ details }) => {
-  return <div>{details.facilityName}</div>;
+  return <td className="ngoDetailsTableData">{details.facilityName}</td>;
 };
 
 export default NgoDetails;

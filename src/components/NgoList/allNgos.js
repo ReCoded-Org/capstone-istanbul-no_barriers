@@ -25,7 +25,7 @@ const allNgos = [
     image,
     name: "ABC",
     service: "Education",
-    city: "Instanbul",
+    city: "Şanlıurfa",
     rating: "4",
     details: {
       facilityName: "ABC Okul",

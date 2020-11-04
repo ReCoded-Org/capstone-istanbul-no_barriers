@@ -1,6 +1,19 @@
 .ngoLogo {
-  height: 4rem;
-  width: 4.1rem;
+  height: 3rem;
+  width: 3.1rem;
   border-radius: 50%;
   border: 1px solid blue;
+  display: inline;
+  text-align: right;
+}
+
+.ngoListTable {
+  text-align: left;
+}
+
+td.d-table-cell.align-middle.btnCol {
+  display: inline-block;
+  text-align: right;
+  padding-right: 4rem;
+  margin-right: 2rem;
 }
