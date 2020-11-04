@@ -3,6 +3,7 @@ import image from "./image/image.jpg";
 // This will be a fetch from the database
 const allNgos = [
   {
+    id: "firebaseDocId",
     image,
     name: "Teng",
     service: "Health Care",
@@ -20,6 +21,7 @@ const allNgos = [
     },
   },
   {
+    id: "firebaseDocId",
     image,
     name: "ABC",
     service: "Education",
