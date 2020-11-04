@@ -1,3 +1,13 @@
+:root {
+  --main-ngoTable-bg-color: #eff4f6;
+  --ngoTable-text-color: #002736;
+  --orange-link: #f2c94c;
+  --dark-orange: #d88315;
+  --orange: #fc9e01;
+}
+
+
+
 .ngoLogo {
   height: 3rem;
   width: 3.1rem;
@@ -13,6 +23,8 @@
 
 .ngoListTable {
   text-align: left;
+  background-color: var(--main-ngoTable-bg-color);
+  color: var(--ngoTable-text-color);
 }
 
 td.d-table-cell.align-middle.btnCol {

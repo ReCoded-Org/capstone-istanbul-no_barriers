@@ -2,3 +2,15 @@ td.ngoDetails {
     padding-right: 4rem;
     padding-bottom: 3rem;
 }
+
+.btnMoreDetails,
+.btnMoreDetails:hover,
+.btnMoreDetails:focus {
+  background-color: var(--orange);
+  border: none;
+}
+
+/* filter all button active state style */
+.btnMoreDetails.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--dark-orange);
+}

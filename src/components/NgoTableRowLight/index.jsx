@@ -27,6 +27,7 @@ const NgoTableRowLight = ({
         <td className="d-table-cell align-middle">{rating}</td>
         <td className="d-table-cell align-middle btnCol">
           <Button
+            className="btnMoreDetails shadow-none"
             onClick={() => setOpenDetails(!openDetails)}
             aria-controls={`${id}`}
           >

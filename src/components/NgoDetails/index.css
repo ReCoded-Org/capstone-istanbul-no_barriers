@@ -11,6 +11,28 @@ td.ngoDetailsTableData {
   margin-right: 1rem;
 }
 
-.website {
+.btnWebsite {
   margin-right: 2rem;
+  background-color: transparent;
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
+}
+
+.btnWebsite.btn-primary:not(:disabled):not(.disabled):active,
+.btnWebsite:hover {
+  background-color: var(--dark-orange);
+  color: whitesmoke;
+  border: none;
+}
+
+.btnAddFavourite,
+.btnAddFavourite:hover,
+.btnAddFavourite:focus {
+  background-color: var(--orange);
+  border: none;
+}
+
+/* filter favourite button active state style */
+.btnAddFavourite.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--dark-orange);
 }

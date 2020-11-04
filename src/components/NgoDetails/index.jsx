@@ -19,11 +19,11 @@ const NgoDetails = ({ details }) => {
         {`E-mail: ${details.email}`}
       </p>
       <div className="d-flex align-items-baseline">
-        <p className="moreInfo">For more info</p>
-        <Button href={details.website} target="blank" className="website">
+        <p className="moreInfo">For more info, go to:</p>
+        <Button href={details.website} target="blank" className="btnWebsite shadow-none">
           Website
         </Button>
-        <Button>Add to favourite</Button>
+        <Button className="btnAddFavourite shadow-none">Add to favourite</Button>
       </div>
     </div>
   );

@@ -33,6 +33,9 @@
 /* Div with + filter option */
 div.advancedFilters .card-header {
   padding: 0;
+  border-bottom: none;
+  border-radius: 0;
+  background-color: var(--main-filter-bg-color);
 }
 
 div.advancedFilters .card-header:hover {
