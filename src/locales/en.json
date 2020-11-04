@@ -1,5 +1,16 @@
 {
   "homePage": {
+    "browser": {
+      "title": "Browse By Category",
+      "categories": {
+        "food": "Food",
+        "education": "Education",
+        "health": "Health",
+        "housing": "Housing",
+        "jobs": "Jobs"
+      },
+      "more": "More Categories"
+    },
     "header": {
       "title": "NO BARRIERS",
       "subtitle": "CONNECT WITH NGOs - SHARE YOUR STORY",

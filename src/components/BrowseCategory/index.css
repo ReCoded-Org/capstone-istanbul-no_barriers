@@ -1,0 +1,40 @@
+:root {
+  --main-bg-browse-color: #ed9809;
+  --text-browse-color: #eff4f6;
+  --hover-browse-color: #074081;
+}
+
+.browseByCategory {
+  background-color: var(--main-bg-browse-color);
+}
+
+.browserTitle {
+  width: 36.25rem;
+  height: 2.6875rem;
+  margin-top: 3rem;
+  font: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  color: var(--text-browse-color);
+}
+
+.more {
+  height: 1.5625rem;
+  font: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 0.0625rem;
+  color: var(--text-browse-color);
+  background-color: var(--main-bg-browse-color);
+  border: 0.0625rem solid var(--text-browse-color);
+  box-sizing: border-box;
+  border-radius: 0.3125rem;
+}
+
+.more:hover {
+  color: var(--hover-browse-color);
+  border-color: var(--hover-browse-color);
+}
