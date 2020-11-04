@@ -30,4 +30,3 @@ const NgoDetails = ({ details }) => {
 };
 
 export default NgoDetails;
-
