@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./index.css";
 import NgoDetails from "../NgoDetails";
+import NgoDetailsDirection from "../NgoDetailsDirection";
 
 const NgoTableRowDark = ({
   id,
@@ -38,6 +39,9 @@ const NgoTableRowDark = ({
           <td>&nbsp;</td>
           <td className="ngoDetails" id={`${id}`} colSpan="3">
             <NgoDetails details={details} />
+          </td>
+          <td colSpan="2">
+            <NgoDetailsDirection address={details.address} />
           </td>
         </tr>
       ) : null}

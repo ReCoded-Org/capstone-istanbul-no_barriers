@@ -28,7 +28,7 @@ const NgoList = ({ ngos = allNgos }) => {
             if (index % 2 === 0) {
               return (
                 <NgoTableRowLight
-                  id={ngo.id}
+                  key={ngo.id}
                   image={ngo.image}
                   name={ngo.name}
                   service={ngo.service}
@@ -40,7 +40,7 @@ const NgoList = ({ ngos = allNgos }) => {
             }
             return (
               <NgoTableRowDark
-                id={ngo.id}
+                key={ngo.id}
                 image={ngo.image}
                 name={ngo.name}
                 service={ngo.service}

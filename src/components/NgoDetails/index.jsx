@@ -4,7 +4,7 @@ import "./index.css";
 
 const NgoDetails = ({ details }) => {
   return (
-    <td className="ngoDetailsTableData">
+    <div className="ngoDetailsTableData">
       <h3>{details.facilityName}</h3>
       <p className="address">{details.address}</p>
       <h5>How we can help</h5>
@@ -18,14 +18,14 @@ const NgoDetails = ({ details }) => {
         <br />
         {`E-mail: ${details.email}`}
       </p>
-      <td className="d-flex align-items-baseline">
+      <div className="d-flex align-items-baseline">
         <p className="moreInfo">For more info</p>
         <Button href={details.website} target="blank" className="website">
           Website
         </Button>
         <Button>Add to favourite</Button>
-      </td>
-    </td>
+      </div>
+    </div>
   );
 };
 

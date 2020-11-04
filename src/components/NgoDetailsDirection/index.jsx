@@ -1,7 +1,12 @@
 import React from "react";
 
-const NgoDetailsDirection = () => {
-  return <div></div>;
+const NgoDetailsDirection = ({ address }) => {
+  return (
+    <div>
+      <h5>Directions</h5>
+      {address}
+    </div>
+  );
 };
 
 export default NgoDetailsDirection;
