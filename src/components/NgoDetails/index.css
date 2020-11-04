@@ -1,3 +1,16 @@
+.ngoDetails {
+  width: 20rem;
+}
+
 td.ngoDetailsTableData {
-  padding: 0;
+  padding: 0;  
+  padding-right: 2rem;
+}
+
+.moreInfo {
+  margin-right: 1rem;
+}
+
+.website {
+  margin-right: 2rem;
 }
