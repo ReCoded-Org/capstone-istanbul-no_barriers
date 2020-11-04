@@ -2,6 +2,7 @@ import React from "react";
 import { Table, Button } from "react-bootstrap";
 import allNgos from "./allNgos";
 import "./index.css";
+import NgoDetails from "../NgoDetails";
 
 // This renders the NGOs which are filtered or searched
 // It renders all NGOs by default if a parameter is not given
@@ -33,6 +34,7 @@ const NgoList = ({ ngos = allNgos }) => {
                   <td className="d-table-cell align-middle">
                     <Button>Details</Button>
                   </td>
+                  <NgoDetails ngoDetails={ngo.details} />
                 </tr>
               );
             }
@@ -48,6 +50,7 @@ const NgoList = ({ ngos = allNgos }) => {
                 <td className="d-table-cell align-middle">
                   <Button>Details</Button>
                 </td>
+                <NgoDetails ngoDetails={ngo.details} />
               </tr>
             );
           })}
