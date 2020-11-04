@@ -1,14 +1,16 @@
+import image from "./image/image.jpg";
+
 // This will be a fetch from the database
 const allNgos = [
   {
-    image: "teng_img",
+    image,
     name: "Teng",
     service: "Health Care",
     city: "Ankara",
     rating: "4",
   },
   {
-    image: "abc_img",
+    image,
     name: "ABC",
     service: "Education",
     city: "Instanbul",
