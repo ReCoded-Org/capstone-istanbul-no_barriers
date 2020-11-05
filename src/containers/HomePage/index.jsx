@@ -1,7 +1,8 @@
 import React from "react";
 import Quotes from "../../components/Quotes";
 import NavBar from "../../components/NavBar";
-import HowDoesWork from "../../components/HowDoesWork";
+import HowDoesItWork from "../../components/HowDoesItWork";
+import TrustedBy from "../../components/TrustedBy";
 import Header from "../../components/Header";
 import GetStarted from "../../components/GetStarted";
 import Footer from "../../components/Footer";
@@ -14,7 +15,8 @@ const HomePage = () => {
     <div>
       <NavBar />
       <Header />
-      <HowDoesWork />
+      <HowDoesItWork />
+      <TrustedBy />
       <BrowseCategory />
       <Features />
       <ExploreBlogs />

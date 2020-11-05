@@ -1,0 +1,19 @@
+:root {
+  --grey-bg-color: #eee;
+}
+
+.signUp {
+  background-color: orange;
+  border-color: var(--grey-bg-color);
+}
+
+.contactUs {
+  background-color: var(--grey-bg-color);
+  color: orange;
+  border-color: orange;
+}
+
+.getStarted {
+  background-color: var(--grey-bg-color);
+  padding: 2rem;
+}

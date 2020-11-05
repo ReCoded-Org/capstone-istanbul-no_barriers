@@ -1,5 +1,24 @@
 {
   "homePage": {
+    "browser": {
+      "title": "Browse By Category",
+      "categories": {
+        "food": "Food",
+        "education": "Education",
+        "health": "Health",
+        "housing": "Housing",
+        "jobs": "Jobs"
+      },
+      "more": "More Categories"
+    },
+    "header": {
+      "title": "NO BARRIERS",
+      "subtitle": "CONNECT WITH NGOs - SHARE YOUR STORY",
+      "inputLocation": "Location",
+      "inputService": "Service",
+      "inputRating": "Rating",
+      "button": "Find it NOW"
+    },
     "quotes": {
       "quoteAisha": "We perceive and are affected by changes too subtle to be described.",
       "personAisha": "Aisha Khaled, manager at Teng",

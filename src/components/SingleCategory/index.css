@@ -1,0 +1,18 @@
+:root {
+  --text-browse-color: #eff4f6;
+  --hover-browse-color: #074081;
+}
+
+.catogoryIcon {
+  height: 5rem;
+  width: auto;
+}
+
+.iconTitle {
+  color: var(--text-browse-color);
+  cursor: pointer;
+}
+
+.iconTitle:hover {
+  color: var(--hover-browse-color);
+}
