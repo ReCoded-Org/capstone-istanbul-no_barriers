@@ -20,10 +20,16 @@ const NgoDetails = ({ details }) => {
       </p>
       <div className="d-flex align-items-baseline">
         <p className="moreInfo">For more info, go to:</p>
-        <Button href={details.website} target="blank" className="btnWebsite shadow-none">
+        <Button
+          href={details.website}
+          target="blank"
+          className="btnWebsite shadow-none"
+        >
           Website
         </Button>
-        <Button className="btnAddFavourite shadow-none">Add to favourite</Button>
+        <Button className="btnAddFavourite shadow-none">
+          Add to favourite
+        </Button>
       </div>
     </div>
   );
