@@ -4,7 +4,8 @@ import "./index.css";
 import NgoDetails from "../NgoDetails";
 import NgoDetailsDirection from "../NgoDetailsDirection";
 
-const NgoTableRowLight = ({
+const NgoTableRow = ({
+  trClassname,
   id,
   image,
   name,
@@ -17,7 +18,7 @@ const NgoTableRowLight = ({
 
   return (
     <>
-      <tr className="table-light" key={id}>
+      <tr className={trClassname} key={id}>
         <td className="d-table-cell align-middle">
           <img src={image} alt="NGO Logo" className="ngoLogo" align="right" />
         </td>
@@ -36,7 +37,7 @@ const NgoTableRowLight = ({
         </td>
       </tr>
       {openDetails ? (
-        <tr className="table-light">
+        <tr className="table-info">
           <td>&nbsp;</td>
           <td className="ngoDetails" id={`${id}`} colSpan="3">
             <NgoDetails details={details} />
@@ -50,4 +51,4 @@ const NgoTableRowLight = ({
   );
 };
 
-export default NgoTableRowLight;
+export default NgoTableRow;

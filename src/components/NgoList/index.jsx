@@ -2,8 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import allNgos from "./allNgos";
 import "./index.css";
-import NgoTableRowLight from "../NgoTableRowLight";
-import NgoTableRowDark from "../NgoTableRowDark";
+import NgoTableRow from "../NgoTableRow";
 
 // This renders the NGOs which are filtered or searched
 // It renders all NGOs by default if a parameter is not given
@@ -27,7 +26,8 @@ const NgoList = ({ ngos = allNgos }) => {
           {ngos.map((ngo, index) => {
             if (index % 2 === 0) {
               return (
-                <NgoTableRowLight
+                <NgoTableRow
+                  trClassname="table-info"
                   key={ngo.id}
                   image={ngo.image}
                   name={ngo.name}
@@ -39,7 +39,8 @@ const NgoList = ({ ngos = allNgos }) => {
               );
             }
             return (
-              <NgoTableRowDark
+              <NgoTableRow
+                trClassname="table-light"
                 key={ngo.id}
                 image={ngo.image}
                 name={ngo.name}
