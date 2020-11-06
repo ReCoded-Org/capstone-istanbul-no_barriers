@@ -10,7 +10,7 @@ const allNgos = [
     city: "Ankara",
     rating: "4",
     details: {
-      facilityName: "Teng klinik",
+      facilityName: "Teng clinic",
       address: "Çankaya/Ankara",
       serviceDescription:
         "Suspendisse pulvinar pretium scelerisque. Suspendisse potenti. Sed ullamcorper enim sed lacinia sagittis. Nulla tellus risus, maximus et vestibulum id, tempor eget ipsum. Praesent convallis dictum turpis eu ullamcorper. Curabitur in ultrices sapien. Etiam lacinia ante quis luctus luctus. Nullam efficitur turpis orci, at bibendum tortor efficitur sed. Nam accumsan dolor luctus blandit lobortis.",
@@ -28,7 +28,7 @@ const allNgos = [
     city: "Ankara",
     rating: "4",
     details: {
-      facilityName: "Teng klinik",
+      facilityName: "Teng clinic",
       address: "Çankaya/Ankara",
       serviceDescription:
         "Suspendisse pulvinar pretium scelerisque. Suspendisse potenti. Sed ullamcorper enim sed lacinia sagittis. Nulla tellus risus, maximus et vestibulum id, tempor eget ipsum. Praesent convallis dictum turpis eu ullamcorper. Curabitur in ultrices sapien. Etiam lacinia ante quis luctus luctus. Nullam efficitur turpis orci, at bibendum tortor efficitur sed. Nam accumsan dolor luctus blandit lobortis.",
@@ -46,7 +46,7 @@ const allNgos = [
     city: "Şanlıurfa",
     rating: "4",
     details: {
-      facilityName: "ABC Okul",
+      facilityName: "ABC School",
       address: "Şanlıurfa",
       serviceDescription:
         "Suspendisse pulvinar pretium scelerisque. Suspendisse potenti. Sed ullamcorper enim sed lacinia sagittis. Nulla tellus risus, maximus et vestibulum id, tempor eget ipsum. Praesent convallis dictum turpis eu ullamcorper. Curabitur in ultrices sapien. Etiam lacinia ante quis luctus luctus. Nullam efficitur turpis orci, at bibendum tortor efficitur sed. Nam accumsan dolor luctus blandit lobortis.",

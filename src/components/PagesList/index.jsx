@@ -13,7 +13,7 @@ const PagesList = ({ ngos = allNgos }) => {
   return (
     <div className="pages">
     <Pagination className="d-flex justify-content-end pb-5" style={{
-    backgroundColor: "#eff4f6", paddingRight: "6rem", marginBottom: "0"}}>
+    backgroundColor: "#eff4f6", paddingRight: "6rem", paddingTop: "1rem", marginBottom: "0"}}>
       <Pagination.First />
       {pageNumbers.map((number, index) => {
         const displayedNumber = index + 1;

@@ -29,6 +29,7 @@
   text-align: left;
   background-color: var(--main-ngoTable-bg-color);
   color: var(--ngoTable-text-color);
+  margin-bottom: 0;
 }
 
 td.d-table-cell.align-middle.btnCol {
