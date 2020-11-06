@@ -9,7 +9,7 @@ const Resources = () => {
   return (
     <div>
       <SearchBar />
-      <div className="coreFunctionalities d-flex justify-content-between">
+      <div className="d-flex justify-content-between">
         <AdvancedFilters />
         <NgoList />
       </div>
