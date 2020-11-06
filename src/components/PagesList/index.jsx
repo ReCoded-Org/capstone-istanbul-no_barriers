@@ -1,20 +1,31 @@
 import React from "react";
-import Pagination from "react-bootstrap";
+import {Pagination} from "react-bootstrap";
+import allNgos from "../NgoList/allNgos";
+ 
+const PagesList = ({ ngos = allNgos }) => {
 
-const PagesList = ({ ngos }) => {
+  const ngosPerPage= 10;
+  const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(ngos.length / ngosPerPage); i++) {
+      pageNumbers.push(i);
+    }
+
   return (
-    <Pagination>
+    <div className="pages">
+    <Pagination className="d-flex justify-content-end pb-5" style={{
+    backgroundColor: "#eff4f6", paddingRight: "6rem", marginBottom: "0"}}>
       <Pagination.First />
-      {ngos.map((ngo, index) => {
-        const pageNumber = index + 1;
+      {pageNumbers.map((number, index) => {
+        const displayedNumber = index + 1;
         return (
-          <Pagination.Item key={pageNumber} active={pageNumber === "active"}>
-            {pageNumber}
+          <Pagination.Item key={displayedNumber} active={number === "active"}>
+            {number}
           </Pagination.Item>
         );
       })}
       <Pagination.Last />
     </Pagination>
+    </div>
   );
 };
 

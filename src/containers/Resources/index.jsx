@@ -4,6 +4,7 @@ import NgoList from "../../components/NgoList";
 import AdvancedFilters from "../../components/AdvancedFilters";
 import PagesList from "../../components/PagesList";
 import "./index.css";
+import allNgos from "../../components/NgoList/allNgos";
 
 const Resources = () => {
   return (
