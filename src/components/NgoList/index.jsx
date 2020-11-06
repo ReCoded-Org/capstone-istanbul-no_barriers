@@ -8,7 +8,7 @@ import NgoTableRow from "../NgoTableRow";
 // It renders all NGOs by default if a parameter is not given
 const NgoList = ({ ngos = allNgos }) => {
   return (
-    <div>
+    <div className="ngoList">
       <Table className="table-borderless ngoListTable">
         <thead>
           <tr>

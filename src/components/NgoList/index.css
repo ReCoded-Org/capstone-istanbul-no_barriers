@@ -6,6 +6,12 @@
   --orange: #fc9e01;
 }
 
+.ngoList {
+  width: 100%;
+  padding: 0 6rem 0 2rem ;
+  background-color: var(--main-ngoTable-bg-color);
+}
+
 .ngoLogo {
   height: 3rem;
   width: 3.1rem;
