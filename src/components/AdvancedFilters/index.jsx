@@ -15,8 +15,8 @@ const AdvancedFilters = () => {
   return (
     <div className="advancedFilters">
       <Container>
-        <div className="advancedFiltersTitle d-flex justify-content-between">
-          <h5 className>Refine the list with filters</h5>
+        <div className="advancedFiltersTitleSection d-flex justify-content-between">
+          <h5 className="advancedFiltersTitle">Refine the list with filters</h5>
           <OverlayTrigger
             overlay={
               <Tooltip className="tooltipInfo">

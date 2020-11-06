@@ -13,17 +13,22 @@
   padding: 2rem;
 }
 
-.advancedFiltersTitle {
+.advancedFiltersTitleSection {
   border-bottom: 1px solid var(--main-filter-text-color);
   padding-left: 1rem;
   margin-bottom: 1rem;
+}
+
+.advancedFiltersTitle {
+  font-size: 1rem;
+  padding: 0 2rem;
 }
 
 .moreInfoFilters {
   border-radius: 50%;
   background-color: var(--info-bg-color);
   height: 2rem;
-  width: 2.5rem;
+  width: 3.1rem;
   line-height: 2rem;
   border-radius: 50%;
   text-align: center;
