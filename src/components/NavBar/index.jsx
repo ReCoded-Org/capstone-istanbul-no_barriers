@@ -1,5 +1,6 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Button, Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "./index.css";
 import { useTranslation } from "react-i18next";
 
@@ -11,35 +12,43 @@ const NavBar = () => {
 
   return (
     <Navbar>
-      <Container>
-        <Navbar.Brand href="#home">{t("homePage.navbar.home")}</Navbar.Brand>
-        <Nav className="ml-auto">
-          <Nav.Link href="#findNgo">{t("homePage.navbar.ngo")}</Nav.Link>
-          <Nav.Link href="#stories">{t("homePage.navbar.stories")}</Nav.Link>
-          <Nav.Link href="#aboutUs">{t("homePage.navbar.aboutUs")}</Nav.Link>
-          <Nav.Link href="#profile">{t("homePage.navbar.profile")}</Nav.Link>
-          <Button variant="outline-info" className="shadow-none">
-            {t("homePage.navbar.signIn")}
-          </Button>
-          <Button variant="outline-info" className="shadow-none mr-1">
-            {t("homePage.navbar.signUp")}
-          </Button>
-          <NavDropdown
-            title={t("homePage.navbar.dropdownTitle")}
-            id="basic-nav-dropdown"
-          >
-            <NavDropdown.Item href="#action/3.1">
-              {t("homePage.navbar.dropdownEnglish")}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">
-              {t("homePage.navbar.dropdownArabic")}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.1">
-              {t("homePage.navbar.dropdownTurkish")}
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Container>
+      <NavLink to="/" className="navbar-brand">
+        <Navbar.Brand>{t("homePage.navbar.home")}</Navbar.Brand>
+      </NavLink>
+      <Nav className="ml-auto">
+        <NavLink to="/findNgo" className="nav-link">
+          {t("homePage.navbar.ngo")}
+        </NavLink>
+        <NavLink to="/stories" className="nav-link">
+          {t("homePage.navbar.stories")}
+        </NavLink>
+        <NavLink to="/aboutUs" className="nav-link">
+          {t("homePage.navbar.aboutUs")}
+        </NavLink>
+        <NavLink to="/profile" className="nav-link">
+          {t("homePage.navbar.profile")}
+        </NavLink>
+        <Button variant="outline-info" className="shadow-none">
+          {t("homePage.navbar.signIn")}
+        </Button>
+        <Button variant="outline-info" className="shadow-none mr-1">
+          {t("homePage.navbar.signUp")}
+        </Button>
+        <NavDropdown
+          title={t("homePage.navbar.dropdownTitle")}
+          id="basic-nav-dropdown"
+        >
+          <NavDropdown.Item href="#action/3.1">
+            {t("homePage.navbar.dropdownEnglish")}
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">
+            {t("homePage.navbar.dropdownArabic")}
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">
+            {t("homePage.navbar.dropdownTurkish")}
+          </NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
     </Navbar>
   );
 };
