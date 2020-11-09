@@ -1,22 +1,19 @@
-import { useTranslation } from "react-i18next";
-
-const { t } = useTranslation();
-
+// filterParameters should be fetched from database
 const filters = [
   {
-    filterName: t("resources.AdvancedFilters.city"),
+    filterName: "resources.AdvancedFilters.city",
     filterParameters: ["ankara", "istanbul"],
   },
   {
-    filterName: t("resources.AdvancedFilters.ngoName"),
+    filterName: "resources.AdvancedFilters.ngoName",
     filterParameters: ["teng", "abc"],
   },
   {
-    filterName: t("resources.AdvancedFilters.service"),
+    filterName: "resources.AdvancedFilters.service",
     filterParameters: ["healthcare", "education"],
   },
   {
-    filterName: t("resources.AdvancedFilters.rating"),
+    filterName: "resources.AdvancedFilters.rating",
     filterParameters: [1, 2, 3, 4, 5],
   },
 ];

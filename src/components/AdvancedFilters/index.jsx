@@ -40,7 +40,7 @@ const AdvancedFilters = () => {
                   <div className="circle">
                     <span className="filterPlusSign">+</span>
                   </div>
-                  <p className="filterTitle">{filter.filterName}</p>
+                  <p className="filterTitle">{t(filter.filterName)}</p>
                 </div>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
