@@ -3,7 +3,7 @@
 exports[`NgoDetailsDirection renders correctly 1`] = `
 Array [
   <h5>
-    ngoList.ngoDetails.directions
+    resources.ngoList.ngoDetails.directions
   </h5>,
   <div
     className="google-map"
@@ -76,11 +76,14 @@ Array [
             <div
               className="pin"
             >
+              <span
+                className="iconify"
+                data-icon="mdi:map-marker"
+                data-inline="false"
+              />
               <p
-                className="pin-text"
-              >
-                Ankara
-              </p>
+                className="pin-address"
+              />
             </div>
           </div>
         </div>
