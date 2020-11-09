@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NgoDetailsDirection renders correctly 1`] = `
+Array [
+  <h5>
+    ngoList.ngoDetails.directions
+  </h5>,
+  <div
+    className="google-map"
+  >
+    <div
+      onClick={[Function]}
+      onMouseDownCapture={[Function]}
+      onMouseMove={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "margin": 0,
+          "padding": 0,
+          "position": "relative",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "margin": 0,
+            "padding": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "height": "50%",
+            "left": "50%",
+            "margin": 0,
+            "padding": 0,
+            "position": "absolute",
+            "top": "50%",
+            "width": "50%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "height": "100%",
+              "left": 0,
+              "margin": 0,
+              "padding": 0,
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "height": 0,
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": 0,
+              }
+            }
+          >
+            <div
+              className="pin"
+            >
+              <p
+                className="pin-text"
+              >
+                Ankara
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

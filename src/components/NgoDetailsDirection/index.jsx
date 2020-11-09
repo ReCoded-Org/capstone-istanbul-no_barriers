@@ -2,8 +2,10 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 import LocationPin from "../LocationPin";
 import "./index.css";
+import { useTranslation } from "react-i18next";
 
 const NgoDetailsDirection = ({ address }) => {
+  const { t } = useTranslation();
   const location = {
     address,
     lat: 37.42216,
@@ -12,7 +14,7 @@ const NgoDetailsDirection = ({ address }) => {
 
   return (
     <>
-      <h5>Directions</h5>
+      <h5>{t("ngoList.ngoDetails.directions")}</h5>
       <div className="google-map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyA_W5FFmcpoLooDBWggCdOaWdD20aacVXk" }}

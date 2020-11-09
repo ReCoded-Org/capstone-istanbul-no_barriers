@@ -85,7 +85,8 @@
         "email": "E-mail:",
         "moreInfo": "For more info, go to:",
         "website": "Website",
-        "favourite": "Add to favourite"
+        "favourite": "Add to favourite",
+        "directions": "Directions"
       }
     }
   }
