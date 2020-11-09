@@ -10,18 +10,22 @@ import {
 import filters from "./filters";
 import "./index.css";
 import FilterOptionsList from "../FilterOptionsList";
+import { useTranslation } from "react-i18next";
 
 const AdvancedFilters = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="advancedFilters">
       <Container>
         <div className="advancedFiltersTitleSection d-flex justify-content-between">
-          <h5 className="advancedFiltersTitle">Refine the list with filters</h5>
+          <h5 className="advancedFiltersTitle">
+            {t("resources.AdvancedFilters.title")}
+          </h5>
           <OverlayTrigger
             overlay={
               <Tooltip className="tooltipInfo">
-                You can select different filter options by clicking on a filter
-                name.
+                {t("resources.AdvancedFilters.tooltipInfo")}
               </Tooltip>
             }
           >
@@ -46,8 +50,10 @@ const AdvancedFilters = () => {
           );
         })}
         <div className="filterButtons d-flex justify-content-center align-items-baseline">
-          <p className="clearAll">Clear All</p>
-          <Button className="applyFilters shadow-none">Apply Filters</Button>
+          <p className="clearAll">{t("resources.AdvancedFilters.clearAll")}</p>
+          <Button className="applyFilters shadow-none">
+            {t("resources.AdvancedFilters.applyFilters")}
+          </Button>
         </div>
       </Container>
     </div>

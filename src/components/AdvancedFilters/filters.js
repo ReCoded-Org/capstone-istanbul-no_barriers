@@ -1,12 +1,24 @@
-const city = { filterName: "City", filterParameters: ["ankara", "istanbul"] };
-const ngoName = { filterName: "NGO Name", filterParameters: ["teng", "abc"] };
-const sector = {
-  filterName: "Sector",
-  filterParameters: ["healthcare", "education"],
-};
-const rating = { filterName: "Rating", filterParameters: [1, 2, 3, 4, 5] };
+import { useTranslation } from "react-i18next";
 
-// Advance filters are fetched from Database
-const filters = [city, ngoName, sector, rating];
+const { t } = useTranslation();
+
+const filters = [
+  {
+    filterName: t("resources.AdvancedFilters.city"),
+    filterParameters: ["ankara", "istanbul"],
+  },
+  {
+    filterName: t("resources.AdvancedFilters.ngoName"),
+    filterParameters: ["teng", "abc"],
+  },
+  {
+    filterName: t("resources.AdvancedFilters.service"),
+    filterParameters: ["healthcare", "education"],
+  },
+  {
+    filterName: t("resources.AdvancedFilters.rating"),
+    filterParameters: [1, 2, 3, 4, 5],
+  },
+];
 
 export default filters;

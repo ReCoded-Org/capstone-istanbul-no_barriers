@@ -64,6 +64,16 @@
       "searchTitle": "Find the Service you Need",
       "inputPlaceholder": "Please, enter a search term...",
       "searchButton": "Search"
+    },
+    "AdvancedFilters": {
+      "tooltipInfo": " You can select different filter options by clicking on a filter name",
+      "title": "Refine the list with filters",
+      "city": "City",
+      "service": "Sector",
+      "ngoName": "NGO name",
+      "rating": "Rating",
+      "clearAll": "Clear All",
+      "applyFilters": "Apply Filters"
     }
   }
 }
