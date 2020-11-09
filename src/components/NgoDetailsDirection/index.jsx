@@ -14,7 +14,7 @@ const NgoDetailsDirection = ({ address }) => {
 
   return (
     <>
-      <h5>{t("ngoList.ngoDetails.directions")}</h5>
+      <h5>{t("resources.ngoList.ngoDetails.directions")}</h5>
       <div className="google-map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyA_W5FFmcpoLooDBWggCdOaWdD20aacVXk" }}
