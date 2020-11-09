@@ -1,0 +1,12 @@
+:root {
+  --trusted-background-color: #eee;
+}
+
+.trustedBy {
+  background-color: var(--trusted-background-color);
+  padding: 2rem;
+}
+
+.trustedBy img {
+  height: 7.25rem;
+}

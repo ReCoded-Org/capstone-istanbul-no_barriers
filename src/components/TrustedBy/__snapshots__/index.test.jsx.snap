@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TrustedBy correctly 1`] = `
+<div
+  className="trustedBy container-fluid"
+>
+  <h4>
+    Trusted by the World's Best NGOs
+  </h4>
+  <br />
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <img
+        alt="logo1"
+        src={
+          Object {
+            "default": "932761.png",
+          }
+        }
+        title="logo1"
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <img
+        alt="logo2"
+        src={
+          Object {
+            "default": "932762.png",
+          }
+        }
+        title="logo2"
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <img
+        alt="logo3"
+        src={
+          Object {
+            "default": "932763.png",
+          }
+        }
+        title="logo3"
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <img
+        alt="logo4"
+        src={
+          Object {
+            "default": "932764.png",
+          }
+        }
+        title="logo4"
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <img
+        alt="logo5"
+        src={
+          Object {
+            "default": "932765.png",
+          }
+        }
+        title="logo5"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,12 +1,12 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import SingleFeature from "../SingleFeature";
+import renderer from "react-test-renderer";
+import SingleFeature from "../SingleFeature/index";
 import contents from "./contents";
 
-const Features = () => {
-  return (
-    <Container>
-      {contents.map((content, index) => {
+it("Features renders correctly", () => {
+  const tree = renderer
+    .create(
+      contents.map((content, index) => {
         if (index % 2 === 0) {
           return (
             <SingleFeature
@@ -16,7 +16,7 @@ const Features = () => {
               styling={content.styling}
               alt={content.alt}
               key={content.alt}
-              order="first"
+              order={"first"}
             />
           );
         } else {
@@ -28,13 +28,12 @@ const Features = () => {
               styling={content.styling}
               alt={content.alt}
               key={content.alt}
-              order="last"
+              order={"last"}
             />
           );
         }
-      })}
-    </Container>
-  );
-};
-
-export default Features;
+      })
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});

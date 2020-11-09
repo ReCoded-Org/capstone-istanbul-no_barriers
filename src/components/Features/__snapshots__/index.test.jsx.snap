@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Features renders correctly 1`] = `
+Array [
+  <div
+    className="imgclass row"
+  >
+    <div
+      className="col-lg order-lg-first"
+    >
+      <img
+        alt="girl with Laptop"
+        className="featuresImg"
+        src="img1.jpg"
+        style={
+          Object {
+            "hight": "34rem",
+            "top": "139.375rem",
+            "width": "45rem",
+          }
+        }
+      />
+    </div>
+    <div
+      className="col-lg-6"
+    >
+      <h3>
+        Service Search engine in your control
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>,
+  <div
+    className="imgclass row"
+  >
+    <div
+      className="col-lg order-lg-last"
+    >
+      <img
+        alt="girl with email and speaker"
+        className="featuresImg"
+        src="img2.jpg"
+        style={
+          Object {
+            "hight": "37.5rem",
+            "left": "45rem",
+            "width": "45rem",
+          }
+        }
+      />
+    </div>
+    <div
+      className="col-lg-6"
+    >
+      <h3>
+        Hear Stories from around the world
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>,
+  <div
+    className="imgclass row"
+  >
+    <div
+      className="col-lg order-lg-first"
+    >
+      <img
+        alt="people fixing puzzle"
+        className="featuresImg"
+        src="img3.jpg"
+        style={
+          Object {
+            "hight": "37.5rem",
+            "width": "45rem",
+          }
+        }
+      />
+    </div>
+    <div
+      className="col-lg-6"
+    >
+      <h3>
+        Linking you with the Service Directly
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>,
+]
+`;

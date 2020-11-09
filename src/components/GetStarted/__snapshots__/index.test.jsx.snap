@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders GetStarted correctly 1`] = `
+<div
+  className="getStarted container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-6"
+    >
+      <h6>
+        Ready to get started?
+      </h6>
+      <p>
+        Sign up or contact us
+      </p>
+    </div>
+    <div
+      className="col-md-1.5 col"
+    >
+      <button
+        className="signUp btn btn-primary btn-sm"
+        disabled={false}
+        type="button"
+      >
+        Sign Up
+      </button>
+    </div>
+    <div
+      className="col-md-1.5 col"
+    >
+      <button
+        className="contactUs btn btn-primary btn-sm"
+        disabled={false}
+        type="button"
+      >
+        Contact Us
+      </button>
+    </div>
+    <div
+      className="col-md-3 col"
+    />
+  </div>
+</div>
+`;

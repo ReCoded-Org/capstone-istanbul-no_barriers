@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Browser renders correctly 1`] = `
+Array [
+  <div
+    className="categoryComponent col"
+  >
+    <img
+      alt="category icon"
+      className="catogoryIcon"
+      src="education.png"
+    />
+    <p
+      className="iconTitle"
+    >
+      homePage.browser.categories.education
+    </p>
+  </div>,
+  <div
+    className="categoryComponent col"
+  >
+    <img
+      alt="category icon"
+      className="catogoryIcon"
+      src="food.png"
+    />
+    <p
+      className="iconTitle"
+    >
+      homePage.browser.categories.food
+    </p>
+  </div>,
+  <div
+    className="categoryComponent col"
+  >
+    <img
+      alt="category icon"
+      className="catogoryIcon"
+      src="health.png"
+    />
+    <p
+      className="iconTitle"
+    >
+      homePage.browser.categories.health
+    </p>
+  </div>,
+  <div
+    className="categoryComponent col"
+  >
+    <img
+      alt="category icon"
+      className="catogoryIcon"
+      src="housing.png"
+    />
+    <p
+      className="iconTitle"
+    >
+      homePage.browser.categories.housing
+    </p>
+  </div>,
+  <div
+    className="categoryComponent col"
+  >
+    <img
+      alt="category icon"
+      className="catogoryIcon"
+      src="jobs.png"
+    />
+    <p
+      className="iconTitle"
+    >
+      homePage.browser.categories.jobs
+    </p>
+  </div>,
+]
+`;
