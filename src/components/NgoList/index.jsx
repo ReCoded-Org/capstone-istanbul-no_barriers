@@ -3,10 +3,13 @@ import { Table } from "react-bootstrap";
 import allNgos from "./allNgos";
 import "./index.css";
 import NgoTableRow from "../NgoTableRow";
+import { useTranslation } from "react-i18next";
 
 // This renders the NGOs which are filtered or searched
 // It renders all NGOs by default if a parameter is not given
 const NgoList = ({ ngos = allNgos }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="ngoList">
       <Table className="table-borderless ngoListTable">
@@ -15,10 +18,10 @@ const NgoList = ({ ngos = allNgos }) => {
             <th scope="col" className="logoCol">
               &nbsp;
             </th>
-            <th scope="col">NGO Name</th>
-            <th scope="col">Service</th>
-            <th scope="col">City</th>
-            <th scope="col">Rating</th>
+            <th scope="col">{t("resources.AdvancedFilters.ngoName")}</th>
+            <th scope="col">{t("resources.AdvancedFilters.sector")}</th>
+            <th scope="col">{t("resources.AdvancedFilters.city")}</th>
+            <th scope="col">{t("resources.AdvancedFilters.rating")}</th>
             <th scope="col">&nbsp;</th>
           </tr>
         </thead>
