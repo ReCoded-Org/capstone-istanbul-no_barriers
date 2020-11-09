@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar renders correctly 1`] = `
+<div
+  className="globalSearch"
+>
+  <h2>
+    resources.searchBar.searchTitle
+  </h2>
+  <div
+    className="searchBar d-flex"
+  >
+    <input
+      className="searchBarInput flex-grow-1"
+      maxLength="15"
+      placeholder="resources.searchBar.inputPlaceholder"
+      type="text"
+    />
+    <button
+      className="searchBarButton shadow-none btn btn-primary"
+      disabled={false}
+      type="button"
+    >
+      resources.searchBar.searchButton
+    </button>
+  </div>
+</div>
+`;

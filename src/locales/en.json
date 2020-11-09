@@ -58,5 +58,12 @@
       "blogLink": "Go to blog post",
       "buttonSeeMore": "See more blogs"
     }
+  },
+  "resources": {
+    "searchBar": {
+      "searchTitle": "Find the Service you Need",
+      "inputPlaceholder": "Please, enter a search term...",
+      "searchButton": "Search"
+    }
   }
 }

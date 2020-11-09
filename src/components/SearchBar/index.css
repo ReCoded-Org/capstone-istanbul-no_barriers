@@ -1,0 +1,52 @@
+:root {
+  --main-searchBar-bg-color: #eff4f6;
+  --searchBar-text-color: #002736;
+  --orange-link: #f2c94c;
+  --dark-orange: #d88315;
+  --orange: #fc9e01;
+  --inputBar-background: #f4fcff;
+}
+
+.globalSearch {
+  background-color: var(--main-searchBar-bg-color);
+  color: var(--searchBar-text-color);
+  padding: 5rem 6rem 4rem;
+}
+
+.searchBar {
+  padding-top: 2rem;
+}
+
+.searchBarInput {
+  padding: 0 1rem;
+  margin-right: 1rem;
+  border-color: var(--orange);
+  border-radius: 0.3rem;
+  background: var(--inputBar-background);
+}
+
+.searchBarInput:focus {
+  border-style: inset;
+  outline-color: var(--orange);
+}
+
+.searchBarInput::placeholder {
+  color: var(--orange-link);
+}
+
+.searchBarButton {
+  padding: 0.5rem 3rem;
+  border-radius: 5rem;
+}
+
+.searchBarButton,
+.searchBarButton:hover,
+.searchBarButton:focus {
+  background-color: var(--orange);
+  border: none;
+}
+
+/* search button active state style */
+.searchBarButton.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--dark-orange);
+}
