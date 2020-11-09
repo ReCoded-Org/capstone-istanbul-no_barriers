@@ -19,7 +19,7 @@ const NgoList = ({ ngos = allNgos }) => {
               &nbsp;
             </th>
             <th scope="col">{t("resources.AdvancedFilters.ngoName")}</th>
-            <th scope="col">{t("resources.AdvancedFilters.sector")}</th>
+            <th scope="col">{t("resources.AdvancedFilters.service")}</th>
             <th scope="col">{t("resources.AdvancedFilters.city")}</th>
             <th scope="col">{t("resources.AdvancedFilters.rating")}</th>
             <th scope="col">&nbsp;</th>

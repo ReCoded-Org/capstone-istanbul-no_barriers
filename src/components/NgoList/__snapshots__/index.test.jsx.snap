@@ -23,7 +23,7 @@ exports[`NgoList renders correctly 1`] = `
         <th
           scope="col"
         >
-          resources.AdvancedFilters.sector
+          resources.AdvancedFilters.service
         </th>
         <th
           scope="col"
