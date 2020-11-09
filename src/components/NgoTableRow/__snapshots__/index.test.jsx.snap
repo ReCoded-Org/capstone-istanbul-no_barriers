@@ -45,7 +45,7 @@ Array [
         onClick={[Function]}
         type="button"
       >
-        Details
+        resources.ngoList.buttonOpenDetails
       </button>
     </td>
   </tr>,
@@ -92,7 +92,7 @@ Array [
         onClick={[Function]}
         type="button"
       >
-        Details
+        resources.ngoList.buttonOpenDetails
       </button>
     </td>
   </tr>,
@@ -139,7 +139,7 @@ Array [
         onClick={[Function]}
         type="button"
       >
-        Details
+        resources.ngoList.buttonOpenDetails
       </button>
     </td>
   </tr>,

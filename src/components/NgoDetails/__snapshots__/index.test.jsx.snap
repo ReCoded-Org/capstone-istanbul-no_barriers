@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NgoDetails renders correctly 1`] = `
+<div
+  className="ngoDetailsTableData"
+>
+  <h3>
+    abc
+  </h3>
+  <p
+    className="address"
+  >
+    address
+  </p>
+  <h5>
+    resources.ngoList.ngoDetails.aidDescription
+  </h5>
+  <p
+    className="ngoDetailsServiceDescription"
+  >
+    serviceDescription
+  </p>
+  <p>
+    resources.ngoList.ngoDetails.responsiblePerson responsiblePerson
+    <br />
+    resources.ngoList.ngoDetails.phoneNum 12344
+    <br />
+    resources.ngoList.ngoDetails.email email
+  </p>
+  <div
+    className="d-flex align-items-baseline"
+  >
+    <p
+      className="moreInfo"
+    >
+      resources.ngoList.ngoDetails.moreInfo
+    </p>
+    <a
+      className="btnWebsite shadow-none btn btn-primary"
+      href="website"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      target="blank"
+    >
+      resources.ngoList.ngoDetails.website
+    </a>
+    <button
+      className="btnAddFavourite shadow-none btn btn-primary"
+      disabled={false}
+      type="button"
+    >
+      resources.ngoList.ngoDetails.favourite
+    </button>
+  </div>
+</div>
+`;

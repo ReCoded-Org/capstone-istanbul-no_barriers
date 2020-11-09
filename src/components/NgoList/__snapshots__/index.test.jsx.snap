@@ -86,7 +86,7 @@ exports[`NgoList renders correctly 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Details
+            resources.ngoList.buttonOpenDetails
           </button>
         </td>
       </tr>
@@ -133,7 +133,7 @@ exports[`NgoList renders correctly 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Details
+            resources.ngoList.buttonOpenDetails
           </button>
         </td>
       </tr>
@@ -180,7 +180,7 @@ exports[`NgoList renders correctly 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Details
+            resources.ngoList.buttonOpenDetails
           </button>
         </td>
       </tr>

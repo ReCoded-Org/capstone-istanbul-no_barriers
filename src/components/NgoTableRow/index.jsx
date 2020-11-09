@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import "./index.css";
 import NgoDetails from "../NgoDetails";
 import NgoDetailsDirection from "../NgoDetailsDirection";
+import { useTranslation } from "react-i18next";
 
 const NgoTableRow = ({
   trClassname,
@@ -15,6 +16,7 @@ const NgoTableRow = ({
   details,
 }) => {
   const [openDetails, setOpenDetails] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -32,7 +34,7 @@ const NgoTableRow = ({
             onClick={() => setOpenDetails(!openDetails)}
             aria-controls={`${id}`}
           >
-            Details
+            {t("resources.ngoList.buttonOpenDetails")}
           </Button>
         </td>
       </tr>

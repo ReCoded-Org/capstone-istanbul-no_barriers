@@ -74,6 +74,19 @@
       "rating": "Rating",
       "clearAll": "Clear All",
       "applyFilters": "Apply Filters"
+    },
+    "ngoList": {
+      "buttonOpenDetails": "Details",
+      "buttonCloseDetails": "Close Details",
+      "ngoDetails": {
+        "aidDescription": "How we can help",
+        "responsiblePerson": "Responsible to talk is",
+        "phoneNum": "Phone number:",
+        "email": "E-mail:",
+        "moreInfo": "For more info, go to:",
+        "website": "Website",
+        "favourite": "Add to favourite"
+      }
     }
   }
 }
