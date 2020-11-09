@@ -83,7 +83,9 @@ Array [
               />
               <p
                 className="pin-address"
-              />
+              >
+                Ankara
+              </p>
             </div>
           </div>
         </div>

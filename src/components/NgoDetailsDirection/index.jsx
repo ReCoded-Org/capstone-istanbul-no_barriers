@@ -24,7 +24,7 @@ const NgoDetailsDirection = ({ address }) => {
           <LocationPin
             lat={location.lat}
             lng={location.lng}
-            text={location.address}
+            address={location.address}
           />
         </GoogleMapReact>
       </div>
