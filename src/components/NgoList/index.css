@@ -1,0 +1,40 @@
+:root {
+  --main-ngoTable-bg-color: #eff4f6;
+  --ngoTable-text-color: #002736;
+  --orange-link: #f2c94c;
+  --dark-orange: #d88315;
+  --orange: #fc9e01;
+}
+
+.ngoList {
+  width: 100%;
+  padding: 0 6rem 0 2rem;
+  background-color: var(--main-ngoTable-bg-color);
+}
+
+.ngoLogo {
+  height: 3rem;
+  width: 3.1rem;
+  border-radius: 50%;
+  border: 1px solid;
+  display: inline;
+  text-align: right;
+}
+
+.logoCol {
+  width: 5rem;
+}
+
+.ngoListTable {
+  text-align: left;
+  background-color: var(--main-ngoTable-bg-color);
+  color: var(--ngoTable-text-color);
+  margin-bottom: 0;
+}
+
+td.d-table-cell.align-middle.btnCol {
+  display: inline-block;
+  text-align: right;
+  padding-right: 4rem;
+  margin-right: 2rem;
+}

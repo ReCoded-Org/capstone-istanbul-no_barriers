@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NgoList renders correctly 1`] = `
+<div
+  className="ngoList"
+>
+  <table
+    className="table-borderless ngoListTable table"
+  >
+    <thead>
+      <tr>
+        <th
+          className="logoCol"
+          scope="col"
+        >
+           
+        </th>
+        <th
+          scope="col"
+        >
+          resources.AdvancedFilters.ngoName
+        </th>
+        <th
+          scope="col"
+        >
+          resources.AdvancedFilters.service
+        </th>
+        <th
+          scope="col"
+        >
+          resources.AdvancedFilters.city
+        </th>
+        <th
+          scope="col"
+        >
+          resources.AdvancedFilters.rating
+        </th>
+        <th
+          scope="col"
+        >
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="table-info"
+      >
+        <td
+          className="d-table-cell align-middle"
+        >
+          <img
+            align="right"
+            alt="NGO Logo"
+            className="ngoLogo"
+            src="image.jpg"
+          />
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Teng
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Health Care
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Ankara
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          4
+        </td>
+        <td
+          className="d-table-cell align-middle btnCol"
+        >
+          <button
+            aria-controls="undefined"
+            className="btnMoreDetails shadow-none btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            resources.ngoList.buttonOpenDetails
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="table-light"
+      >
+        <td
+          className="d-table-cell align-middle"
+        >
+          <img
+            align="right"
+            alt="NGO Logo"
+            className="ngoLogo"
+            src="image.jpg"
+          />
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Teng
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Health Care
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Ankara
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          4
+        </td>
+        <td
+          className="d-table-cell align-middle btnCol"
+        >
+          <button
+            aria-controls="undefined"
+            className="btnMoreDetails shadow-none btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            resources.ngoList.buttonOpenDetails
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="table-info"
+      >
+        <td
+          className="d-table-cell align-middle"
+        >
+          <img
+            align="right"
+            alt="NGO Logo"
+            className="ngoLogo"
+            src="image.jpg"
+          />
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          ABC
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Education
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          Şanlıurfa
+        </td>
+        <td
+          className="d-table-cell align-middle"
+        >
+          4
+        </td>
+        <td
+          className="d-table-cell align-middle btnCol"
+        >
+          <button
+            aria-controls="undefined"
+            className="btnMoreDetails shadow-none btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            resources.ngoList.buttonOpenDetails
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

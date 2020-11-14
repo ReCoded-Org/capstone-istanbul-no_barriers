@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PagesList renders correctly 1`] = `
+<div
+  className="pages"
+>
+  <ul
+    className="d-flex justify-content-end pb-5 pagination"
+    style={
+      Object {
+        "backgroundColor": "#eff4f6",
+        "marginBottom": "0",
+        "paddingRight": "6rem",
+        "paddingTop": "1rem",
+      }
+    }
+  >
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          «
+        </span>
+        <span
+          className="sr-only"
+        >
+          First
+        </span>
+      </a>
+    </li>
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          »
+        </span>
+        <span
+          className="sr-only"
+        >
+          Last
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
