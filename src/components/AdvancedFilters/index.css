@@ -1,0 +1,98 @@
+:root {
+  --main-filter-bg-color: #00374d;
+  --main-filter-text-color: #d7f7fa;
+  --orange-link: #f2c94c;
+  --info-bg-color: #29ccd8;
+  --dark-orange: #d88315;
+  --orange: #fc9e01;
+}
+
+.advancedFilters {
+  background-color: var(--main-filter-bg-color);
+  color: var(--main-filter-text-color);
+  padding: 2rem;
+}
+
+.advancedFiltersTitleSection {
+  border-bottom: 1px solid var(--main-filter-text-color);
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.advancedFiltersTitle {
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+
+.moreInfoFilters {
+  border-radius: 50%;
+  background-color: var(--info-bg-color);
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.moreInfoFilters:hover {
+  background-color: var(--orange-link);
+}
+
+/* Div with + filter option */
+div.advancedFilters .card-header {
+  padding: 0;
+  border-bottom: none;
+  border-radius: 0;
+  background-color: var(--main-filter-bg-color);
+}
+
+div.advancedFilters .card-header:hover {
+  background-color: var(--orange-link);
+  color: var(--main-filter-bg-color);
+}
+
+.filter {
+  margin: none;
+  font-weight: bold;
+  padding: 0.5rem 0 0;
+}
+
+.circle {
+  position: relative;
+  background-color: var(--main-filter-text-color);
+  color: var(--main-filter-bg-color);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.filterPlusSign {
+  position: absolute;
+  top: -0.1rem;
+  left: 0.4rem;
+}
+
+.filterButtons {
+  margin-top: 1.5rem;
+}
+
+.clearAll {
+  margin-right: 2rem;
+}
+
+.clearAll:hover {
+  color: var(--orange-link);
+}
+
+.applyFilters,
+.applyFilters:hover,
+.applyFilters:focus {
+  background-color: var(--orange);
+  border: none;
+}
+
+/* filter all button active state style */
+.applyFilters.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--dark-orange);
+}
