@@ -1,0 +1,35 @@
+:root {
+  --title-browse-color: #6c567b;
+  --storyBody-color: #000000;
+  --background-color: #fc9e01;
+  --hover-browse-color: #074081;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+.blogContainer {
+  margin: 3rem auto 5rem auto;
+  text-align: center;
+}
+
+.blogBodyHolder {
+  text-align: justify;
+  margin: auto;
+}
+
+.blogTitle {
+  color: var(--title-browse-color);
+  margin: 0rem 3rem 3rem 3rem;
+}
+
+.blogImage {
+  width: 35rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.blogBody {
+  line-height: 2rem;
+  margin: 3rem auto;
+  color: var(--storyBody-color);
+  width: 80%;
+}

@@ -59,6 +59,9 @@
       "buttonSeeMore": "See more blogs"
     }
   },
+  "singleStoryCard": {
+    "continueReading": "Continue Reading"
+  },
   "resources": {
     "searchBar": {
       "searchTitle": "Find the Service you Need",

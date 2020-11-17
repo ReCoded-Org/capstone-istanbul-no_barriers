@@ -1,0 +1,47 @@
+:root {
+  --title-browse-color: #6c567b;
+  --storyBody-color: #000000;
+  --background-color: #fc9e01;
+  --hover-browse-color: #074081;
+  --button-text-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+.articleContainer {
+  margin: 3rem auto 5rem auto;
+  text-align: center;
+}
+
+.articleTitle {
+  color: var(--title-browse-color);
+}
+
+.articleBody {
+  line-height: 2rem;
+  margin: 3rem auto;
+  color: var(--storyBody-color);
+  width: 80%;
+}
+
+.readMoreButton {
+  color: var(--button-text-color);
+  display: block;
+  margin: auto;
+  padding: 0.8rem 1.5rem;
+  background: var(--background-color);
+  box-shadow: 0rem 0.3rem 0.6rem var(--shadow-color);
+  border-radius: 5rem;
+  border: none;
+}
+
+.readMoreButton:active {
+  outline: none;
+}
+
+.readMoreButton:hover {
+  text-decoration-color: none;
+}
+
+.roundImage {
+  width: 100%;
+}
