@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
       <Container>
         <Navbar variant="dark" className="footerNavbar">
-          <Navbar.Brand href="#home" className="d-flex">
+          <Navbar.Brand href="/" className="d-flex">
             <h4 className="footerHeading">{t("homePage.footer.brand")}</h4>
             <p className="copyright">
               <span>&#169;</span>
@@ -20,7 +20,7 @@ const Footer = () => {
           <Nav className="ml-auto">
             <Nav.Link href="#find">{t("homePage.footer.find")}</Nav.Link>
             <Nav.Link href="#stories">{t("homePage.footer.stories")}</Nav.Link>
-            <Nav.Link href="#aboutUs">{t("homePage.footer.about")}</Nav.Link>
+            <Nav.Link href="aboutUs">{t("homePage.footer.about")}</Nav.Link>
           </Nav>
         </Navbar>
         <Col className="justify-content-md-left" md={2}>

@@ -12,7 +12,7 @@ exports[`Footer renders correctly 1`] = `
     >
       <a
         className="d-flex navbar-brand"
-        href="#home"
+        href="/"
       >
         <h4
           className="footerHeading"
@@ -52,8 +52,8 @@ exports[`Footer renders correctly 1`] = `
         </a>
         <a
           className="nav-link"
-          data-rb-event-key="#aboutUs"
-          href="#aboutUs"
+          data-rb-event-key="aboutUs"
+          href="aboutUs"
           onClick={[Function]}
           onKeyDown={[Function]}
         >

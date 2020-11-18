@@ -38,13 +38,13 @@ const NavBar = () => {
           title={t("homePage.navbar.dropdownTitle")}
           id="basic-nav-dropdown"
         >
-          <NavDropdown.Item href="#action/3.1">
+          <NavDropdown.Item>
             {t("homePage.navbar.dropdownEnglish")}
           </NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.1">
+          <NavDropdown.Item>
             {t("homePage.navbar.dropdownArabic")}
           </NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.1">
+          <NavDropdown.Item>
             {t("homePage.navbar.dropdownTurkish")}
           </NavDropdown.Item>
         </NavDropdown>

@@ -92,5 +92,16 @@
         "directions": "Directions"
       }
     }
+  },
+  "meetTheTeam": {
+    "titles": {
+      "teamLead": "Team Lead",
+      "juniorFrontendDeveloper": "Junior Frontend Developer"
+    },
+    "pageTitle": "Meet the Team"
+  },
+  "aboutUs": {
+    "header": "About NO BARRIERS",
+    "paragraph": "A Website where refugees can easily connect with NGOs, and keep updated about any new aids that the NGOs provide for them, build a community of Refugees that can help each other, at the same time it would be a source for Refugees to share their own personal experience and knowledge with each other."
   }
 }

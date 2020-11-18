@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import HomePage from "./containers/HomePage";
 import Resources from "./containers/Resources";
 import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
 import AboutUS from "./containers/AboutUS";
 import Stories from "./containers/Stories";
 import Story from "./containers/Story";
@@ -18,6 +19,7 @@ function App() {
   // just add another object here with the details of your containers to be added to the Routers.
   const ROUTES = [
     { path: "/", name: "homepage", Component: HomePage },
+    { path: "/aboutus", name: "aboutus", Component: AboutUs },
     { path: "/aboutus", name: "aboutus", Component: AboutUS },
     { path: "/stories", name: "stories", Component: Stories },
     { path: "/findnow", name: "findnow", Component: Resources },

@@ -1,0 +1,29 @@
+.avatar img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+:root {
+  --main-meetTheTeam-bg-color: rgba(206, 238, 248, 0.397);
+  --meetTheTeam-text-color: #002736;
+}
+
+.meetTheTeam {
+  background-color: var(--main-meetTheTeam-bg-color);
+  color: var(--meetTheTeam-text-color);
+  padding: 3rem;
+}
+
+.profileInfo {
+  padding: 2rem;
+}
+
+.gitHubIcon {
+  font-size: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: xx-large;
+}
