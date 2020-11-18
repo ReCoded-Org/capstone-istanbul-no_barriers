@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import "./index.css";
 import { useTranslation } from "react-i18next";
 
-const SearchBar = () => {
+const SearchBar = ({ searchKey, setSearchKey, handleSearchSubmit }) => {
   const { t } = useTranslation();
 
   return (
@@ -15,8 +15,13 @@ const SearchBar = () => {
           type="text"
           placeholder={t("resources.searchBar.inputPlaceholder")}
           maxLength="15"
+          value={searchKey}
+          onChange={(e) => setSearchKey(e.target.value)}
         />
-        <Button className="searchBarButton shadow-none">
+        <Button
+          className="searchBarButton shadow-none"
+          onClick={handleSearchSubmit}
+        >
           {t("resources.searchBar.searchButton")}
         </Button>
       </div>

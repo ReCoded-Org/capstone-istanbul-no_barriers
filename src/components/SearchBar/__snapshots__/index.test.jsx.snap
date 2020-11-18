@@ -13,6 +13,7 @@ exports[`SearchBar renders correctly 1`] = `
     <input
       className="searchBarInput flex-grow-1"
       maxLength="15"
+      onChange={[Function]}
       placeholder="resources.searchBar.inputPlaceholder"
       type="text"
     />
