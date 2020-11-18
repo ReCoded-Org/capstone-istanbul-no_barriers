@@ -15,13 +15,14 @@ const NgoDetails = ({ details }) => {
         {details.serviceDescription}
       </p>
       <p>
-        {`${t("resources.ngoList.ngoDetails.responsiblePerson")} ${
-          details.responsiblePerson
-        }`}
+        {t("resources.ngoList.ngoDetails.responsiblePerson")}
+        {details.responsiblePerson}
         <br />
-        {`${t("resources.ngoList.ngoDetails.phoneNum")} ${details.phoneNumber}`}
+        {t("resources.ngoList.ngoDetails.phoneNum")}
+        {details.phoneNumber}
         <br />
-        {`${t("resources.ngoList.ngoDetails.email")} ${details.email}`}
+        {t("resources.ngoList.ngoDetails.email")}
+        {details.email}
       </p>
       <div className="d-flex align-items-baseline">
         <p className="moreInfo">{t("resources.ngoList.ngoDetails.moreInfo")}</p>

@@ -9,14 +9,20 @@ const FilterOptionsList = ({ selectedOptions }) => {
       {selectedOptions.map((option, index) => {
         if (index % 2 === 0) {
           return (
-            <div className="selectedOption d-flex justify-content-between backgroundLight">
+            <div
+              className="selectedOption d-flex justify-content-between backgroundLight"
+              key={option}
+            >
               <p className="selectedOptionTitle">{option}</p>
               <span className="selectedOptionDelete">X</span>
             </div>
           );
         }
         return (
-          <div className="selectedOption d-flex justify-content-between backgroundDark">
+          <div
+            className="selectedOption d-flex justify-content-between backgroundDark"
+            key={option}
+          >
             <p className="selectedOptionTitle">{option}</p>
             <span className="selectedOptionDelete">X</span>
           </div>

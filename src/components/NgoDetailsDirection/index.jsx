@@ -15,7 +15,7 @@ const NgoDetailsDirection = ({ address }) => {
   return (
     <>
       <h5>{t("resources.ngoList.ngoDetails.directions")}</h5>
-      <div className="google-map">
+      <div className="googleMap">
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyA_W5FFmcpoLooDBWggCdOaWdD20aacVXk" }}
           defaultCenter={location}

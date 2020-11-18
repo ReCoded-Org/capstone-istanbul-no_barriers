@@ -1,14 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
+<<<<<<< HEAD
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+=======
+>>>>>>> dev
 import NavBar from "./components/NavBar";
 import HomePage from "./containers/HomePage";
 import Resources from "./containers/Resources";
 import Footer from "./components/Footer";
 import AboutUS from "./containers/AboutUS";
+import Stories from "./containers/Stories";
+import Story from "./containers/Story";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 
@@ -17,7 +23,8 @@ function App() {
   const ROUTES = [
     { path: "/", name: "homepage", Component: HomePage },
     { path: "/aboutus", name: "aboutus", Component: AboutUS },
-    { path: "/findnow", name: "findnow", Component: Resources },
+    { path: "/stories", name: "stories", Component: Stories },
+    { path: "/findngos", name: "findngos", Component: Resources },
   ];
 
   return (
@@ -30,6 +37,11 @@ function App() {
               <Component />
             </Route>
           ))}
+          <Route
+            exact
+            path="/story/:id"
+            render={(props) => <Story {...props} />}
+          />
         </Switch>
         <Footer />
       </Router>

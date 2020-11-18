@@ -6,7 +6,7 @@ Array [
     resources.ngoList.ngoDetails.directions
   </h5>,
   <div
-    className="google-map"
+    className="googleMap"
   >
     <div
       onClick={[Function]}
@@ -73,17 +73,13 @@ Array [
               }
             }
           >
-            <div
-              className="pin"
-            >
+            <div>
               <span
                 className="iconify"
                 data-icon="mdi:map-marker"
                 data-inline="false"
               />
-              <p
-                className="pin-address"
-              >
+              <p>
                 Ankara
               </p>
             </div>

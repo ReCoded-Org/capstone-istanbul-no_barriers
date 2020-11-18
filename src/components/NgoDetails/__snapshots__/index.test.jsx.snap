@@ -21,11 +21,14 @@ exports[`NgoDetails renders correctly 1`] = `
     serviceDescription
   </p>
   <p>
-    resources.ngoList.ngoDetails.responsiblePerson responsiblePerson
+    resources.ngoList.ngoDetails.responsiblePerson
+    responsiblePerson
     <br />
-    resources.ngoList.ngoDetails.phoneNum 12344
+    resources.ngoList.ngoDetails.phoneNum
+    12344
     <br />
-    resources.ngoList.ngoDetails.email email
+    resources.ngoList.ngoDetails.email
+    email
   </p>
   <div
     className="d-flex align-items-baseline"

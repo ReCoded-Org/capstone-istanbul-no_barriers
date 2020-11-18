@@ -8,7 +8,7 @@ exports[`AdvancedFilters renders correctly 1`] = `
     className="container"
   >
     <div
-      className="advancedFiltersTitleSection d-flex justify-content-between"
+      className="advancedFiltersTitleSection d-flex justify-content-between align-items-baseline pb-2"
     >
       <h5
         className="advancedFiltersTitle"

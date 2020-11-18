@@ -2,9 +2,9 @@ import React from "react";
 import "./index.css";
 
 const LocationPin = ({ address }) => (
-  <div className="pin">
+  <div>
     <span className="iconify" data-icon="mdi:map-marker" data-inline="false" />
-    <p className="pin-address">{address}</p>
+    <p>{address}</p>
   </div>
 );
 

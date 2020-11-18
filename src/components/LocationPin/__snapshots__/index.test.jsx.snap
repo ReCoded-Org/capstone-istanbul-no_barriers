@@ -1,17 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LocationPin renders correctly 1`] = `
-<div
-  className="pin"
->
+<div>
   <span
     className="iconify"
     data-icon="mdi:map-marker"
     data-inline="false"
   />
-  <p
-    className="pin-address"
-  >
+  <p>
     Ankara
   </p>
 </div>

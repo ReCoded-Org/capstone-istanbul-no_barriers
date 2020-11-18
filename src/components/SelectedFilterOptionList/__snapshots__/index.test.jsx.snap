@@ -1,34 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SelectedFilterOptionList renders correctly 1`] = `
-Array [
+<div
+  className="filteredOptionsList"
+>
   <div
     className="selectedOption d-flex justify-content-between backgroundLight"
   >
     <p
       className="selectedOptionTitle"
     >
-      ankara
+      Ankara
     </p>
     <span
       className="selectedOptionDelete"
     >
       X
     </span>
-  </div>,
+  </div>
   <div
     className="selectedOption d-flex justify-content-between backgroundDark"
   >
     <p
       className="selectedOptionTitle"
     >
-      istanbul
+      Istanbul
     </p>
     <span
       className="selectedOptionDelete"
     >
       X
     </span>
-  </div>,
-]
+  </div>
+</div>
 `;

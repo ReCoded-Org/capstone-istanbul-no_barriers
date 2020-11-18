@@ -3,9 +3,9 @@ import { Pagination } from "react-bootstrap";
 import allNgos from "../NgoList/allNgos";
 
 const PagesList = ({ ngos = allNgos }) => {
-  const ngosPerPage = 10;
+  const NGOS_PER_PAGE = 10;
   const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(ngos.length / ngosPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(ngos.length / NGOS_PER_PAGE); i++) {
     pageNumbers.push(i);
   }
 
@@ -21,11 +21,14 @@ const PagesList = ({ ngos = allNgos }) => {
         }}
       >
         <Pagination.First />
-        {pageNumbers.map((number, index) => {
+        {pageNumbers.map((currentDisplayedPageNumber, index) => {
           const displayedNumber = index + 1;
           return (
-            <Pagination.Item key={displayedNumber} active={number === "active"}>
-              {number}
+            <Pagination.Item
+              key={displayedNumber}
+              active={currentDisplayedPageNumber === "active"}
+            >
+              {currentDisplayedPageNumber}
             </Pagination.Item>
           );
         })}
