@@ -1,0 +1,31 @@
+:root {
+  --title-color: #002736;
+  --subTitle-color: #000000;
+  --background-color: #fc9e01;
+  --text-color: #eff4f6;
+  --filter-shadow-color: #b3b3b3;
+  --link-color: #0641af;
+}
+
+.webLogo,
+.welcometext {
+  color: var(--title-color);
+  margin-top: 2rem;
+}
+
+.signupBtn {
+  background-color: var(--background-color);
+  font-weight: 600;
+  cursor: pointer;
+  width: 7rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 2.1875rem;
+  border-style: hidden;
+  box-shadow: 0rem 0.6875rem 1.5rem -0.4375rem var(--filter-shadow-color);
+}
+
+.loginLink {
+  display: inline;
+  color: var(--link-color);
+}

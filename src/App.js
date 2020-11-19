@@ -14,6 +14,7 @@ import Stories from "./containers/Stories";
 import Story from "./containers/Story";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
+import SignUp from "./components/SignUp";
 
 function App() {
   // just add another object here with the details of your containers to be added to the Routers.
@@ -23,6 +24,7 @@ function App() {
     { path: "/aboutus", name: "aboutus", Component: AboutUS },
     { path: "/stories", name: "stories", Component: Stories },
     { path: "/findnow", name: "findnow", Component: Resources },
+    { path: "/signup", name: "signup", Component: SignUp },
   ];
 
   return (

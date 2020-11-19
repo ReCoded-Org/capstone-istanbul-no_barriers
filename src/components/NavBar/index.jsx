@@ -31,9 +31,11 @@ const NavBar = () => {
         <Button variant="outline-info" className="shadow-none">
           {t("homePage.navbar.signIn")}
         </Button>
-        <Button variant="outline-info" className="shadow-none mr-1">
-          {t("homePage.navbar.signUp")}
-        </Button>
+        <NavLink to="/signup" className="nav-link">
+          <Button variant="outline-info" className="shadow-none mr-1">
+            {t("homePage.navbar.signUp")}
+          </Button>
+        </NavLink>
         <NavDropdown
           title={t("homePage.navbar.dropdownTitle")}
           id="basic-nav-dropdown"

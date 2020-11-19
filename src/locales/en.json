@@ -93,6 +93,19 @@
       }
     }
   },
+  "signup": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "E-mail",
+    "password": "Password",
+    "repeatPassword": "Reapeat Password",
+    "signup": "Sign Up",
+    "existingAccount": "Already have an account?",
+    "alertMsg": "Passwords doesn't match",
+    "alertCmplt": "Your registration is completed",
+    "login": "Login",
+    "welcomeMsg": "Welcome to No Barriers"
+  },
   "meetTheTeam": {
     "titles": {
       "teamLead": "Team Lead",
