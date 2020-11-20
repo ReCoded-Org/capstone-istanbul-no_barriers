@@ -1,0 +1,30 @@
+/* Edit profile button styles on click, focus and normal state*/
+Button.editProfile.shadow-none.btn.btn-primary,
+Button.editProfile.shadow-none.btn.btn-primary:not(:disabled):not(.disabled):active,
+Button.editProfile.shadow-none.btn.btn-primary:focus {
+  color: var(--main-title-profile);
+  border: none;
+  background-color: var(--main-text-color-profile);
+}
+
+Button.editProfile.shadow-none.btn.btn-primary:hover {
+  background-color: var(--blog-background-profile);
+  color: var(--main-text-color-profile);
+}
+
+.editProfile {
+  margin-left: auto;
+}
+
+.profilePic {
+  height: 10rem;
+}
+
+.profileName {
+  color: var(--main-title-profile);
+}
+
+.bio {
+  padding: 0 10rem;
+  text-align: justify;
+}

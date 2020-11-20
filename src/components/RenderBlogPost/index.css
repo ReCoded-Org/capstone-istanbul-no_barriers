@@ -1,0 +1,22 @@
+.profileBlogPostImage,
+.imageHover {
+  width: 20rem;
+}
+
+.profileBlogPostInfo {
+  background-color: var(--blog-background-profile);
+}
+
+.blogPostInfoHover {
+  color: var(--blog-background-profile);
+  background-color: var(--main-text-color-profile);
+}
+
+.profileBlogPostHover {
+  background-color: var(--main-text-color-profile);
+  cursor: pointer;
+}
+
+.imageHover {
+  opacity: 0.4;
+}

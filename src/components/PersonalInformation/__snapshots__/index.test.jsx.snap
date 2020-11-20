@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonalInformation renders correctly 1`] = `
+<div
+  className="mx-5 px-5"
+>
+  <div
+    className="row"
+  >
+    <button
+      className="editProfile shadow-none btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      profile.editProfile
+    </button>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="d-flex align-items-center justify-content-center mb-5"
+      >
+        <img
+          alt="person"
+          className="profilePic mr-5 img-fluid rounded-circle"
+          src="profile.jpg"
+        />
+        <div>
+          <h2
+            className="profileName"
+          >
+            IBO (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+          </h2>
+          <h5
+            className="pt-2"
+          >
+            profile.contactInfo
+          </h5>
+          <div
+            className="d-flex"
+          >
+            <p
+              className="pr-3"
+            >
+              profile.email
+               
+              aish@aaa.com
+            </p>
+            <p>
+              profile.phone
+               
+              +900000
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="bio align-items-center flex-column row"
+  >
+    <h2>
+      profile.bioTitle
+    </h2>
+    <p>
+      Vestibulum elementum felis magna, sit amet ullamcorper nunc viverra sed. Morbi at est id quam consequat aliquam. Morbi congue tellus quis nisl porta, in varius urna euismod. Aliquam at ligula diam. Fusce accumsan posuere venenatis. Nullam at lacus id diam iaculis finibus nec sed purus. Curabitur eget interdum turpis. Suspendisse pellentesque accumsan mattis. Nullam laoreet dictum metus nec vestibulum. Nulla ac libero a erat vehicula ullamcorper. Phasellus hendrerit mi at leo molestie, nec iaculis tellus suscipit. Vestibulum imperdiet bibendum urna sed condimentum. Sed eu libero nec ex pretium ullamcorper. Vivamus pellentesque leo ipsum, iaculis viverra nunc malesuada ut. Nullam volutpat, ipsum non mollis semper, tortor magna pretium mauris, quis tincidunt arcu lacus vitae diam. Etiam quis augue non libero tristique pellentesque sed quis urna. Proin in porttitor sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque porttitor commodo erat nec aliquam. Phasellus hendrerit, urna a congue iaculis, nulla leo posuere nulla, vel accumsan nunc nulla at magna.
+    </p>
+  </div>
+</div>
+`;

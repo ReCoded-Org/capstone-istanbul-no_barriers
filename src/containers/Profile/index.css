@@ -1,0 +1,11 @@
+:root {
+  --main-text-color-profile: #002736;
+  --main-background-color-profile: #f2f2f2;
+  --main-title-profile: #fc9e01;
+  --blog-background-profile: #f2c94c;
+}
+
+.profile {
+  background-color: var(--main-background-color-profile);
+  color: var(--main-text-color-profile);
+}

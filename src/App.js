@@ -10,6 +10,7 @@ import Resources from "./containers/Resources";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import AboutUS from "./containers/AboutUS";
+import Profile from "./containers/Profile";
 import Stories from "./containers/Stories";
 import Story from "./containers/Story";
 import { I18nextProvider } from "react-i18next";
@@ -24,6 +25,7 @@ function App() {
     { path: "/aboutus", name: "aboutus", Component: AboutUS },
     { path: "/stories", name: "stories", Component: Stories },
     { path: "/findnow", name: "findnow", Component: Resources },
+    { path: "/profile", name: "profile", Component: Profile },
     { path: "/signup", name: "signup", Component: SignUp },
   ];
 

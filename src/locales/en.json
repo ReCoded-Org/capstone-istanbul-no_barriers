@@ -93,6 +93,27 @@
       }
     }
   },
+  "profile": {
+    "editProfile": "Edit Profile",
+    "contactInfo": "CONTACT INFO",
+    "email": "E-Mail:",
+    "phone": "Phone:",
+    "bioTitle": "MY STORY",
+    "writePost": "Write a post",
+    "recentPost": "RECENT POSTS",
+    "editProfileModal": {
+      "title": "Edit Profile",
+      "name": "Name:",
+      "namePlaceholder": "type a new name",
+      "emailPlaceholder": "type a new e-mail",
+      "phonePlaceholder": "type a new phone number",
+      "profileImage": "Add a new profile picture:",
+      "bio": "Bio:",
+      "bioPlaceholder": "type a new biography",
+      "close": "close",
+      "save": "Save"
+    }
+  },
   "signup": {
     "firstName": "First Name",
     "lastName": "Last Name",
