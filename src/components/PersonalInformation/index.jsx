@@ -13,7 +13,7 @@ const PersonalInformation = () => {
   // bio should be different according to each language
   const [info, setInfo] = useState({
     profilePicSource: profilePic,
-    name: "IBO (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+    name: "IBO",
     email: "aish@aaa.com",
     phoneNum: "+900000",
     bio:

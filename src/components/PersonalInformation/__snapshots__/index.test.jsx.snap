@@ -34,7 +34,7 @@ exports[`PersonalInformation renders correctly 1`] = `
           <h2
             className="profileName"
           >
-            IBO (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+            IBO
           </h2>
           <h5
             className="pt-2"
