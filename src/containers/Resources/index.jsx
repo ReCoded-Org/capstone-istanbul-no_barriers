@@ -34,7 +34,6 @@ const Resources = () => {
     };
 
     fetchNgos();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -66,7 +65,7 @@ const Resources = () => {
   useEffect(() => {
     setFilterOptions(getFilterOptions(allNgos));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [allNgos]);
 
   // Advance Filters component's functionalities - START
   const applyAdvancedFilters = (filterOptions, ngos, setFilteredNgos) => {
@@ -106,6 +105,13 @@ const Resources = () => {
     setFilteredNgos(filterNgos(allNgos, searchKey));
     setSearchKey("");
   };
+
+  useEffect(() => {
+    if (searchKey) {
+      setFilteredNgos(filterNgos(allNgos, searchKey));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allNgos]);
 
   useEffect(() => {
     if (searchInput.length > 0) {
