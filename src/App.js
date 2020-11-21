@@ -16,6 +16,7 @@ import Story from "./containers/Story";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
 import { Provider } from "react-redux";
 import store from "./redux/store/store";
 
@@ -29,6 +30,8 @@ function App() {
     { path: "/findngos", name: "findngos", Component: Resources },
     { path: "/profile", name: "profile", Component: Profile },
     { path: "/signup", name: "signup", Component: SignUp },
+    { path: "/profile", name: "profile", Component: Profile },
+    { path: "/signin", name: "signin", Component: SignIn },
   ];
 
   return (

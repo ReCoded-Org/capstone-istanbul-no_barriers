@@ -3,7 +3,7 @@
 exports[`Features renders correctly 1`] = `
 Array [
   <div
-    className="imgclass row"
+    className="featContainer justify-content-center align-items-center row"
   >
     <div
       className="col-lg order-lg-first"
@@ -22,7 +22,7 @@ Array [
       />
     </div>
     <div
-      className="col-lg-6"
+      className="featText col-lg-6"
     >
       <h3>
         Service Search engine in your control
@@ -33,7 +33,7 @@ Array [
     </div>
   </div>,
   <div
-    className="imgclass row"
+    className="featContainer justify-content-center align-items-center row"
   >
     <div
       className="col-lg order-lg-last"
@@ -52,7 +52,7 @@ Array [
       />
     </div>
     <div
-      className="col-lg-6"
+      className="featText col-lg-6"
     >
       <h3>
         Hear Stories from around the world
@@ -63,7 +63,7 @@ Array [
     </div>
   </div>,
   <div
-    className="imgclass row"
+    className="featContainer justify-content-center align-items-center row"
   >
     <div
       className="col-lg order-lg-first"
@@ -81,7 +81,7 @@ Array [
       />
     </div>
     <div
-      className="col-lg-6"
+      className="featText col-lg-6"
     >
       <h3>
         Linking you with the Service Directly

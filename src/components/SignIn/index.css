@@ -1,0 +1,49 @@
+:root {
+  --title-color: #002736;
+  --subTitle-color: #000000;
+  --background-color: #fc9e01;
+  --text-color: #eff4f6;
+  --filter-shadow-color: #b3b3b3;
+  --link-color: #0641af;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.icons button {
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+/*
+.or:after,
+.or:before {
+    content:"\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+}
+*/
+
+.signInButton {
+  background-color: var(--background-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  width: 7rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border-style: hidden;
+  box-shadow: 0px 11px 24px -7px var(--filter-shadow-color);
+}
+
+.socialIcons {
+  background-color: var(--background-color);
+  border: 0rem;
+  box-shadow: 0px 11px 24px -7px var(--filter-shadow-color);
+}

@@ -28,7 +28,7 @@ const NavBar = () => {
         <NavLink to="/profile" className="nav-link">
           {t("homePage.navbar.profile")}
         </NavLink>
-        <Button variant="outline-info" className="shadow-none">
+        <Button href="/signin" variant="outline-info" className="shadow-none">
           {t("homePage.navbar.signIn")}
         </Button>
         <NavLink to="/signup" className="nav-link">

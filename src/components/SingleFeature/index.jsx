@@ -4,7 +4,7 @@ import "./index.css";
 
 const SingleFeature = (props) => {
   return (
-    <Row className="imgclass">
+    <Row className="featContainer justify-content-center align-items-center">
       <Col lg={{ order: props.order }}>
         <img
           className="featuresImg"
@@ -13,7 +13,7 @@ const SingleFeature = (props) => {
           alt={props.alt}
         />
       </Col>
-      <Col lg="6">
+      <Col className="featText" lg="6">
         <h3>{props.title}</h3>
         <p>{props.text}</p>
       </Col>
