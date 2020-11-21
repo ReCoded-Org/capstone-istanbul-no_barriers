@@ -24,7 +24,7 @@ exports[`navbar renders correctly 1`] = `
     <a
       aria-current={null}
       className="nav-link"
-      href="/findNgos"
+      href="/findngos"
       onClick={[Function]}
     >
       homePage.navbar.ngo

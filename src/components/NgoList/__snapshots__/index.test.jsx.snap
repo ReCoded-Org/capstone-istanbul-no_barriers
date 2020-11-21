@@ -18,22 +18,22 @@ exports[`NgoList renders correctly 1`] = `
         <th
           scope="col"
         >
-          resources.AdvancedFilters.ngoName
+          resources.AdvancedFilters.names
         </th>
         <th
           scope="col"
         >
-          resources.AdvancedFilters.service
+          resources.AdvancedFilters.services
         </th>
         <th
           scope="col"
         >
-          resources.AdvancedFilters.city
+          resources.AdvancedFilters.cities
         </th>
         <th
           scope="col"
         >
-          resources.AdvancedFilters.rating
+          resources.AdvancedFilters.ratings
         </th>
         <th
           scope="col"
@@ -52,102 +52,8 @@ exports[`NgoList renders correctly 1`] = `
           <img
             align="right"
             alt="NGO Logo"
-            className="ngoLogo"
-            src="image.jpg"
-          />
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          Teng
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          Health Care
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          Ankara
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          4
-        </td>
-        <td
-          className="d-table-cell align-middle btnCol"
-        >
-          <button
-            aria-controls="undefined"
-            className="btnMoreDetails shadow-none btn btn-primary"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            resources.ngoList.buttonOpenDetails
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="table-light"
-      >
-        <td
-          className="d-table-cell align-middle"
-        >
-          <img
-            align="right"
-            alt="NGO Logo"
-            className="ngoLogo"
-            src="image.jpg"
-          />
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          Teng
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          Health Care
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          Ankara
-        </td>
-        <td
-          className="d-table-cell align-middle"
-        >
-          4
-        </td>
-        <td
-          className="d-table-cell align-middle btnCol"
-        >
-          <button
-            aria-controls="undefined"
-            className="btnMoreDetails shadow-none btn btn-primary"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            resources.ngoList.buttonOpenDetails
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="table-info"
-      >
-        <td
-          className="d-table-cell align-middle"
-        >
-          <img
-            align="right"
-            alt="NGO Logo"
-            className="ngoLogo"
-            src="image.jpg"
+            className="ngoLogo fluid"
+            src="https://firebasestorage.googleapis.com/v0/b/no-barriers.appspot.com/o/Zootopia-Characters-Revealed-5.jpg?alt=media&token=0a108e5a-decf-4278-9284-094db45a160a"
           />
         </td>
         <td
@@ -163,12 +69,12 @@ exports[`NgoList renders correctly 1`] = `
         <td
           className="d-table-cell align-middle"
         >
-          Şanlıurfa
+          Ankara
         </td>
         <td
           className="d-table-cell align-middle"
         >
-          4
+          2
         </td>
         <td
           className="d-table-cell align-middle btnCol"

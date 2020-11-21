@@ -12,16 +12,20 @@ const NgoDetails = ({ details }) => {
       <p className="address">{details.address}</p>
       <h5>{t("resources.ngoList.ngoDetails.aidDescription")}</h5>
       <p className="ngoDetailsServiceDescription">
-        {details.serviceDescription}
+        {/* serviceDescription should change according to the language  */}
+        {details.serviceDescription.english}
       </p>
       <p>
         {t("resources.ngoList.ngoDetails.responsiblePerson")}
+        &nbsp;
         {details.responsiblePerson}
         <br />
         {t("resources.ngoList.ngoDetails.phoneNum")}
+        &nbsp;
         {details.phoneNumber}
         <br />
         {t("resources.ngoList.ngoDetails.email")}
+        &nbsp;
         {details.email}
       </p>
       <div className="d-flex align-items-baseline">
@@ -32,9 +36,6 @@ const NgoDetails = ({ details }) => {
           className="btnWebsite shadow-none"
         >
           {t("resources.ngoList.ngoDetails.website")}
-        </Button>
-        <Button className="btnAddFavourite shadow-none">
-          {t("resources.ngoList.ngoDetails.favourite")}
         </Button>
       </div>
     </div>

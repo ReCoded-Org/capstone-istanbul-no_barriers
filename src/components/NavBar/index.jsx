@@ -16,7 +16,7 @@ const NavBar = () => {
         <Navbar.Brand>{t("homePage.navbar.home")}</Navbar.Brand>
       </NavLink>
       <Nav className="ml-auto">
-        <NavLink to="/findNgos" className="nav-link">
+        <NavLink to="/findngos" className="nav-link">
           {t("homePage.navbar.ngo")}
         </NavLink>
         <NavLink to="/stories" className="nav-link">

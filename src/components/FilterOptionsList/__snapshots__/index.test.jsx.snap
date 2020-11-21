@@ -7,84 +7,7 @@ Array [
   >
     <div
       className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        ankara
-      </p>
-    </div>
-    <div
-      className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        istanbul
-      </p>
-    </div>
-  </div>,
-  <div
-    className="filterOptionsList"
-  >
-    <div
-      className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        teng
-      </p>
-    </div>
-    <div
-      className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        abc
-      </p>
-    </div>
-  </div>,
-  <div
-    className="filterOptionsList"
-  >
-    <div
-      className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        healthcare
-      </p>
-    </div>
-    <div
-      className="filterOption d-flex align-items-center p-1"
+      onClick={[Function]}
     >
       <span
         className="filterOptionPlusSign"
@@ -103,6 +26,7 @@ Array [
   >
     <div
       className="filterOption d-flex align-items-center p-1"
+      onClick={[Function]}
     >
       <span
         className="filterOptionPlusSign"
@@ -112,11 +36,12 @@ Array [
       <p
         className="filterOptionTitle "
       >
-        1
+        Istanbul
       </p>
     </div>
     <div
       className="filterOption d-flex align-items-center p-1"
+      onClick={[Function]}
     >
       <span
         className="filterOptionPlusSign"
@@ -126,49 +51,7 @@ Array [
       <p
         className="filterOptionTitle "
       >
-        2
-      </p>
-    </div>
-    <div
-      className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        3
-      </p>
-    </div>
-    <div
-      className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        4
-      </p>
-    </div>
-    <div
-      className="filterOption d-flex align-items-center p-1"
-    >
-      <span
-        className="filterOptionPlusSign"
-      >
-        +
-      </span>
-      <p
-        className="filterOptionTitle "
-      >
-        5
+        Ankara
       </p>
     </div>
   </div>,

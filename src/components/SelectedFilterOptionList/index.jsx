@@ -4,7 +4,23 @@ import "./index.css";
 // It renders the selected filter options of a given state which tracks the selected filter options.
 // It is called in AdvancedFilters component
 
-const FilterOptionsList = ({ selectedOptions }) => {
+const SelectedFilterOptionsList = ({
+  selectedOptions,
+  setChosenOptions,
+  chosenOptionsKey,
+  chosenOptions,
+}) => {
+  const deleteOption = (option) => {
+    const values = chosenOptions[chosenOptionsKey];
+    const index = values.indexOf(option);
+    if (index > -1) {
+      values.splice(index, 1);
+    }
+
+    // const key = chosenOptions[chosenOptionsKey];
+    setChosenOptions({ key: values });
+  };
+
   return (
     <div className="filteredOptionsList">
       {selectedOptions.map((option, index) => {
@@ -15,7 +31,12 @@ const FilterOptionsList = ({ selectedOptions }) => {
               key={option}
             >
               <p className="selectedOptionTitle">{option}</p>
-              <span className="selectedOptionDelete">X</span>
+              <span
+                className="selectedOptionDelete"
+                onClick={() => deleteOption(option)}
+              >
+                X
+              </span>
             </div>
           );
         }
@@ -33,4 +54,4 @@ const FilterOptionsList = ({ selectedOptions }) => {
   );
 };
 
-export default FilterOptionsList;
+export default SelectedFilterOptionsList;

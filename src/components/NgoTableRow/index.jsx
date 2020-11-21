@@ -22,7 +22,12 @@ const NgoTableRow = ({
     <>
       <tr className={trClassname} key={id}>
         <td className="d-table-cell align-middle">
-          <img src={image} alt="NGO Logo" className="ngoLogo" align="right" />
+          <img
+            src={image}
+            alt="NGO Logo"
+            className="ngoLogo fluid"
+            align="right"
+          />
         </td>
         <td className="d-table-cell align-middle">{name}</td>
         <td className="d-table-cell align-middle">{service}</td>

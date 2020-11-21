@@ -1,8 +1,7 @@
 import React from "react";
 import { Pagination } from "react-bootstrap";
-import allNgos from "../NgoList/allNgos";
 
-const PagesList = ({ ngos = allNgos }) => {
+const PagesList = ({ ngos }) => {
   const NGOS_PER_PAGE = 10;
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(ngos.length / NGOS_PER_PAGE); i++) {

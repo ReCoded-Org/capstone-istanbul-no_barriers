@@ -1,29 +1,30 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import SearchBar from "../../components/SearchBar";
 import NgoList from "../../components/NgoList";
 import AdvancedFilters from "../../components/AdvancedFilters";
 import PagesList from "../../components/PagesList";
 import database from "../../firebaseConfig";
-import { useSelector } from "react-redux";
+import LoadingPage from "../../components/LoadingPage";
 
 const Resources = () => {
   const [allNgos, setAllNgos] = useState([]);
   const [filteredNgos, setFilteredNgos] = useState([]);
-  const [filterOptions, setFilterOptions] = useState([]);
+  const [filterOptions, setFilterOptions] = useState({});
   const searchInput = useSelector((state) => state.currentSearchWordsReducer);
   const [searchKey, setSearchKey] = useState(searchInput);
 
   useEffect(() => {
     // Fetch all ngos from the database
-    const fetchNgos = (setNgos) => {
+    const fetchNgos = () => {
       database
         .collection("ngosEn")
         .get()
         .then((querySnapshot) => {
           querySnapshot.forEach((doc) => {
-            setNgos((prevState) => [
+            setAllNgos((prevState) => [
               ...prevState,
-              { id: doc.id, ngoData: doc.data() },
+              { id: doc.id, ...doc.data() },
             ]);
           });
         })
@@ -32,31 +33,37 @@ const Resources = () => {
         });
     };
 
-    const checkIfIsIncluded = (option, ngoValue) => {
-      if (!option.includes(ngoValue)) {
-        option.push(ngoValue);
-      }
+    fetchNgos();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const checkIfIsIncluded = (option, ngoValue) => {
+    if (!option.includes(ngoValue)) {
+      option.push(ngoValue);
+    }
+  };
+
+  // OUTPUT ==> { cities: ["Ankara", "Sincan"], services: ["health care", "education"]}
+  const getFilterOptions = (ngos) => {
+    const options = {
+      names: [],
+      cities: [],
+      services: [],
+      ratings: [],
     };
 
-    // OUTPUT ==> { cities: ["Ankara", "Sincan"], services: ["health care", "education"]}
-    const getFilterOptions = (ngos) => {
-      const filterOptions = {
-        cities: [],
-        services: [],
-        ratings: [],
-        names: [],
-      };
+    for (let i = 0; i < ngos.length; i++) {
+      checkIfIsIncluded(options.cities, ngos[i].city);
+      checkIfIsIncluded(options.services, ngos[i].service);
+      checkIfIsIncluded(options.ratings, ngos[i].rating);
+      checkIfIsIncluded(options.names, ngos[i].name);
+    }
 
-      for (let i = 0; i < ngos.length; i++) {
-        checkIfIsIncluded(filterOptions.cities, ngos[i].city);
-        checkIfIsIncluded(filterOptions.services, ngos[i].service);
-        checkIfIsIncluded(filterOptions.ratings, ngos[i].rating);
-        checkIfIsIncluded(filterOptions.names, ngos[i].name);
-        return filterOptions;
-      }
-    };
+    return options;
+  };
 
-    fetchNgos(setAllNgos);
+  useEffect(() => {
     setFilterOptions(getFilterOptions(allNgos));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -85,9 +92,9 @@ const Resources = () => {
       searchedWordsArray.length > 1
         ? new RegExp(searchedWordsArray.join("|"), "i")
         : new RegExp(searchedWordsArray[0], "i");
-    return Object.keys(ngo).some((parameter) =>
-      searchedValue.test(ngo[parameter])
-    );
+    return Object.keys(ngo).some((parameter) => {
+      return searchedValue.test(JSON.stringify(ngo[parameter]));
+    });
   };
 
   const filterNgos = (ngos, searchedWords) => {
@@ -107,6 +114,10 @@ const Resources = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  if (!allNgos) {
+    return <LoadingPage />;
+  }
+
   return (
     <div>
       <SearchBar
@@ -120,10 +131,11 @@ const Resources = () => {
             applyAdvancedFilters(filterOptions, allNgos, setFilteredNgos)
           }
           setFilteredNgos={setFilteredNgos}
+          filterOptions={filterOptions}
         />
-        <NgoList ngos={filteredNgos > 0 ? filteredNgos : allNgos} />
+        <NgoList ngos={filteredNgos.length > 0 ? filteredNgos : allNgos} />
       </div>
-      <PagesList ngos={filteredNgos > 0 ? filteredNgos : allNgos} />
+      <PagesList ngos={filteredNgos.length > 0 ? filteredNgos : allNgos} />
     </div>
   );
 };

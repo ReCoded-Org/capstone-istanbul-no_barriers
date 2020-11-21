@@ -1,147 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NgoTableRow renders correctly 1`] = `
-Array [
-  <tr
-    className="table-info"
+<tr
+  className="table-info"
+>
+  <td
+    className="d-table-cell align-middle"
   >
-    <td
-      className="d-table-cell align-middle"
-    >
-      <img
-        align="right"
-        alt="NGO Logo"
-        className="ngoLogo"
-        src="image.jpg"
-      />
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Teng
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Health Care
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Ankara
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      4
-    </td>
-    <td
-      className="d-table-cell align-middle btnCol"
-    >
-      <button
-        aria-controls="undefined"
-        className="btnMoreDetails shadow-none btn btn-primary"
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        resources.ngoList.buttonOpenDetails
-      </button>
-    </td>
-  </tr>,
-  <tr
-    className="table-light"
+    <img
+      align="right"
+      alt="NGO Logo"
+      className="ngoLogo fluid"
+      src="https://firebasestorage.googleapis.com/v0/b/no-barriers.appspot.com/o/Zootopia-Characters-Revealed-5.jpg?alt=media&token=0a108e5a-decf-4278-9284-094db45a160a"
+    />
+  </td>
+  <td
+    className="d-table-cell align-middle"
   >
-    <td
-      className="d-table-cell align-middle"
-    >
-      <img
-        align="right"
-        alt="NGO Logo"
-        className="ngoLogo"
-        src="image.jpg"
-      />
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Teng
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Health Care
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Ankara
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      4
-    </td>
-    <td
-      className="d-table-cell align-middle btnCol"
-    >
-      <button
-        aria-controls="undefined"
-        className="btnMoreDetails shadow-none btn btn-primary"
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        resources.ngoList.buttonOpenDetails
-      </button>
-    </td>
-  </tr>,
-  <tr
-    className="table-info"
+    ABC
+  </td>
+  <td
+    className="d-table-cell align-middle"
   >
-    <td
-      className="d-table-cell align-middle"
+    Education
+  </td>
+  <td
+    className="d-table-cell align-middle"
+  >
+    Ankara
+  </td>
+  <td
+    className="d-table-cell align-middle"
+  >
+    2
+  </td>
+  <td
+    className="d-table-cell align-middle btnCol"
+  >
+    <button
+      aria-controls="undefined"
+      className="btnMoreDetails shadow-none btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
     >
-      <img
-        align="right"
-        alt="NGO Logo"
-        className="ngoLogo"
-        src="image.jpg"
-      />
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      ABC
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Education
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      Şanlıurfa
-    </td>
-    <td
-      className="d-table-cell align-middle"
-    >
-      4
-    </td>
-    <td
-      className="d-table-cell align-middle btnCol"
-    >
-      <button
-        aria-controls="undefined"
-        className="btnMoreDetails shadow-none btn btn-primary"
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        resources.ngoList.buttonOpenDetails
-      </button>
-    </td>
-  </tr>,
-]
+      resources.ngoList.buttonOpenDetails
+    </button>
+  </td>
+</tr>
 `;
