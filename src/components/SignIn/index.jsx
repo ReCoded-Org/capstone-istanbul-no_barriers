@@ -6,6 +6,8 @@ import { useHistory } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
 import "./index.css";
 import { useTranslation } from "react-i18next";
@@ -16,16 +18,17 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 const SignIn = () => {
   const history = useHistory();
   const [alert, setAlert] = useState(null);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  var googleProvider = new firebase.auth.GoogleAuthProvider();
-  var facebookProvider = new firebase.auth.FacebookAuthProvider();
+  const googleProvider = new firebase.auth.GoogleAuthProvider();
+  const facebookProvider = new firebase.auth.FacebookAuthProvider();
 
   const handleFacebookLogin = (e) => {
     firebase
       .auth()
       .signInWithPopup(facebookProvider)
       .then(function (result) {
-        // var user = result.user;
         setAlert({
           message: "signIn.successMsg",
           status: "success",
@@ -45,7 +48,6 @@ const SignIn = () => {
       .auth()
       .signInWithPopup(googleProvider)
       .then(function (result) {
-        // var user = result.user;
         setAlert({
           message: "signIn.successMsg",
           status: "success",
@@ -60,14 +62,20 @@ const SignIn = () => {
       });
   };
 
+  const handleInput = (e) => {
+    const value = e.target.value;
+    if (e.target.type === "email") {
+      setEmail(value);
+    } else if (e.target.type === "password") {
+      setPassword(value);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     firebase
       .auth()
-      .signInWithEmailAndPassword(
-        e.target.elements[0].value,
-        e.target.elements[1].value
-      )
+      .signInWithEmailAndPassword(email, password)
       .then((user) => {
         setAlert({
           message: "signIn.successMsg",
@@ -77,7 +85,7 @@ const SignIn = () => {
       })
       .catch(function (error) {
         setAlert({
-          message: error.message,
+          message: "signIn.errorMsg",
           status: "danger",
         });
       });
@@ -85,10 +93,14 @@ const SignIn = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="container">
-      <h4 className="welcomeBack">{t("signIn.welcomeBack")}</h4>
-      <p>{t("signIn.signInText")}</p>
-      <div>
+    <Container className="container justify-content-center">
+      <Row className="justify-content-center">
+        <h4 className="welcomeBack">{t("signIn.welcomeBack")}</h4>
+      </Row>
+      <Row className="justify-content-center">
+        <p>{t("signIn.signInText")}</p>
+      </Row>
+      <Row className="justify-content-center">
         <div className="icons">
           <Button
             className="socialIcons"
@@ -101,27 +113,49 @@ const SignIn = () => {
             <FontAwesomeIcon icon={faFacebook} />
           </Button>
         </div>
-      </div>
+      </Row>
       <Form id="signInForm" onSubmit={handleSubmit}>
-        <p>{t("signIn.or")}</p>
-        <Form.Group as={Row} controlId="formBasicEmail">
-          <Form.Control type="email" placeholder={t("signIn.enterEmail")} />
-          <Form.Text className="text-muted">{t("signIn.emailMsg")}</Form.Text>
+        <Form.Group as={Row} className="justify-content-center">
+          <p>{t("signIn.or")}</p>
+        </Form.Group>
+        <Form.Group
+          as={Row}
+          className="justify-content-center"
+          controlId="formBasicEmail"
+        >
+          <Col xs={5}>
+            <Form.Control
+              onChange={handleInput}
+              type="email"
+              placeholder={t("signIn.enterEmail")}
+            />
+            <Form.Text className="text-muted">{t("signIn.emailMsg")}</Form.Text>
+          </Col>
         </Form.Group>
 
-        <Form.Group as={Row} controlId="formBasicPassword">
-          <Form.Control type="password" placeholder={t("signIn.password")} />
+        <Form.Group
+          as={Row}
+          className="justify-content-center"
+          controlId="formBasicPassword"
+        >
+          <Col xs={5}>
+            <Form.Control
+              onChange={handleInput}
+              type="password"
+              placeholder={t("signIn.password")}
+            />
+          </Col>
         </Form.Group>
-        {alert && (
-          <Alert variant={alert.status} key="0">
-            {t(alert.message)}
-          </Alert>
-        )}
-        <Button variant="primary" type="submit" className="signInButton">
-          {t("signIn.signInBtn")}
-        </Button>
+        <Row className="justify-content-center">
+          {alert && <Alert variant={alert.status}>{t(alert.message)}</Alert>}
+        </Row>
+        <Row className="justify-content-center">
+          <Button variant="primary" type="submit" className="signInButton">
+            {t("signIn.signInBtn")}
+          </Button>
+        </Row>
       </Form>
-    </div>
+    </Container>
   );
 };
 

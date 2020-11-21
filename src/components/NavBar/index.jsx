@@ -28,9 +28,11 @@ const NavBar = () => {
         <NavLink to="/profile" className="nav-link">
           {t("homePage.navbar.profile")}
         </NavLink>
-        <Button href="/signin" variant="outline-info" className="shadow-none">
-          {t("homePage.navbar.signIn")}
-        </Button>
+        <NavLink to="/signin" className="nav-link">
+          <Button variant="outline-info" className="shadow-none mr-1">
+            {t("homePage.navbar.signIn")}
+          </Button>
+        </NavLink>
         <NavLink to="/signup" className="nav-link">
           <Button variant="outline-info" className="shadow-none mr-1">
             {t("homePage.navbar.signUp")}

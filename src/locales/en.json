@@ -1,4 +1,15 @@
 {
+  "signIn": {
+    "welcomeBack": "Welcome Back to No Barriers",
+    "successMsg": "Successfully signed in",
+    "enterEmail": "Enter email",
+    "password": "Password",
+    "emailMsg": "We'll never share your email with anyone else.",
+    "or": "or",
+    "signInText": "Sign in with",
+    "signInBtn": "Sign in",
+    "errorMsg": "Sign in failed"
+  },
   "homePage": {
     "browser": {
       "title": "Browse By Category",

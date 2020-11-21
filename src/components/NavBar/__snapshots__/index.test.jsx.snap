@@ -54,12 +54,18 @@ exports[`navbar renders correctly 1`] = `
       homePage.navbar.profile
     </a>
     <a
-      className="shadow-none btn btn-outline-info"
+      aria-current={null}
+      className="nav-link"
       href="/signin"
       onClick={[Function]}
-      onKeyDown={[Function]}
     >
-      homePage.navbar.signIn
+      <button
+        className="shadow-none mr-1 btn btn-outline-info"
+        disabled={false}
+        type="button"
+      >
+        homePage.navbar.signIn
+      </button>
     </a>
     <a
       aria-current={null}

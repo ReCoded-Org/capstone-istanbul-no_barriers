@@ -9,7 +9,6 @@ import HomePage from "./containers/HomePage";
 import Resources from "./containers/Resources";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
-import AboutUS from "./containers/AboutUS";
 import Profile from "./containers/Profile";
 import Stories from "./containers/Stories";
 import Story from "./containers/Story";
@@ -25,10 +24,9 @@ function App() {
   const ROUTES = [
     { path: "/", name: "homepage", Component: HomePage },
     { path: "/aboutus", name: "aboutus", Component: AboutUs },
-    { path: "/aboutus", name: "aboutus", Component: AboutUS },
     { path: "/stories", name: "stories", Component: Stories },
+    { path: "/findnow", name: "findnow", Component: Resources },
     { path: "/findngos", name: "findngos", Component: Resources },
-    { path: "/profile", name: "profile", Component: Profile },
     { path: "/signup", name: "signup", Component: SignUp },
     { path: "/profile", name: "profile", Component: Profile },
     { path: "/signin", name: "signin", Component: SignIn },

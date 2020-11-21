@@ -2,17 +2,27 @@
 
 exports[`SignIn renders correctly 1`] = `
 <div
-  className="container"
+  className="container justify-content-center container"
 >
-  <h4
-    className="welcomeBack"
+  <div
+    className="justify-content-center row"
   >
-    signIn.welcomeBack
-  </h4>
-  <p>
-    signIn.signInText
-  </p>
-  <div>
+    <h4
+      className="welcomeBack"
+    >
+      signIn.welcomeBack
+    </h4>
+  </div>
+  <div
+    className="justify-content-center row"
+  >
+    <p>
+      signIn.signInText
+    </p>
+  </div>
+  <div
+    className="justify-content-center row"
+  >
     <div
       className="icons"
     >
@@ -71,41 +81,62 @@ exports[`SignIn renders correctly 1`] = `
     id="signInForm"
     onSubmit={[Function]}
   >
-    <p>
-      signIn.or
-    </p>
     <div
-      className="form-group row"
+      className="justify-content-center form-group row"
     >
-      <input
-        className="form-control"
-        id="formBasicEmail"
-        placeholder="signIn.enterEmail"
-        type="email"
-      />
-      <small
-        className="text-muted form-text"
+      <p>
+        signIn.or
+      </p>
+    </div>
+    <div
+      className="justify-content-center form-group row"
+    >
+      <div
+        className="col-5"
       >
-        signIn.emailMsg
-      </small>
+        <input
+          className="form-control"
+          id="formBasicEmail"
+          onChange={[Function]}
+          placeholder="signIn.enterEmail"
+          type="email"
+        />
+        <small
+          className="text-muted form-text"
+        >
+          signIn.emailMsg
+        </small>
+      </div>
     </div>
     <div
-      className="form-group row"
+      className="justify-content-center form-group row"
     >
-      <input
-        className="form-control"
-        id="formBasicPassword"
-        placeholder="signIn.password"
-        type="password"
-      />
+      <div
+        className="col-5"
+      >
+        <input
+          className="form-control"
+          id="formBasicPassword"
+          onChange={[Function]}
+          placeholder="signIn.password"
+          type="password"
+        />
+      </div>
     </div>
-    <button
-      className="signInButton btn btn-primary"
-      disabled={false}
-      type="submit"
+    <div
+      className="justify-content-center row"
+    />
+    <div
+      className="justify-content-center row"
     >
-      signIn.signInBtn
-    </button>
+      <button
+        className="signInButton btn btn-primary"
+        disabled={false}
+        type="submit"
+      >
+        signIn.signInBtn
+      </button>
+    </div>
   </form>
 </div>
 `;
