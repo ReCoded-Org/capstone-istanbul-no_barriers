@@ -1,84 +1,70 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import "./index.css";
 import { Row, Container, Col, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import image from "./images/placeHolderImage.jpg";
+import { Link } from "react-router-dom";
 
 // Explore-Blogs section shows the last 3 blog posts in the database.
 // If you click on a single blog post, you go to that blog's page
 // If you click on show more button, you go to blogs list page
 const ExploreBlogs = () => {
   const { t } = useTranslation();
-  const history = useHistory();
 
-  const handleClick = () => history.push("/stories");
+  const [posts, setPosts] = React.useState([]);
+  const _URL =
+    "https://public-api.wordpress.com/wp/v2/sites/nobarriers650349093.wordpress.com/posts";
+  const _startNum = 0;
+  const _endNum = 3;
+
+  React.useEffect(() => {
+    const fetchPosts = async () => {
+      const data = await fetch(_URL);
+      const fetchedPosts = await data.json();
+      setPosts(fetchedPosts.slice(_startNum, _endNum));
+    };
+    fetchPosts();
+  }, []);
 
   return (
     <div className="exploreBlogs">
-      <Row className="justify-content-center">
-        <Container className="exploreBlogsHeading">
-          <h3 className="exploreBlogsHeadingTitleMain">
-            {t("homePage.exploreBlogs.exploreBlogs")}
-          </h3>
-          <p className="exploreBlogsHeadingParagraph">
-            {t("homePage.exploreBlogs.paragraph")}
-          </p>
-        </Container>
-      </Row>
-      <Container className="exploreBlogsBlogList">
-        <Row className="d-flex">
-          <Col xs={12} md={6} lg={4}>
-            <div className="exploreBlogsBlog">
-              <img
-                src={image}
-                alt="placeholder"
-                className="exploreBlogsBlogImg"
-              />
-              <h5 className="exploreBlogsBlogHeading">
-                {t("homePage.exploreBlogs.blogTitle")}
-              </h5>
-              <a href="#singleBlog" className="exploreBlogsBlogLink">
-                {t("homePage.exploreBlogs.blogLink")}
-              </a>
-            </div>
+      <Container>
+        <Row className="exploreBlogsHeadingTitleMain justify-content-center">
+          <Col md="auto">
+            <h4>{t("homePage.exploreBlogs.exploreBlogs")}</h4>
           </Col>
-          <Col xs={12} md={6} lg={4}>
-            <div className="exploreBlogsBlog">
-              <img
-                src={image}
-                alt="placeholder"
-                className="exploreBlogsBlogImg"
-              />
-              <h5 className="exploreBlogsBlogHeading">
-                {t("homePage.exploreBlogs.blogTitle")}
-              </h5>
-              <a href="#singleBlog" className="exploreBlogsBlogLink">
-                {t("homePage.exploreBlogs.blogLink")}
-              </a>
-            </div>
-          </Col>
-          <Col xs={12} md={6} lg={4}>
-            <div className="exploreBlogsBlog">
-              <img
-                src={image}
-                alt="placeholder"
-                className="exploreBlogsBlogImg"
-              />
-              <h5 className="exploreBlogsBlogHeading">
-                {t("homePage.exploreBlogs.blogTitle")}
-              </h5>
-              <a href="#singleBlog" className="exploreBlogsBlogLink">
-                {t("homePage.exploreBlogs.blogLink")}
-              </a>
-            </div>
+        </Row>
+        <Row className="exploreBlogsHeadingParagraph justify-content-center">
+          <Col>
+            <p>{t("homePage.exploreBlogs.paragraph")}</p>
           </Col>
         </Row>
       </Container>
+      <Container className="exploreBlogsBlogList">
+        <Row className="justify-content-center">
+          {posts.map((post) => {
+            return (
+              <Col xs={12} md={6} lg={3} className="exploreBlogsBlog">
+                <Link to={`/story/${post.id}`}>
+                  <img
+                    src={post.jetpack_featured_media_url}
+                    alt="placeholder"
+                    className="exploreBlogsBlogImg"
+                  />
+                  <h5 className="exploreBlogsBlogHeading">
+                    {post.title.rendered}
+                  </h5>
+                </Link>
+              </Col>
+            );
+          })}
+        </Row>
+      </Container>
       <Row className="justify-content-center">
-        <Button variant="outline-warning shadow-none" onClick={handleClick}>
-          {t("homePage.exploreBlogs.buttonSeeMore")}
-        </Button>
+        <Link to={`/stories`}>
+          <Button variant="outline-warning shadow-none">
+            {t("homePage.exploreBlogs.buttonSeeMore")}
+          </Button>
+        </Link>
       </Row>
     </div>
   );
