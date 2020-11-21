@@ -138,7 +138,7 @@ const SignUp = () => {
       {redirect && <Redirect to="/" />}
       <Row className="justify-content-center">
         <p className="mt-3">
-          {t("signup.existingAccount")}{" "}
+          {t("signup.existingAccount")}
           <a href="/login" className="loginLink">
             {t("signup.login")}
           </a>

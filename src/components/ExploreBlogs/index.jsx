@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./index.css";
 import { Row, Container, Col, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
@@ -9,6 +10,9 @@ import image from "./images/placeHolderImage.jpg";
 // If you click on show more button, you go to blogs list page
 const ExploreBlogs = () => {
   const { t } = useTranslation();
+  const history = useHistory();
+
+  const handleClick = () => history.push("/stories");
 
   return (
     <div className="exploreBlogs">
@@ -72,7 +76,7 @@ const ExploreBlogs = () => {
         </Row>
       </Container>
       <Row className="justify-content-center">
-        <Button variant="outline-warning shadow-none">
+        <Button variant="outline-warning shadow-none" onClick={handleClick}>
           {t("homePage.exploreBlogs.buttonSeeMore")}
         </Button>
       </Row>

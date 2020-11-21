@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import "./index.css";
 import SingleCategory from "../SingleCategory/index";
@@ -6,7 +7,12 @@ import categories from "./categories";
 import { useTranslation } from "react-i18next";
 
 const BrowseCategory = () => {
+  const history = useHistory();
   const { t } = useTranslation();
+
+  const handleClick = () => {
+    history.push("/findngos");
+  };
 
   return (
     <div className="browseByCategory">
@@ -25,7 +31,11 @@ const BrowseCategory = () => {
             />
           ))}
         </Row>
-        <Button variant="normal" className="more shadow-none mt-3">
+        <Button
+          variant="normal"
+          className="more shadow-none mt-3"
+          onClick={handleClick}
+        >
           {t("homePage.browser.more")}
         </Button>
       </Container>

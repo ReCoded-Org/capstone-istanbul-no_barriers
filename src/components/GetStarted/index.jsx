@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,6 +7,10 @@ import Button from "react-bootstrap/Button";
 import "./index.css";
 
 const GetStarted = () => {
+  const history = useHistory();
+
+  const handleSignUp = () => history.push("/signup");
+
   return (
     <Container fluid className="getStarted">
       <Row>
@@ -14,7 +19,12 @@ const GetStarted = () => {
           <p>Sign up or contact us</p>
         </Col>
         <Col xs md="1.5">
-          <Button className="signUp" variant="primary" size="sm">
+          <Button
+            className="signUp"
+            variant="primary"
+            size="sm"
+            onClick={handleSignUp}
+          >
             Sign Up
           </Button>
         </Col>

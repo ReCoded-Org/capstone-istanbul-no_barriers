@@ -24,7 +24,7 @@ exports[`navbar renders correctly 1`] = `
     <a
       aria-current={null}
       className="nav-link"
-      href="/findNgo"
+      href="/findNgos"
       onClick={[Function]}
     >
       homePage.navbar.ngo
@@ -75,7 +75,7 @@ exports[`navbar renders correctly 1`] = `
       </button>
     </a>
     <div
-      className="dropdown nav-item"
+      className="dropleft nav-item"
       onKeyDown={[Function]}
     >
       <a

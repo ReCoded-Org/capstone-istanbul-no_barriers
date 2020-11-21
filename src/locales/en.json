@@ -14,9 +14,7 @@
     "header": {
       "title": "NO BARRIERS",
       "subtitle": "CONNECT WITH NGOs - SHARE YOUR STORY",
-      "inputLocation": "Location",
-      "inputService": "Service",
-      "inputRating": "Rating",
+      "inputSearch": "Insert a keyword to search",
       "button": "Find it NOW"
     },
     "quotes": {

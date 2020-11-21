@@ -4,12 +4,14 @@ import NgoList from "../../components/NgoList";
 import AdvancedFilters from "../../components/AdvancedFilters";
 import PagesList from "../../components/PagesList";
 import database from "../../firebaseConfig";
+import { useSelector } from "react-redux";
 
 const Resources = () => {
   const [allNgos, setAllNgos] = useState([]);
   const [filteredNgos, setFilteredNgos] = useState([]);
   const [filterOptions, setFilterOptions] = useState([]);
-  const [searchKey, setSearchKey] = useState("");
+  const searchInput = useSelector((state) => state.currentSearchWordsReducer);
+  const [searchKey, setSearchKey] = useState(searchInput);
 
   useEffect(() => {
     // Fetch all ngos from the database
@@ -56,7 +58,8 @@ const Resources = () => {
 
     fetchNgos(setAllNgos);
     setFilterOptions(getFilterOptions(allNgos));
-  }, [allNgos]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Advance Filters component's functionalities - START
   const applyAdvancedFilters = (filterOptions, ngos, setFilteredNgos) => {
@@ -97,6 +100,13 @@ const Resources = () => {
     setSearchKey("");
   };
 
+  useEffect(() => {
+    if (searchInput.length > 0) {
+      handleSearchSubmit();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div>
       <SearchBar
@@ -111,9 +121,9 @@ const Resources = () => {
           }
           setFilteredNgos={setFilteredNgos}
         />
-        <NgoList ngos={filteredNgos ? filteredNgos : allNgos} />
+        <NgoList ngos={filteredNgos > 0 ? filteredNgos : allNgos} />
       </div>
-      <PagesList ngos={filteredNgos ? filteredNgos : allNgos} />
+      <PagesList ngos={filteredNgos > 0 ? filteredNgos : allNgos} />
     </div>
   );
 };

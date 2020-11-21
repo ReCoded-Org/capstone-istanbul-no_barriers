@@ -108,6 +108,7 @@ exports[`Explore Blogs renders correctly 1`] = `
     <button
       className="btn btn-outline-warning shadow-none"
       disabled={false}
+      onClick={[Function]}
       type="button"
     >
       homePage.exploreBlogs.buttonSeeMore

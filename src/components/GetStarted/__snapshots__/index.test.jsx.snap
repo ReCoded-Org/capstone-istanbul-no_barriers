@@ -23,6 +23,7 @@ exports[`renders GetStarted correctly 1`] = `
       <button
         className="signUp btn btn-primary btn-sm"
         disabled={false}
+        onClick={[Function]}
         type="button"
       >
         Sign Up

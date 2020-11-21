@@ -16,4 +16,5 @@
 .getStarted {
   background-color: var(--grey-bg-color);
   padding: 2rem;
+  text-align: center;
 }

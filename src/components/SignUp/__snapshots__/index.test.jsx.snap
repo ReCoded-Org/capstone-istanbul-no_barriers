@@ -122,7 +122,6 @@ exports[`renders correctly 1`] = `
       className="mt-3"
     >
       signup.existingAccount
-       
       <a
         className="loginLink"
         href="/login"

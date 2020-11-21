@@ -34,8 +34,8 @@ exports[`Footer renders correctly 1`] = `
       >
         <a
           className="nav-link"
-          data-rb-event-key="#find"
-          href="#find"
+          data-rb-event-key="/findNgos"
+          href="/findNgos"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -43,8 +43,8 @@ exports[`Footer renders correctly 1`] = `
         </a>
         <a
           className="nav-link"
-          data-rb-event-key="#stories"
-          href="#stories"
+          data-rb-event-key="/stories"
+          href="/stories"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -52,8 +52,8 @@ exports[`Footer renders correctly 1`] = `
         </a>
         <a
           className="nav-link"
-          data-rb-event-key="aboutUs"
-          href="aboutUs"
+          data-rb-event-key="/aboutUs"
+          href="/aboutUs"
           onClick={[Function]}
           onKeyDown={[Function]}
         >

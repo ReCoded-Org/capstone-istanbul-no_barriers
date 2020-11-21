@@ -16,7 +16,7 @@ const NavBar = () => {
         <Navbar.Brand>{t("homePage.navbar.home")}</Navbar.Brand>
       </NavLink>
       <Nav className="ml-auto">
-        <NavLink to="/findNgo" className="nav-link">
+        <NavLink to="/findNgos" className="nav-link">
           {t("homePage.navbar.ngo")}
         </NavLink>
         <NavLink to="/stories" className="nav-link">
@@ -39,6 +39,7 @@ const NavBar = () => {
         <NavDropdown
           title={t("homePage.navbar.dropdownTitle")}
           id="basic-nav-dropdown"
+          drop="left"
         >
           <NavDropdown.Item>
             {t("homePage.navbar.dropdownEnglish")}

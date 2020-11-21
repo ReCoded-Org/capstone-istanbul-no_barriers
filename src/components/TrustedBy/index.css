@@ -5,6 +5,7 @@
 .trustedBy {
   background-color: var(--trusted-background-color);
   padding: 2rem;
+  text-align: center;
 }
 
 .trustedBy img {

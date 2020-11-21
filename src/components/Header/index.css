@@ -6,7 +6,11 @@
   --filter-shadow-color: rgba(0, 0, 0, 0.25);
 }
 
-.title {
+.header {
+  text-align: center;
+}
+
+.header h1.title {
   color: var(--title-color);
   font: "Roboto";
   font-style: normal;

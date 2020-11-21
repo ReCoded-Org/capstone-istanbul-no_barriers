@@ -8,7 +8,7 @@ exports[`Header renders correctly 1`] = `
     className="row"
   >
     <div
-      className="mt-5 mb-1 col-12"
+      className="mt-5 mb-1 header col-12"
     >
       <h1
         className="title"
@@ -26,33 +26,15 @@ exports[`Header renders correctly 1`] = `
     className="searchers mt-5 d-flex justify-content-around row"
   >
     <div
-      className="col-lg-4 col-md-3 col-12"
+      className="col-lg-8 col-md-3 col-12"
     >
       <input
-        aria-label="Locations"
+        aria-label="search"
         className="form-control"
-        placeholder="homePage.header.inputLocation"
+        onChange={[Function]}
+        placeholder="homePage.header.inputSearch"
         type="text"
-      />
-    </div>
-    <div
-      className="col-lg-4 col-md-3 col-12"
-    >
-      <input
-        aria-label="Service"
-        className="form-control"
-        placeholder="homePage.header.inputService"
-        type="text"
-      />
-    </div>
-    <div
-      className="col-lg-4 col-md-3 col-12"
-    >
-      <input
-        aria-label="Rating"
-        className="form-control"
-        placeholder="homePage.header.inputRating"
-        type="text"
+        value=""
       />
     </div>
   </div>
@@ -64,6 +46,7 @@ exports[`Header renders correctly 1`] = `
     >
       <button
         className="headerImageBtn"
+        onClick={[Function]}
         type="button"
       >
         homePage.header.button

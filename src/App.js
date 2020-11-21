@@ -16,6 +16,8 @@ import Story from "./containers/Story";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import SignUp from "./components/SignUp";
+import { Provider } from "react-redux";
+import store from "./redux/store/store";
 
 function App() {
   // just add another object here with the details of your containers to be added to the Routers.
@@ -24,30 +26,32 @@ function App() {
     { path: "/aboutus", name: "aboutus", Component: AboutUs },
     { path: "/aboutus", name: "aboutus", Component: AboutUS },
     { path: "/stories", name: "stories", Component: Stories },
-    { path: "/findnow", name: "findnow", Component: Resources },
+    { path: "/findngos", name: "findngos", Component: Resources },
     { path: "/profile", name: "profile", Component: Profile },
     { path: "/signup", name: "signup", Component: SignUp },
   ];
 
   return (
-    <I18nextProvider i18n={i18n}>
-      <Router className="App">
-        <NavBar />
-        <Switch>
-          {ROUTES.map(({ path, Component }) => (
-            <Route key={path} exact path={path}>
-              <Component />
-            </Route>
-          ))}
-          <Route
-            exact
-            path="/story/:id"
-            render={(props) => <Story {...props} />}
-          />
-        </Switch>
-        <Footer />
-      </Router>
-    </I18nextProvider>
+    <Provider store={store}>
+      <I18nextProvider i18n={i18n}>
+        <Router className="App">
+          <NavBar />
+          <Switch>
+            {ROUTES.map(({ path, Component }) => (
+              <Route key={path} exact path={path}>
+                <Component />
+              </Route>
+            ))}
+            <Route
+              exact
+              path="/story/:id"
+              render={(props) => <Story {...props} />}
+            />
+          </Switch>
+          <Footer />
+        </Router>
+      </I18nextProvider>
+    </Provider>
   );
 }
 

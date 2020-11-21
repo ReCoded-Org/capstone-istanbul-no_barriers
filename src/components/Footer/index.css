@@ -9,6 +9,7 @@
   background-color: var(--main-footer-background-colour);
   position: relative;
   padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 .footerNavbar {
