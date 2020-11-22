@@ -14,7 +14,7 @@ exports[`navbar renders correctly 1`] = `
     <span
       className="navbar-brand"
     >
-      homePage.navbar.home
+      NO BARRIERS
     </span>
   </a>
   <div
@@ -27,7 +27,7 @@ exports[`navbar renders correctly 1`] = `
       href="/findngos"
       onClick={[Function]}
     >
-      homePage.navbar.ngo
+      Find NGO
     </a>
     <a
       aria-current={null}
@@ -35,7 +35,7 @@ exports[`navbar renders correctly 1`] = `
       href="/stories"
       onClick={[Function]}
     >
-      homePage.navbar.stories
+      Stories
     </a>
     <a
       aria-current={null}
@@ -43,7 +43,7 @@ exports[`navbar renders correctly 1`] = `
       href="/aboutUs"
       onClick={[Function]}
     >
-      homePage.navbar.aboutUs
+      About Us
     </a>
     <a
       aria-current={null}
@@ -51,7 +51,7 @@ exports[`navbar renders correctly 1`] = `
       href="/profile"
       onClick={[Function]}
     >
-      homePage.navbar.profile
+      Profile
     </a>
     <a
       aria-current={null}
@@ -64,7 +64,7 @@ exports[`navbar renders correctly 1`] = `
         disabled={false}
         type="button"
       >
-        homePage.navbar.signIn
+        Sign In
       </button>
     </a>
     <a
@@ -78,7 +78,7 @@ exports[`navbar renders correctly 1`] = `
         disabled={false}
         type="button"
       >
-        homePage.navbar.signUp
+        Sign Up
       </button>
     </a>
     <div
@@ -96,7 +96,7 @@ exports[`navbar renders correctly 1`] = `
         onKeyDown={[Function]}
         role="button"
       >
-        homePage.navbar.dropdownTitle
+        lang
       </a>
     </div>
   </div>

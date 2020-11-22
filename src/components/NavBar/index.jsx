@@ -3,12 +3,16 @@ import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./index.css";
 import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 // Navbar will display different links according to the log status of the user:
 //  if user is logged in => Find ngo, stories, about us, profile + only log out button
 //  otherwise => Find ngo, stories, about us + buttons for sign in and sign up
 const NavBar = () => {
   const { t } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <Navbar>
@@ -43,13 +47,13 @@ const NavBar = () => {
           id="basic-nav-dropdown"
           drop="left"
         >
-          <NavDropdown.Item>
+          <NavDropdown.Item onClick={() => changeLanguage("en")}>
             {t("homePage.navbar.dropdownEnglish")}
           </NavDropdown.Item>
-          <NavDropdown.Item>
+          <NavDropdown.Item onClick={() => changeLanguage("ar")}>
             {t("homePage.navbar.dropdownArabic")}
           </NavDropdown.Item>
-          <NavDropdown.Item>
+          <NavDropdown.Item onClick={() => changeLanguage("tr")}>
             {t("homePage.navbar.dropdownTurkish")}
           </NavDropdown.Item>
         </NavDropdown>
