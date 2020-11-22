@@ -1,5 +1,148 @@
 {
+  "signIn": {
+    "welcomeBack": "مرحبًا بك مرة أخرى في بلا عوائق",
+    "successMsg": "تم تسجيل الدخول بنجاح",
+    "enterEmail": "أدخل البريد الإلكتروني",
+    "password": "كلمه السر",
+    "emailMsg": "لن نشارك بريدك الإلكتروني أبدًا مع أي شخص آخر.",
+    "or": "أو",
+    "signInText": "تسجيل الدخول ب",
+    "signInBtn": "تسجيل الدخول",
+    "errorMsg": "فشل تسجيل الدخول"
+  },
+  "homePage": {
+    "browser": {
+      "title": "تصفح حسب الفئة",
+      "categories": {
+        "food": "طعام",
+        "education": "التعليم",
+        "health": "الصحة",
+        "housing": "الإسكان",
+        "jobs": "وظائف"
+      },
+      "more": "المزيد من الفئات"
+    },
+    "header": {
+      "title": "NO BARRIERS",
+      "subtitle": "تواصل مع المنظمات غير الحكومية - شارك قصتك",
+      "inputSearch": "أدخل كلمة رئيسية للبحث",
+      "button": "ابحث عنه الآن"
+    },
+    "quotes": {
+      "quoteAisha": "نحن ندرك ونتأثر بالتغييرات الدقيقة للغاية بحيث لا يمكن وصفها",
+      "personAisha": "عائشة خالد مديرة شركة تنغ",
+      "idAisha": 0,
+      "quoteLatif": "المتشائم يرى صعوبة في كل فرصة. المتفائل يرى فرصة في كل صعوبة",
+      "personLatif": "عبد اللطيف - لاجئ",
+      "idLatif": 1,
+      "quoteŞen": "الأشخاص المجنونون بما يكفي ليعتقدوا أنه بإمكانهم تغيير العالم  , هم من يفعلون ذلك",
+      "personŞen": "Aişe Şen , VP at A. S.  ",
+      "idŞen": 2
+    },
+    "footer": {
+      "find": "أجد الآن",
+      "stories": "قصص",
+      "about": "معلومات عنا",
+      "term": "الخصوصية - الشروط"
+    },
+    "navbar": {
+      "home": "NO BARRIERS",
+      "ngo": "ابحث الآن",
+      "stories": "قصص",
+      "aboutUs": "معلومات عنا",
+      "profile": "الملف الشخصي",
+      "dropdownTitle": "اللغة",
+      "dropdownEnglish": "En",
+      "dropdownArabic": "عربي",
+      "dropdownTurkish": "TR",
+      "signOut": "تسجيل خروج",
+      "signIn": "تسجيل الدخول",
+      "signUp": "سجل"
+    },
+    "exploreBlogs": {
+      "exploreBlogs": "استكشف مدوناتنا",
+      "paragraph": " هل تعلم أنه تم إثبات شيئين فقط لمساعدة الناجين من الهولوكوست؟ التدليك واحد. سرد قصتهم شيء آخر. أن يتم لمسك ولمسك. رواية قصتك مؤثرة. إنها تحررك",
+      "blogTitle": "هذا هو عنوان مدونتي",
+      "blogLink": "الانتقال إلى منشور المدونة",
+      "buttonSeeMore": "مشاهدة المزيد من المدونات"
+    }
+  },
+  "singleStoryCard": {
+    "continueReading": "أكمل القراءة"
+  },
+  "resources": {
+    "searchBar": {
+      "searchTitle": "ابحث عن الخدمة التي تحتاجها",
+      "inputPlaceholder": "الرجاء إدخال مصطلح البحث...",
+      "searchButton": "بحث"
+    },
+    "AdvancedFilters": {
+      "tooltipInfo": "يمكنك تحديد خيارات تصفية مختلفة من خلال النقر على اسم مرشح",
+      "title": "تنقيح القائمة ",
+      "cities": "المدينة",
+      "services": "نوع الخدمة",
+      "names": "اسم المنظمة",
+      "ratings": "التقييم",
+      "clearAll": "امسح الكل",
+      "applyFilters": "تطبيق"
+    },
+    "ngoList": {
+      "buttonOpenDetails": "تفاصيل",
+      "buttonCloseDetails": "إغلاق التفاصيل",
+      "ngoDetails": {
+        "aidDescription": "كيف يمكننا المساعدة",
+        "responsiblePerson": "المسؤول عن الحديث هو",
+        "phoneNum": "رقم الهاتف",
+        "email": "البريد الإلكتروني",
+        "moreInfo": "المزيد من المعلومات",
+        "website": "الموقع الكتروني",
+        "directions": "العنوان"
+      }
+    }
+  },
+  "profile": {
+    "editProfile": "تعديل الملف الشخصي",
+    "contactInfo": "معلومات الاتصال",
+    "email": "البريد الإلكتروني",
+    "phone": "هاتف",
+    "bioTitle": "قصتي",
+    "writePost": "اكتب مشاركة",
+    "recentPost": "المشاركات الاخيرة",
+    "editProfileModal": {
+      "title": "تعديل الملف الشخصي",
+      "name": "اسم",
+      "namePlaceholder": "اكتب اسمًا جديدًا",
+      "emailPlaceholder": "اكتب بريدًا إلكترونيًا جديدًا",
+      "phonePlaceholder": "اكتب رقم هاتف جديد",
+      "profileImage": "أضف صورة ملف تعريف جديدة",
+      "bio": "السيرة الذاتية",
+      "bioPlaceholder": "اكتب سيرة ذاتية جديدة",
+      "close": "أغلق",
+      "save": "حفظ"
+    }
+  },
+  "signup": {
+    "firstName": "الاسم الاول",
+    "lastName": "الكنية",
+    "email": "البريد الإلكتروني",
+    "password": "كلمه السر",
+    "repeatPassword": "Reapeat Password",
+    "signup": "سجل",
+    "existingAccount": "هل لديك حساب؟",
+    "alertMsg": "كلمات المرور غير متطابقة",
+    "alertCmplt": "اكتمل تسجيلك",
+    "login": "تسجيل الدخول",
+    "welcomeMsg": "مرحبًا بكم في No Barriers"
+  },
   "meetTheTeam": {
+    "titles": {
+      "teamLead": "قائد الفريق",
+      "juniorFrontendDeveloper": "مطور الواجهة الأمامية "
+    },
     "pageTitle": "قابل الفريق"
+  },
+  "aboutUs": {
+    "header": "من NO BARRIERS",
+    "paragraph": "موقع على شبكة الإنترنت حيث يمكن للاجئين التواصل بسهولة مع المنظمات غير الحكومية  , والبقاء على اطلاع دائم بأية مساعدات جديدة تقدمها المنظمات غير الحكومية لهم  , وبناء مجتمع من اللاجئين يمكن أن يساعد بعضهم البعض  , وفي نفس الوقت سيكون مصدرًا للاجئين لمشاركة الخبرة الشخصية والمعرفة مع بعضنا البعض"
   }
 }
