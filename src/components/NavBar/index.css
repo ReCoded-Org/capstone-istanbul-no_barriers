@@ -31,7 +31,7 @@ a#basic-nav-dropdown.dropdown-toggle.nav-link:active {
 }
 
 /* Nav links */
-.navbar-expand .navbar-nav .nav-link:last-of-type {
+.nav-link {
   padding-right: 1.5rem;
 }
 
@@ -65,8 +65,4 @@ a.dropdown-item,
   background-color: var(--medium-blue);
   color: var(--white);
   border-color: var(--medium-blue);
-}
-
-.navbar-expand .navbar-nav .dropdown-menu {
-  padding-bottom: 0;
 }
