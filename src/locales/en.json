@@ -67,6 +67,12 @@
       "blogLink": "Go to blog post",
       "buttonSeeMore": "See more blogs"
     },
+    "getStarted": {
+      "ready": "Ready to get started?",
+      "parag": "Sign up or contact us",
+      "signUp": "Sign Up",
+      "contactUs": "Contact Us"
+    },
     "features": {
       "firstFeatTitle": "Service Search engine in your control",
       "seondFeatTitle": "Hear Stories from around the world",

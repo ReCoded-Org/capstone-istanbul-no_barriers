@@ -11,10 +11,10 @@ exports[`renders GetStarted correctly 1`] = `
       className="col-md-6"
     >
       <h6>
-        Ready to get started?
+        homePage.getStarted.ready
       </h6>
       <p>
-        Sign up or contact us
+        homePage.getStarted.parag
       </p>
     </div>
     <div
@@ -26,7 +26,7 @@ exports[`renders GetStarted correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Sign Up
+        homePage.getStarted.signUp
       </button>
     </div>
     <div
@@ -37,7 +37,7 @@ exports[`renders GetStarted correctly 1`] = `
         disabled={false}
         type="button"
       >
-        Contact Us
+        homePage.getStarted.contactUs
       </button>
     </div>
     <div
