@@ -8,7 +8,11 @@
     "or": "or",
     "signInText": "Sign in with",
     "signInBtn": "Sign in",
-    "errorMsg": "Sign in failed"
+    "errorMsg": "Sign in failed",
+    "resetQuestion": "Have you forgotten your password? ",
+    "resetBtn": "RESET PASSWORD",
+    "successReset": "A verification email has been sent",
+    "errorReset": "Enter an email"
   },
   "homePage": {
     "browser": {

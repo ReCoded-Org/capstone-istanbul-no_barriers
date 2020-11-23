@@ -34,3 +34,9 @@
   border: 0rem;
   box-shadow: 0px 11px 24px -7px var(--filter-shadow-color);
 }
+
+.reset {
+  color: var(--background-color);
+  font-weight: bold;
+  cursor: pointer;
+}

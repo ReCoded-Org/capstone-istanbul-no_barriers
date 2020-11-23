@@ -71,6 +71,24 @@ const SignIn = () => {
     }
   };
 
+  const handleReset = () => {
+    firebase
+      .auth()
+      .sendPasswordResetEmail(email)
+      .then(function () {
+        setAlert({
+          message: "signIn.successReset",
+          status: "success",
+        });
+      })
+      .catch(function (error) {
+        setAlert({
+          message: "signIn.errorReset",
+          status: "danger",
+        });
+      });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     firebase
@@ -148,6 +166,14 @@ const SignIn = () => {
         </Form.Group>
         <Row className="justify-content-center">
           {alert && <Alert variant={alert.status}>{t(alert.message)}</Alert>}
+        </Row>
+        <Row className="justify-content-center">
+          <p>
+            {t("signIn.resetQuestion")}
+            <span className="reset" onClick={handleReset}>
+              {t("signIn.resetBtn")}
+            </span>
+          </p>
         </Row>
         <Row className="justify-content-center">
           <Button variant="primary" type="submit" className="signInButton">
