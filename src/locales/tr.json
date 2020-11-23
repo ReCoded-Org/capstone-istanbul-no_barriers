@@ -1,1 +1,164 @@
-{}
+{
+  "signIn": {
+    "welcomeBack": "Tekrar Hoş Geldiniz",
+    "successMsg": "Oturum açma başarılı",
+    "enterEmail": "E-posta",
+    "password": "Şifre",
+    "emailMsg": "E-posta adresini üçüncü kişilerle asla paylaşmayacağız.",
+    "or": "ya da",
+    "signInText": "Başka şekilde oturum aç",
+    "signInBtn": "Oturum aç",
+    "errorMsg": "Oturum açma başarısız",
+    "resetQuestion": "Şifreni mi unuttun? ",
+    "resetBtn": "ŞİFRENİ SIFIRLA",
+    "successReset": "Şifreni sıfırlama e-postası gönderildi",
+    "errorReset": "E-posta gir"
+  },
+  "homePage": {
+    "browser": {
+      "title": "Kategoriye göre ara",
+      "categories": {
+        "food": "Gıda",
+        "education": "Eğitim",
+        "health": "Sağlık",
+        "housing": "Barınma",
+        "jobs": "Meslek Edinme"
+      },
+      "more": "Daha fazla kategori"
+    },
+    "header": {
+      "title": "NO BARRIERS",
+      "subtitle": "NGO'lar İLE İLETİŞİM KUR - HİKAYENİ PAYLAŞ",
+      "inputSearch": "Arama yapmak için anahtar kelime gir",
+      "button": "ŞİMDİ bul"
+    },
+    "quotes": {
+      "quoteAisha": "Tanımlanamayacak kadar ince değişiklikleri algılıyor ve onlardan etkileniyoruz.",
+      "personAisha": "Aisha Khaled, Yönetici, Teng",
+      "idAisha": "0",
+      "quoteLatif": "Kötümser her fırsatta zorluk görür. İyimser, her zorlukta fırsat görür.",
+      "personLatif": "Abdul Latif, Mülteci",
+      "idLatif": "1",
+      "quoteŞen": "Dünyayı değiştirebileceklerini düşünecek kadar deli olan insanlar, değiştirenlerdir.",
+      "personŞen": "Aişe Şen, Genel Müdür Yardımcısı, A. S.",
+      "idŞen": "2"
+    },
+    "footer": {
+      "brand": "NO BARRIERS",
+      "find": "Şimdi Bul",
+      "stories": "Hikayeler",
+      "about": "Hakkımızda",
+      "term": "Gizlilik - Şartlar"
+    },
+    "navbar": {
+      "home": "NO BARRIERS",
+      "ngo": "NGO bul",
+      "stories": "Hikayeler",
+      "aboutUs": "Hakkımızda",
+      "profile": "Profil",
+      "dropdownTitle": "Diller",
+      "dropdownEnglish": "İngilizce",
+      "dropdownArabic": "Arapça",
+      "dropdownTurkish": "Türkçe",
+      "signOut": "Oturumu Kapat",
+      "signIn": "Oturum Aç",
+      "signUp": "Kayıt Ol"
+    },
+    "exploreBlogs": {
+      "exploreBlogs": "BLOGLARA GÖZ AT",
+      "paragraph": "Holokost'tan kurtulanlara yardım ettiği kanıtlanmış sadece iki şeyin olduğunu biliyor musunuz? Masaj biridir. Hikayelerini anlatmak başka. Dokunulmak ve dokunmak. Hikayenizi anlatmak dokunaklı. Sizi özgür kılar.",
+      "blogTitle": "Başlık",
+      "blogLink": "Blog yazısına git",
+      "buttonSeeMore": "Daha fazla blog gör"
+    },
+    "getStarted": {
+      "ready": "Başlamaya hazır mısın?",
+      "parag": "Kayıt ol veya bizimle iletişime geç",
+      "signUp": "Kayıt Ol",
+      "contactUs": "Bizimle İletişime Geç"
+    },
+    "features": {
+      "firstFeatTitle": "Arama motoru senin konrolünde olsun",
+      "seondFeatTitle": "Dünyanın dört bir yanından hikayeler dinle",
+      "therdFeatTitle": "Hizmete doğrudan bağlan"
+    }
+  },
+  "singleStoryCard": {
+    "continueReading": "Okumaya devam et"
+  },
+  "resources": {
+    "searchBar": {
+      "searchTitle": "İhtiyacın olan hizmeti bul",
+      "inputPlaceholder": "Lütfen bir anahtar kelime gir...",
+      "searchButton": "Ara"
+    },
+    "AdvancedFilters": {
+      "tooltipInfo": "İsmin üstüne tıklayarak farklı şekilde filreleyebilirsiniz",
+      "title": "Listeyi filtleyerek daralt",
+      "cities": "Şehir",
+      "services": "Sektör",
+      "names": "NGO ismi",
+      "ratings": "Puanı",
+      "clearAll": "Hepsini temizle",
+      "applyFilters": "Filtereleri uygula"
+    },
+    "ngoList": {
+      "buttonOpenDetails": "Ayrıntılar",
+      "buttonCloseDetails": "Ayrıntıları kapat",
+      "ngoDetails": {
+        "aidDescription": "Nasıl yardımcı olabiliriz",
+        "responsiblePerson": "Görevi",
+        "phoneNum": "Telefon numarası:",
+        "email": "E-posta:",
+        "moreInfo": "Daha fazla bilgi için:",
+        "website": "Websitesi",
+        "directions": "Tarif"
+      }
+    }
+  },
+  "profile": {
+    "editProfile": "Edit Profile",
+    "contactInfo": "İLETİŞİM BİLGİLERİ",
+    "email": "E-posta:",
+    "phone": "Telefon:",
+    "bioTitle": "BENİM HİKAYEM",
+    "writePost": "Gönderi paylaş",
+    "recentPost": "YAKIN ZAMANDAKİ GÖNDERİLER",
+    "editProfileModal": {
+      "title": "Profili Düzenle",
+      "name": "İsim:",
+      "namePlaceholder": "yeni bir isim gir",
+      "emailPlaceholder": "yeni bir e-posta gir",
+      "phonePlaceholder": "yeni bir telefon gir",
+      "profileImage": "Yeni bir profil fotoğrafı seç:",
+      "bio": "Biyografi:",
+      "bioPlaceholder": "Yeni bir biyografi yaz",
+      "close": "Kapat",
+      "save": "Kaydet"
+    }
+  },
+  "signup": {
+    "firstName": "İsim",
+    "lastName": "Soyisim",
+    "email": "E-posta",
+    "password": "Şifre",
+    "repeatPassword": "Şifreyi tekrar gir",
+    "signup": "Kayıt Ol",
+    "existingAccount": "Hesabın var mı?",
+    "alertMsg": "Şifre uyuşmuyor",
+    "alertCmplt": "Kayıt başarılı",
+    "login": "Oturum aç",
+    "welcomeMsg": "Hoş Geldiniz"
+  },
+  "meetTheTeam": {
+    "titles": {
+      "teamLead": "Ekip Lideri",
+      "juniorFrontendDeveloper": "Jr. Front-end Developer"
+    },
+    "pageTitle": "Ekiple Tanış"
+  },
+  "aboutUs": {
+    "header": "NO BARRIERS hakkında",
+    "paragraph": "Mültecilerin STK'larla kolayca bağlantı kurabilecekleri ve STK'ların kendilerine sağladığı yeni yardımlar hakkında güncel bilgileri tutabilecekleri, birbirlerine yardım edebilecek bir Mülteci topluluğu oluşturabilecekleri, aynı zamanda Mültecilerin de kendi bilgilerini paylaşabilecekleri bir web sitesi birbirleriyle kişisel deneyim ve bilgi."
+  }
+}
