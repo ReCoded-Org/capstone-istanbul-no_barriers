@@ -61,42 +61,9 @@ exports[`navbar renders correctly 1`] = `
       >
         About Us
       </a>
-      <a
-        aria-current={null}
-        className="nav-link"
-        href="/profile"
-        onClick={[Function]}
-      >
-        Profile
-      </a>
-      <a
-        aria-current={null}
-        className="nav.buttn"
-        href="/signin"
-        onClick={[Function]}
-      >
-        <button
-          className="shadow-none mr-2 mb-1 btn btn-outline-info"
-          disabled={false}
-          type="button"
-        >
-          Sign In
-        </button>
-      </a>
-      <a
-        aria-current={null}
-        className="nav.buttn"
-        href="/signup"
-        onClick={[Function]}
-      >
-        <button
-          className="shadow-none mr-1 btn btn-outline-info"
-          disabled={false}
-          type="button"
-        >
-          Sign Up
-        </button>
-      </a>
+      <div
+        className="authToggleBtns"
+      />
       <div
         className="dropleft nav-item"
         onKeyDown={[Function]}
