@@ -12,7 +12,7 @@ Array [
     </q>
     <img
       alt="person"
-      className="quotesImg"
+      className="quotesImg img-fluid"
       src="Photo-by-Andrea-Piacquadio-from-Pexels.jpg"
     />
     <p>
@@ -29,7 +29,7 @@ Array [
     </q>
     <img
       alt="person"
-      className="quotesImg"
+      className="quotesImg img-fluid"
       src="pexels-justin-shaifer-1222271.jpg"
     />
     <p>
@@ -46,7 +46,7 @@ Array [
     </q>
     <img
       alt="person"
-      className="quotesImg"
+      className="quotesImg img-fluid"
       src="pexels-christina-morillo-1181686.jpg"
     />
     <p>

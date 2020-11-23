@@ -93,7 +93,7 @@ const SignIn = () => {
   const { t } = useTranslation();
 
   return (
-    <Container className="container justify-content-center">
+    <Container className="justify-content-center signIn">
       <Row className="justify-content-center">
         <h4 className="welcomeBack">{t("signIn.welcomeBack")}</h4>
       </Row>

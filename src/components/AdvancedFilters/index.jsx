@@ -45,7 +45,7 @@ const AdvancedFilters = ({
 
   return (
     <div className="advancedFilters">
-      <Container>
+      <Container fluid>
         <div className="advancedFiltersTitleSection d-flex justify-content-between align-items-baseline pb-2">
           <h5 className="advancedFiltersTitle">
             {t("resources.AdvancedFilters.title")}

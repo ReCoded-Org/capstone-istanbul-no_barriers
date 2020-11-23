@@ -9,7 +9,7 @@ import "./index.css";
 
 const HowDoesItWork = () => {
   return (
-    <Container fluid className="howDoesItWork">
+    <Container className="howDoesItWork" fluid>
       <h4>How Does It Work?</h4>
       <br />
       <Row>

@@ -11,7 +11,7 @@ import "./index.css";
 
 const TrustedBy = () => {
   return (
-    <Container fluid className="trustedBy">
+    <Container className="trustedBy" fluid>
       <h4>Trusted by the World's Best NGOs</h4>
       <br />
       <Row>

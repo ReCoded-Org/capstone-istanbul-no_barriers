@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Col xs={12} className="mt-5 mb-1 header">
           <h1 className="title">{t("homePage.header.title")}</h1>
@@ -28,7 +28,7 @@ const Header = () => {
         </Col>
       </Row>
       <Row className="searchers mt-5 d-flex justify-content-around">
-        <Col xs={12} md={3} lg={8}>
+        <Col xs={8} md={6}>
           <input
             className="form-control"
             type="text"
@@ -49,7 +49,7 @@ const Header = () => {
             {t("homePage.header.button")}
           </button>
         </Col>
-        <img src={hero} alt="hero" width="80%" />
+        <img src={hero} alt="hero" width="80%" className="img-fluid" />
       </Row>
     </Container>
   );

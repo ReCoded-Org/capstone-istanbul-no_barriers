@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import SingleFeature from "../SingleFeature";
-import contents from "./contents";
+import contents from "./contents.js";
 import { useTranslation } from "react-i18next";
 
 const Features = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container fluid>
       {contents.map((content, index) => {
         if (index % 2 === 0) {
           return (

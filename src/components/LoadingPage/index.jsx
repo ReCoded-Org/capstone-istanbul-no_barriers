@@ -5,7 +5,7 @@ import loadingGif from "../../images/loading.gif";
 
 const LoadingPage = () => {
   return (
-    <Container className="loadContainer">
+    <Container className="loadContainer" fluid>
       <Row>
         <Image src={loadingGif} className="loadingGif"></Image>
       </Row>

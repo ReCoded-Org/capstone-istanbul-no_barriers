@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <Container>
+      <Container fluid>
         <Navbar variant="dark" className="footerNavbar">
           <Navbar.Brand href="/" className="d-flex">
             <h4 className="footerHeading">{t("homePage.footer.brand")}</h4>

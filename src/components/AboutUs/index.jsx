@@ -12,7 +12,7 @@ const AboutUs = () => {
 
   return (
     <div>
-      <Container>
+      <Container fluid>
         <Row>
           <Col className="aboutUs">
             <h3>{t("aboutUs.header")}</h3>

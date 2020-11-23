@@ -16,7 +16,7 @@ const BrowseCategory = () => {
 
   return (
     <div className="browseByCategory">
-      <Container className="pb-5">
+      <Container fluid className="pb-5">
         <Row>
           <Col xs={12} className="browserTitle mb-5">
             {t("homePage.browser.title")}

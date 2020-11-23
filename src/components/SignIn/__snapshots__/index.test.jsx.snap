@@ -2,7 +2,7 @@
 
 exports[`SignIn renders correctly 1`] = `
 <div
-  className="container justify-content-center container"
+  className="justify-content-center signIn container"
 >
   <div
     className="justify-content-center row"

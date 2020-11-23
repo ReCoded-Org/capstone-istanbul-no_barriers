@@ -5,7 +5,7 @@ exports[`Footer renders correctly 1`] = `
   className="footer"
 >
   <div
-    className="container"
+    className="container-fluid"
   >
     <nav
       className="footerNavbar navbar navbar-expand navbar-dark"

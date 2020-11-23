@@ -8,7 +8,7 @@ const SingleQuote = ({ photo, quote, job }) => {
   return (
     <div className="quotesQuoteBox">
       <q className="quote">{t(quote)}</q>
-      <img src={photo} alt="person" className="quotesImg" />
+      <img src={photo} alt="person" className="quotesImg img-fluid" />
       <p>{t(job)}</p>
     </div>
   );

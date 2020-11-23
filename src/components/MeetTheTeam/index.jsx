@@ -20,7 +20,7 @@ const MeetTheTeam = () => {
 
   return (
     <div className="meetTheTeam">
-      <Container>
+      <Container fluid>
         <h3 className="title">{t("meetTheTeam.pageTitle")}</h3>
         <br />
         <Slider
