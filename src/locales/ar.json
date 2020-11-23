@@ -8,7 +8,11 @@
     "or": "أو",
     "signInText": "تسجيل الدخول ب",
     "signInBtn": "تسجيل الدخول",
-    "errorMsg": "فشل تسجيل الدخول"
+    "errorMsg": "فشل تسجيل الدخول",
+    "resetQuestion": "نسيت كلمة السر؟ ",
+    "resetBtn": "استعادة كلمة السر",
+    "successReset": "تم ارسال ايميل بكلمة السر الجديدة",
+    "errorReset": "أدخل ايميلك"
   },
   "homePage": {
     "browser": {
@@ -40,7 +44,8 @@
       "idŞen": 2
     },
     "footer": {
-      "find": "أجد الآن",
+      "brand": "NO BARRIERS",
+      "find": "ابحث الآن",
       "stories": "قصص",
       "about": "معلومات عنا",
       "term": "الخصوصية - الشروط"
@@ -65,6 +70,24 @@
       "blogTitle": "هذا هو عنوان مدونتي",
       "blogLink": "الانتقال إلى منشور المدونة",
       "buttonSeeMore": "مشاهدة المزيد من المدونات"
+    },
+    "howDoesItWork": {
+      "title": "كيف يعمل الموقع",
+      "preference": "حدد خياراتك",
+      "service": "اختار مزود الخدمة",
+      "connect": "تواصل مع المنظمة مباشرة"
+    },
+    "trustedBy": "معترف به من قبل أفضل المنظمات حول العالم",
+    "getStarted": {
+      "ready": "جاهز للبدأ معنا؟",
+      "parag": "سجل دخول او تواصل معنا",
+      "signUp": "سجل دخول",
+      "contactUs": "تواصل معنا"
+    },
+    "features": {
+      "firstFeatTitle": "خدمات محرك البحث في سيطرتك",
+      "seondFeatTitle": "اقرأ إلى قصص من جميع أنحاء العالم",
+      "therdFeatTitle": "نوصلك بمزود الخدمة مباشرة"
     }
   },
   "singleStoryCard": {
@@ -126,7 +149,7 @@
     "lastName": "الكنية",
     "email": "البريد الإلكتروني",
     "password": "كلمه السر",
-    "repeatPassword": "Reapeat Password",
+    "repeatPassword": "كرر كلمة السر",
     "signup": "سجل",
     "existingAccount": "هل لديك حساب؟",
     "alertMsg": "كلمات المرور غير متطابقة",
