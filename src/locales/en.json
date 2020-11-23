@@ -71,6 +71,13 @@
       "blogLink": "Go to blog post",
       "buttonSeeMore": "See more blogs"
     },
+    "howDoesItWork": {
+      "title": "How Does It Work?",
+      "preference": "Select Your Preference",
+      "service": "Choose a Service",
+      "connect": "Connect with NGO"
+    },
+    "trustedBy": "Trusted by the World's Best NGOs",
     "getStarted": {
       "ready": "Ready to get started?",
       "parag": "Sign up or contact us",

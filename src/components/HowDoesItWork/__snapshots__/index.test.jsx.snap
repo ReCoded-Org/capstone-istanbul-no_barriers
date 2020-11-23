@@ -5,7 +5,7 @@ exports[`renders HowDoesItWork correctly 1`] = `
   className="howDoesItWork container-fluid"
 >
   <h4>
-    How Does It Work?
+    homePage.howDoesItWork.title
   </h4>
   <br />
   <div
@@ -24,7 +24,7 @@ exports[`renders HowDoesItWork correctly 1`] = `
         title="preference"
       />
       <div>
-        Select Your Preference
+        homePage.howDoesItWork.preference
       </div>
     </div>
     <div
@@ -40,7 +40,7 @@ exports[`renders HowDoesItWork correctly 1`] = `
         title="service"
       />
       <div>
-        Choose a Service
+        homePage.howDoesItWork.service
       </div>
     </div>
     <div
@@ -56,7 +56,7 @@ exports[`renders HowDoesItWork correctly 1`] = `
         title="NGO"
       />
       <div>
-        Connect with NGO
+        homePage.howDoesItWork.connect
       </div>
     </div>
   </div>

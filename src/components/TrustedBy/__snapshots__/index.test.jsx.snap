@@ -5,7 +5,7 @@ exports[`renders TrustedBy correctly 1`] = `
   className="trustedBy container-fluid"
 >
   <h4>
-    Trusted by the World's Best NGOs
+    homePage.trustedBy
   </h4>
   <br />
   <div
