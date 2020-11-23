@@ -28,7 +28,7 @@
     },
     "header": {
       "title": "NO BARRIERS",
-      "subtitle": "NGO'lar İLE İLETİŞİM KUR - HİKAYENİ PAYLAŞ",
+      "subtitle": "STK'lar İLE İLETİŞİM KUR - HİKAYENİ PAYLAŞ",
       "inputSearch": "Arama yapmak için anahtar kelime gir",
       "button": "ŞİMDİ bul"
     },
@@ -52,7 +52,7 @@
     },
     "navbar": {
       "home": "NO BARRIERS",
-      "ngo": "NGO bul",
+      "ngo": "STK bul",
       "stories": "Hikayeler",
       "aboutUs": "Hakkımızda",
       "profile": "Profil",
@@ -71,6 +71,13 @@
       "blogLink": "Blog yazısına git",
       "buttonSeeMore": "Daha fazla blog gör"
     },
+    "trustedBy": "Dünyanın en iyi STK'larının güvendiği platform",
+    "howDoesItWork": {
+      "title": "Nasıl Çalışır?",
+      "preference": "Yapmak istediğini bul",
+      "service": "Uygun bir hizmet seç",
+      "connect": "STK ile iletişime geç"
+    },
     "getStarted": {
       "ready": "Başlamaya hazır mısın?",
       "parag": "Kayıt ol veya bizimle iletişime geç",
@@ -78,7 +85,7 @@
       "contactUs": "Bizimle İletişime Geç"
     },
     "features": {
-      "firstFeatTitle": "Arama motoru senin konrolünde olsun",
+      "firstFeatTitle": "Dilediğin hizmeti ara",
       "seondFeatTitle": "Dünyanın dört bir yanından hikayeler dinle",
       "therdFeatTitle": "Hizmete doğrudan bağlan"
     }
@@ -97,7 +104,7 @@
       "title": "Listeyi filtleyerek daralt",
       "cities": "Şehir",
       "services": "Sektör",
-      "names": "NGO ismi",
+      "names": "STK ismi",
       "ratings": "Puanı",
       "clearAll": "Hepsini temizle",
       "applyFilters": "Filtereleri uygula"
