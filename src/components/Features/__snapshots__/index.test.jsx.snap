@@ -25,11 +25,9 @@ Array [
       className="featText col-lg-6"
     >
       <h3>
-        Service Search engine in your control
+        homePage.features.firstFeatTitle
       </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <p />
     </div>
   </div>,
   <div
@@ -55,11 +53,9 @@ Array [
       className="featText col-lg-6"
     >
       <h3>
-        Hear Stories from around the world
+        homePage.features.seondFeatTitle
       </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <p />
     </div>
   </div>,
   <div
@@ -84,11 +80,9 @@ Array [
       className="featText col-lg-6"
     >
       <h3>
-        Linking you with the Service Directly
+        homePage.features.therdFeatTitle
       </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <p />
     </div>
   </div>,
 ]

@@ -4,9 +4,7 @@ import puzzle from "./img3.jpg";
 
 const contents = [
   {
-    title: "Service Search engine in your control",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "homePage.features.firstFeatTitle",
     src: laptopgirl,
     alt: "girl with Laptop",
     styling: {
@@ -16,9 +14,7 @@ const contents = [
     },
   },
   {
-    title: "Hear Stories from around the world",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "homePage.features.seondFeatTitle",
     src: emailgirl,
     alt: "girl with email and speaker",
     styling: {
@@ -28,9 +24,7 @@ const contents = [
     },
   },
   {
-    title: "Linking you with the Service Directly",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "homePage.features.therdFeatTitle",
     src: puzzle,
     alt: "people fixing puzzle",
     styling: {

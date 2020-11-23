@@ -66,6 +66,11 @@
       "blogTitle": "This is the title of my blog",
       "blogLink": "Go to blog post",
       "buttonSeeMore": "See more blogs"
+    },
+    "features": {
+      "firstFeatTitle": "Service Search engine in your control",
+      "seondFeatTitle": "Hear Stories from around the world",
+      "therdFeatTitle": "Linking you with the Service Directly"
     }
   },
   "singleStoryCard": {
