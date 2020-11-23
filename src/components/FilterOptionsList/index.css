@@ -22,6 +22,10 @@
   margin: 0;
 }
 
+.filterOption {
+  cursor: pointer;
+}
+
 .filterOption:hover {
   background-color: var(--orange-link);
 }

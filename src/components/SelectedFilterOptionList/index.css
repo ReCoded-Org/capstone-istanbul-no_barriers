@@ -1,12 +1,7 @@
 :root {
-  --selected-option-light-bg-color: #9cecf5;
   --selected-option-dark-bg-color: #88c8cf;
   --main-selected-option-text-color: #00374d;
   --orange-link: #f2c94c;
-}
-
-.backgroundLight {
-  background-color: var(--selected-option-light-bg-color);
 }
 
 .backgroundDark {
@@ -18,10 +13,13 @@
 }
 
 .selectedOptionTitle {
-  padding-left: 1rem;
+  margin: 0;
+  padding: 0.5rem;
+  margin-left: 1rem;
 }
 
 .selectedOptionDelete {
   padding-right: 1rem;
   font-weight: bold;
+  cursor: pointer;
 }

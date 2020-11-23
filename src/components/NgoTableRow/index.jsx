@@ -44,7 +44,7 @@ const NgoTableRow = ({
         </td>
       </tr>
       {openDetails ? (
-        <tr className="table-info">
+        <tr className={trClassname}>
           <td>&nbsp;</td>
           <td className="ngoDetails" id={`${id}`} colSpan="3">
             <NgoDetails details={details} />

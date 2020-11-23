@@ -8,7 +8,7 @@ exports[`Footer renders correctly 1`] = `
     className="container-fluid"
   >
     <nav
-      className="footerNavbar navbar navbar-expand navbar-dark"
+      className="footerNavbar navbar navbar-expand-lg navbar-dark"
     >
       <a
         className="d-flex navbar-brand"
@@ -34,8 +34,8 @@ exports[`Footer renders correctly 1`] = `
       >
         <a
           className="nav-link"
-          data-rb-event-key="/findNgos"
-          href="/findNgos"
+          data-rb-event-key="/findngos"
+          href="/findngos"
           onClick={[Function]}
           onKeyDown={[Function]}
         >

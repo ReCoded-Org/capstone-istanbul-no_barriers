@@ -21,14 +21,14 @@
 
 .advancedFiltersTitle {
   font-size: 1rem;
-  padding: 0 2rem;
+  padding: 0 1rem 0 0;
 }
 
 .moreInfoFilters {
   border-radius: 50%;
   background-color: var(--info-bg-color);
   height: 2rem;
-  width: 3rem;
+  width: 2.5rem;
   line-height: 2rem;
   border-radius: 50%;
   text-align: center;
@@ -55,6 +55,7 @@ div.advancedFilters .card-header:hover {
   margin: none;
   font-weight: bold;
   padding: 0.5rem 0 0;
+  cursor: pointer;
 }
 
 .circle {
@@ -79,6 +80,8 @@ div.advancedFilters .card-header:hover {
 
 .clearAll {
   margin-right: 2rem;
+  flex: none;
+  cursor: pointer;
 }
 
 .clearAll:hover {
@@ -90,6 +93,7 @@ div.advancedFilters .card-header:hover {
 .applyFilters:focus {
   background-color: var(--orange);
   border: none;
+  flex: none;
 }
 
 /* filter all button active state style */

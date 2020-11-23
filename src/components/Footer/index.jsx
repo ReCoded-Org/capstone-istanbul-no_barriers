@@ -9,7 +9,12 @@ const Footer = () => {
   return (
     <div className="footer">
       <Container fluid>
-        <Navbar variant="dark" className="footerNavbar">
+        <Navbar
+          variant="dark"
+          className="footerNavbar"
+          collapseOnSelect="false"
+          expand="lg"
+        >
           <Navbar.Brand href="/" className="d-flex">
             <h4 className="footerHeading">{t("homePage.footer.brand")}</h4>
             <p className="copyright">
@@ -18,7 +23,7 @@ const Footer = () => {
             </p>
           </Navbar.Brand>
           <Nav className="ml-auto">
-            <Nav.Link href="/findNgos">{t("homePage.footer.find")}</Nav.Link>
+            <Nav.Link href="/findngos">{t("homePage.footer.find")}</Nav.Link>
             <Nav.Link href="/stories">{t("homePage.footer.stories")}</Nav.Link>
             <Nav.Link href="/aboutUs">{t("homePage.footer.about")}</Nav.Link>
           </Nav>

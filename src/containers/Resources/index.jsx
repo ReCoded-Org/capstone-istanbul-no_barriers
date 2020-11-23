@@ -6,6 +6,7 @@ import AdvancedFilters from "../../components/AdvancedFilters";
 import PagesList from "../../components/PagesList";
 import database from "../../firebaseConfig";
 import LoadingPage from "../../components/LoadingPage";
+import "./index.css";
 
 const Resources = () => {
   const [allNgos, setAllNgos] = useState([]);
@@ -21,12 +22,20 @@ const Resources = () => {
         .collection("ngosEn")
         .get()
         .then((querySnapshot) => {
+          const ngos = [];
           querySnapshot.forEach((doc) => {
+            ngos.push({ id: doc.id, ...doc.data() });
             setAllNgos((prevState) => [
               ...prevState,
               { id: doc.id, ...doc.data() },
             ]);
           });
+          return ngos;
+        })
+        .then((ngos) => {
+          if (searchInput.length > 0) {
+            handleSearchSubmit("", ngos);
+          }
         })
         .catch((error) => {
           alert(`Error getting documents ===> ${error.message}`);
@@ -34,6 +43,7 @@ const Resources = () => {
     };
 
     fetchNgos();
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -67,24 +77,22 @@ const Resources = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allNgos]);
 
-  // Advance Filters component's functionalities - START
-  const applyAdvancedFilters = (filterOptions, ngos, setFilteredNgos) => {
+  // this filters ngos with chosenOption
+  const applyAdvancedFilters = (chosenOptions) => {
     setFilteredNgos([]);
-    for (let i = 0; i < ngos.length; i++) {
+    for (let i = 0; i < allNgos.length; i++) {
       const isAllOptionsIncluded =
-        filterOptions.cities.includes(ngos[i].city) &&
-        filterOptions.services.includes(ngos[i].service) &&
-        filterOptions.names.includes(ngos[i].name) &&
-        filterOptions.ratings.includes(ngos[i].rating);
-
+        chosenOptions.cities.includes(allNgos[i].city) ||
+        chosenOptions.services.includes(allNgos[i].service) ||
+        chosenOptions.names.includes(allNgos[i].name) ||
+        chosenOptions.ratings.includes(allNgos[i].rating);
       if (isAllOptionsIncluded) {
-        setFilteredNgos((prevState) => [...prevState, ngos[i]]);
+        setFilteredNgos((prevState) => [...prevState, allNgos[i]]);
       }
     }
   };
-  // Advance Filters component's functionalities - END
 
-  // Search bar component's functionalities - START
+  // this search a keyword and filters ngos with the given keyword
   const isSearchWordsInNgo = (ngo, searchedWords) => {
     const searchedWordsArray = searchedWords.split(" ");
     const searchedValue =
@@ -99,10 +107,9 @@ const Resources = () => {
   const filterNgos = (ngos, searchedWords) => {
     return ngos.filter((ngo) => isSearchWordsInNgo(ngo, searchedWords));
   };
-  // Search bar component's functionalities - END
 
-  const handleSearchSubmit = () => {
-    setFilteredNgos(filterNgos(allNgos, searchKey));
+  const handleSearchSubmit = (e, ngos = allNgos) => {
+    setFilteredNgos(filterNgos(ngos, searchKey));
     setSearchKey("");
   };
 
@@ -112,13 +119,6 @@ const Resources = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allNgos]);
-
-  useEffect(() => {
-    if (searchInput.length > 0) {
-      handleSearchSubmit();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   if (!allNgos) {
     return <LoadingPage />;
@@ -131,11 +131,9 @@ const Resources = () => {
         setSearchKey={setSearchKey}
         handleSearchSubmit={handleSearchSubmit}
       />
-      <div className="d-flex">
+      <div className="d-flex content">
         <AdvancedFilters
-          applyAdvancedFilters={() =>
-            applyAdvancedFilters(filterOptions, allNgos, setFilteredNgos)
-          }
+          applyAdvancedFilters={applyAdvancedFilters}
           setFilteredNgos={setFilteredNgos}
           filterOptions={filterOptions}
         />

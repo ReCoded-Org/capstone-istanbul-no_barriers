@@ -2,7 +2,7 @@
 
 exports[`NgoList renders correctly 1`] = `
 <div
-  className="ngoList"
+  className="ngoList table-responsive"
 >
   <table
     className="table-borderless ngoListTable table"

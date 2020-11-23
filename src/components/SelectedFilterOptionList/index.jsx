@@ -3,7 +3,6 @@ import "./index.css";
 
 // It renders the selected filter options of a given state which tracks the selected filter options.
 // It is called in AdvancedFilters component
-
 const SelectedFilterOptionsList = ({
   selectedOptions,
   setChosenOptions,
@@ -11,24 +10,22 @@ const SelectedFilterOptionsList = ({
   chosenOptions,
 }) => {
   const deleteOption = (option) => {
-    const values = chosenOptions[chosenOptionsKey];
-    const index = values.indexOf(option);
-    if (index > -1) {
-      values.splice(index, 1);
-    }
+    let values = chosenOptions[chosenOptionsKey];
+    values = values.filter((value) => value !== option);
 
-    // const key = chosenOptions[chosenOptionsKey];
-    setChosenOptions({ key: values });
+    setChosenOptions((state) => {
+      return { ...state, [chosenOptionsKey]: values };
+    });
   };
 
   return (
     <div className="filteredOptionsList">
-      {selectedOptions.map((option, index) => {
-        if (index % 2 === 0) {
+      {selectedOptions &&
+        selectedOptions.map((option) => {
           return (
             <div
-              className="selectedOption d-flex justify-content-between backgroundLight"
-              key={option}
+              className="selectedOption d-flex justify-content-between align-items-baseline backgroundDark"
+              key={option + (Math.random() * 100 + 1)}
             >
               <p className="selectedOptionTitle">{option}</p>
               <span
@@ -39,17 +36,7 @@ const SelectedFilterOptionsList = ({
               </span>
             </div>
           );
-        }
-        return (
-          <div
-            className="selectedOption d-flex justify-content-between backgroundDark"
-            key={option}
-          >
-            <p className="selectedOptionTitle">{option}</p>
-            <span className="selectedOptionDelete">X</span>
-          </div>
-        );
-      })}
+        })}
     </div>
   );
 };

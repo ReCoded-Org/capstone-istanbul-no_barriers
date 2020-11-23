@@ -17,7 +17,9 @@ exports[`NgoDetails renders correctly 1`] = `
   </h5>
   <p
     className="ngoDetailsServiceDescription"
-  />
+  >
+    serviceDescription
+  </p>
   <p>
     resources.ngoList.ngoDetails.responsiblePerson
      

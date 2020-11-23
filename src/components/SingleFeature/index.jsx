@@ -7,7 +7,7 @@ const SingleFeature = (props) => {
     <Row className="featContainer justify-content-center align-items-center">
       <Col lg={{ order: props.order }}>
         <img
-          className="featuresImg"
+          className="featuresImg img-fluid"
           src={props.src}
           style={props.styling}
           alt={props.alt}

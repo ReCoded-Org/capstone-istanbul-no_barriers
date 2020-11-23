@@ -10,9 +10,4 @@
 
 .iconTitle {
   color: var(--text-browse-color);
-  cursor: pointer;
-}
-
-.iconTitle:hover {
-  color: var(--hover-browse-color);
 }

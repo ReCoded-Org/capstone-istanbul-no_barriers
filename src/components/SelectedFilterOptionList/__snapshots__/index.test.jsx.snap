@@ -5,7 +5,7 @@ exports[`SelectedFilterOptionList renders correctly 1`] = `
   className="filteredOptionsList"
 >
   <div
-    className="selectedOption d-flex justify-content-between backgroundLight"
+    className="selectedOption d-flex justify-content-between align-items-baseline backgroundDark"
   >
     <p
       className="selectedOptionTitle"
@@ -20,7 +20,7 @@ exports[`SelectedFilterOptionList renders correctly 1`] = `
     </span>
   </div>
   <div
-    className="selectedOption d-flex justify-content-between backgroundDark"
+    className="selectedOption d-flex justify-content-between align-items-baseline backgroundDark"
   >
     <p
       className="selectedOptionTitle"
@@ -29,6 +29,7 @@ exports[`SelectedFilterOptionList renders correctly 1`] = `
     </p>
     <span
       className="selectedOptionDelete"
+      onClick={[Function]}
     >
       X
     </span>

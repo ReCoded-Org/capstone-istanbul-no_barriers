@@ -10,7 +10,7 @@ Array [
     >
       <img
         alt="girl with Laptop"
-        className="featuresImg"
+        className="featuresImg img-fluid"
         src="img1.jpg"
         style={
           Object {
@@ -38,7 +38,7 @@ Array [
     >
       <img
         alt="girl with email and speaker"
-        className="featuresImg"
+        className="featuresImg img-fluid"
         src="img2.jpg"
         style={
           Object {
@@ -66,7 +66,7 @@ Array [
     >
       <img
         alt="people fixing puzzle"
-        className="featuresImg"
+        className="featuresImg img-fluid"
         src="img3.jpg"
         style={
           Object {

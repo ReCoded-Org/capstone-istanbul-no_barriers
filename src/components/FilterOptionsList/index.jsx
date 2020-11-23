@@ -10,12 +10,14 @@ const FilterOptionsList = ({ filter, setChosenOptions, filterCategory }) => {
         return (
           <div
             className="filterOption d-flex align-items-center p-1"
-            key={option}
-            onClick={() =>
+            key={option + (Math.random() * 100 + 1)}
+            onClick={() => {
               setChosenOptions((state) => {
-                state[filterCategory].push(option);
-              })
-            }
+                const newState = { ...state };
+                newState[filterCategory].push(option);
+                return newState;
+              });
+            }}
           >
             <span className="filterOptionPlusSign">+</span>
             <p className="filterOptionTitle ">{option}</p>

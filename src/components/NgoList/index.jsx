@@ -10,7 +10,7 @@ const NgoList = ({ ngos }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="ngoList">
+    <div className="ngoList table-responsive">
       <Table className="table-borderless ngoListTable">
         <thead>
           <tr>

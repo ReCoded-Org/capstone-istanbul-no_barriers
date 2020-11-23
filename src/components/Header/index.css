@@ -53,3 +53,9 @@
 .headerImageBtn:hover {
   background-color: var(--background-color);
 }
+
+@media (max-width: 609px) {
+  .header h1.title {
+    font-size: 2.5rem;
+  }
+}

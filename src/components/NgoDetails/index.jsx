@@ -2,19 +2,29 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./index.css";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 const NgoDetails = ({ details }) => {
   const { t } = useTranslation();
+  const initialLanguage = useSelector((state) => state.languageReducer);
+
+  const renderDetails = () => {
+    switch (initialLanguage) {
+      case "ar":
+        return details.serviceDescription.arabic;
+      case "tr":
+        return details.serviceDescription.turkish;
+      default:
+        return details.serviceDescription.english;
+    }
+  };
 
   return (
     <div className="ngoDetailsTableData">
       <h3>{details.facilityName}</h3>
       <p className="address">{details.address}</p>
       <h5>{t("resources.ngoList.ngoDetails.aidDescription")}</h5>
-      <p className="ngoDetailsServiceDescription">
-        {/* serviceDescription should change according to the language  */}
-        {details.serviceDescription.english}
-      </p>
+      <p className="ngoDetailsServiceDescription">{renderDetails()}</p>
       <p>
         {t("resources.ngoList.ngoDetails.responsiblePerson")}
         &nbsp;

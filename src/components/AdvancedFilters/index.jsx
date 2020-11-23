@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Container,
   Button,
   Accordion,
   Card,
@@ -12,11 +11,7 @@ import FilterOptionsList from "../FilterOptionsList";
 import SelectedFilterOptionsList from "../SelectedFilterOptionList";
 import { useTranslation } from "react-i18next";
 
-const AdvancedFilters = ({
-  applyAdvancedFilters,
-  filterOptions,
-  setFilteredNgos,
-}) => {
+const AdvancedFilters = ({ applyAdvancedFilters, filterOptions }) => {
   const { t } = useTranslation();
   const filters = Object.keys(filterOptions);
   const [chosenOptions, setChosenOptions] = useState({
@@ -28,7 +23,7 @@ const AdvancedFilters = ({
   });
 
   const renderChosenOptions = (filter) => {
-    Object.keys(filterOptions).map((option) => {
+    return Object.keys(filterOptions).map((option) => {
       if (option === filter) {
         return (
           <SelectedFilterOptionsList
@@ -45,7 +40,7 @@ const AdvancedFilters = ({
 
   return (
     <div className="advancedFilters">
-      <Container fluid>
+      <div>
         <div className="advancedFiltersTitleSection d-flex justify-content-between align-items-baseline pb-2">
           <h5 className="advancedFiltersTitle">
             {t("resources.AdvancedFilters.title")}
@@ -87,17 +82,30 @@ const AdvancedFilters = ({
           );
         })}
         <div className="filterButtons d-flex justify-content-center align-items-baseline">
-          <p className="clearAll" onClick={() => setFilteredNgos([])}>
+          <p
+            className="clearAll"
+            onClick={() =>
+              setChosenOptions({
+                cities: [],
+                services: [],
+                ratings: [],
+                location: [],
+                names: [],
+              })
+            }
+          >
             {t("resources.AdvancedFilters.clearAll")}
           </p>
           <Button
             className="applyFilters shadow-none"
-            onClick={applyAdvancedFilters}
+            onClick={() => {
+              applyAdvancedFilters(chosenOptions);
+            }}
           >
             {t("resources.AdvancedFilters.applyFilters")}
           </Button>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

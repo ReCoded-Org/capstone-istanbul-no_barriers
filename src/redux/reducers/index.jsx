@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { USER_LOGGED_IN, WORDS_SEARCHED } from "../action/types";
+import { USER_LOGGED_IN, WORDS_SEARCHED, LANGUAGE } from "../action/types";
 
 const currentUserDataReducer = (state = null, action) => {
   switch (action.type) {
@@ -19,9 +19,19 @@ const currentSearchWordsReducer = (state = "", action) => {
   }
 };
 
+const languageReducer = (state = "en", action) => {
+  switch (action.type) {
+    case LANGUAGE:
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
 const allReducers = combineReducers({
   currentUserDataReducer,
   currentSearchWordsReducer,
+  languageReducer,
 });
 
 export default allReducers;
