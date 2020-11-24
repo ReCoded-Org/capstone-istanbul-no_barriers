@@ -29,3 +29,7 @@
   display: inline;
   color: var(--link-color);
 }
+
+.signupContainer {
+  height: 80vh;
+}
