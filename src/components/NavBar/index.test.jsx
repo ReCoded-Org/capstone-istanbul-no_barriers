@@ -4,10 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import allReducers from "../../redux/reducers";
-
 import Navbar from "./index";
-import { Provider } from "react-redux";
-import store from "../../redux/store/store";
 
 const store = createStore(
   allReducers,

@@ -60,7 +60,6 @@ const ExploreBlogs = () => {
             .filter((post) => post.tags.toString() === langRef)
             .slice(_startNum, _endNum)
             .map((post) => {
-              console.log(post.title);
               return (
                 <Col xs={12} md={6} lg={3} className="exploreBlogsBlog">
                   <Link to={`/story/${post.id}`}>

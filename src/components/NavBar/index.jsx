@@ -8,7 +8,6 @@ import "./index.css";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 import { languageAction } from "../../redux/action/index";
-import { useDispatch } from "react-redux";
 
 // Navbar will display different links according to the log status of the user:
 //  if user is logged in => Find ngo, stories, about us, profile + only log out button
@@ -21,7 +20,6 @@ const NavBar = () => {
     i18n.changeLanguage(lng);
   };
 
-  const dispatch = useDispatch();
   const userData = useSelector((state) => state.currentUserDataReducer);
   const [isLoggedOut, setIsLoggedOut] = React.useState(false);
 
